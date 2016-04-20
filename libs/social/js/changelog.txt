@@ -1,0 +1,10 @@
+2.2 - 5/08/2012
+Add: Xing share button
+
+2.1 - 25/05/2012
+Add: Option to set URL
+Add: prevent pinterest button from browsing
+Edit: Modify loading of linked in script
+
+2.0 - 03/03/2012
+first release

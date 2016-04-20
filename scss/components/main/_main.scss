@@ -1,0 +1,21 @@
+// ==========================================================================
+// Main container
+// ==========================================================================
+
+.main {
+    //margin-top: 77px;
+    position: relative;
+    z-index: 2;
+
+    // @include bp(sm) {
+    //     margin-top: 92px;
+    // }
+
+    // @include bp(md) {
+    //     margin-top: 170px;
+    // }
+}
+
+.main--scrolled {
+    margin-top: 181px;
+}

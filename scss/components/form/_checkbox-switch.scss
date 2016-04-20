@@ -1,0 +1,113 @@
+// ==========================================================================
+// Form Input Switch
+// ==========================================================================
+
+$height: 41px;
+$padding: 3px;
+.checkbox-switch {
+    border: 0;
+    @include border-radius(3px);
+    color: #fff;
+    cursor: pointer;
+    font: 700 20px 'Karla', sans-serif;
+    height: $height;
+    line-height: $height;
+    overflow: hidden;
+    text-transform: uppercase;
+    width: 120px;
+    position: relative;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+
+    &.checkbox-switch--disabled {
+        opacity: 0.5;
+    }
+}
+
+    .checkbox-switch__switch-handel {
+        position: absolute;
+        left: $padding;
+        right: $padding;
+        top: $padding;
+        bottom: $padding;
+    }
+
+        .checkbox-switch__switch-handel-btn {
+            $handleWidth: 50px;
+            @include background(linear-gradient(#fff, #dbdbdb));
+            @include border-radius(3px);
+            @include box-sizing(border-box);
+            @include box-shadow(2px 2px 1px rgba(0,0,0,0.5));
+            height: $height - ($padding * 2);
+            margin-left: 0;
+            width: $handleWidth;
+            @include transition(all 0.5s ease);
+            position: absolute;
+            top: 0;
+            left: 0%;
+            z-index: 2;
+
+            &:after {
+                content: '';
+                display: block;
+                background-image: $icons-url;
+                background-position: sprite-position($icons, switch-grip);
+                height: image-height(sprite-file($icons, switch-grip));
+                width: image-width(sprite-file($icons, switch-grip));
+
+                // center
+                margin-top: - (image-height(sprite-file($icons, switch-grip)) / 2);
+                margin-left: - (image-width(sprite-file($icons, switch-grip)) / 2);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+            }
+
+            .checkbox-switch--checked & {
+                left: 100%;
+                margin-left: - $handleWidth;
+            }
+
+            .checkbox-switch:hover & {
+                border-color: #666;
+            }
+        }
+
+        .checkbox-switch__switch-label {
+            box-sizing: border-box;
+            @include box-shadow(2px 2px 2px rgba(0,0,0,0.3) inset);
+            height: $height;
+            width: 100%;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .checkbox-switch__switch-label-a {
+            @include background(linear-gradient(#29978f, #3fb8af));
+            @include transition(width 0.5s ease);
+            z-index: 1;
+            width: 0;
+
+            .checkbox-switch--checked & {
+                width: 100%;
+            }
+        }
+
+            .checkbox-switch__switch-label-a-text {
+                float: left;
+                padding-left: 10px;
+            }
+
+        .checkbox-switch__switch-label-b {
+            @include background(linear-gradient(#c91434, #e32143));
+            z-index: 0;
+        }
+
+            .checkbox-switch__switch-label-b-text {
+                float: right;
+                padding-right: 10px;
+            }

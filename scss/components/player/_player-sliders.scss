@@ -1,0 +1,113 @@
+.player-alt-slider {
+    display: inline-block;
+    cursor: pointer;
+    height: 8px;
+    vertical-align: middle;
+    width: 100%;
+    position: relative;
+}
+.player-alt-mobile {
+    padding: 0 10px;
+}
+
+    .player-alt-slider__slider,
+    .mobile-slider {
+        @include border-radius(5px);
+        @include box-shadow(3px 3px 6px rgba(0,0,0,0.4));
+        @include background(linear-gradient(#3fb8af, #249b92));
+        height: 8px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    // Disable webkit mobile slider styling
+    .mobile-slider,
+    .mobile-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+    }
+
+    .player-alt-slider__handle,
+    .mobile-slider::-webkit-slider-thumb {
+        @include background(linear-gradient(#fcfcfc, #b9b9b9));
+        @include border-radius(8px);
+        @include box-shadow(3px 3px 6px rgba(0,0,0,0.4));
+    }
+
+
+    .mobile-slider::-webkit-slider-thumb {
+        height: 30px;
+        width: 30px;
+        @include border-radius(15px);
+    }
+
+
+    .player-alt-slider__handle {
+        height: 16px;
+        width: 16px;
+        margin-left: -8px;
+        position: absolute;
+        left: 50%;
+        top: -4px;
+
+        .player-alt-mobile & {
+            @include border-radius(15px);
+            height: 30px;
+            margin-left: -15px;
+            width: 30px;
+            top: -11px;
+        }
+    }
+
+// ==========================================================================
+// Form Input Range
+// ==========================================================================
+
+$height: 32px;
+$width: 73px;
+.player-slider {
+    /*background-image: url(../img/temp/player-bg.png);*/
+    float: left;
+    height: $height;
+    margin-top: 6px;
+    width: 322px;
+    position: relative;
+}
+
+.player-slider__slider {
+    background-color: rgba(0,0,0,0.2);
+    border-top: 1px solid #dfdfdf;
+    height: 1px;
+    position: relative;
+    top: ($height - 4)/2; // subtract __slider height
+    z-index: 1;
+}
+
+$height: $height - 2; // Subtract border
+.player-slider__handle {
+    background-color: #111;
+    border: 3px solid #6b6b6b;
+    @include border-radius($height / 2);
+    @include box-shadow(2px 2px 8px rgba(0,0,0,0.4));
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    height: $height;
+    line-height: $height - 6px;
+    margin-left: - $width / 2;
+    text-align: center;
+    width: $width;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 2;
+    @include transition(border-color 0.5s ease);
+
+    &:hover {
+        border-color: #222;
+    }
+}

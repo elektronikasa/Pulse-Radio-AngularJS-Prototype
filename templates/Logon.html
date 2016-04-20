@@ -1,0 +1,20 @@
+<div style="padding-left:20px; padding-right:20px">
+    <div class="container" >
+        <h1 >Login to task manager</h1>
+        <hr/>
+        <form name="loginForm">
+            <fieldset>
+                <label for="email">Email address:</label>
+                <input id="email" type="email" required placeholder="Email address..." ng-model="logonInfo.email" />
+                <label for="password">Password:</label>
+                <input id="password" type="password" required  ng-model="logonInfo.password" />
+
+            </fieldset>
+            <br />
+
+            <button type="submit" class="btn btn-primary" ng-click="logon(logonInfo, loginForm)">Login</button>
+            <button type="button" class="btn btn-default" ng-click="cancelRegistration()">Cancel</button>
+
+        </form>
+    </div>
+</div>

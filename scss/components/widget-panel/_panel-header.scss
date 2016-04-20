@@ -1,0 +1,48 @@
+.panelHeader {
+	padding: 0 30px;
+	height: 73px;
+	line-height: 73px;
+	background: url(../images/desktop/bg/bg-popupnav.png) repeat-x;
+	border-bottom: 1px solid #d6d6d6;
+
+	&.panelHeader--small {
+		height: 60px;
+		line-height: 60px;
+	}
+}
+
+	.panelHeader__label {
+		margin: 0 10px 0 0;
+		vertical-align: middle;
+		text-transform: uppercase;
+	}
+
+	.panelHeader__checkbox {
+		vertical-align: middle;
+		margin: 0 5px 0 0 !important; // compat bootstrap
+	}
+
+	.export-listing {
+		margin: 0;
+		padding: 0;
+	}
+
+		.export__item {
+			@include inline-block;
+			vertical-align: top;
+			margin-left: 15px;
+			list-style-type: none;
+		}
+
+			.export__link {
+				display: block;
+				font-size: 12px;
+				font-weight: 400;
+				color: #777;
+			}
+
+			.export__label {
+				font-size: 12px;
+				font-weight: 400;
+				color: #777;
+			}

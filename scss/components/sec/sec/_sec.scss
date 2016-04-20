@@ -1,0 +1,39 @@
+// ==========================================================================
+// The base class for block sections
+// ==========================================================================
+
+.sec {
+    color: #000;
+}
+
+    .sec__title {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 19px;
+        margin: 10px 0 5px;
+    }
+
+    .sec__sub-title {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        margin: 0 0 10px;
+    }
+
+    .sec__text {
+        font-family: 'Karla', sans-serif;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .sec__meta-tags {
+        color: #929292;
+    }
+
+        .sec__meta-tags-link,
+        .sec__meta-tags-link:hover {
+            color: #929292;
+        }
+
+@import "figure";

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Plugin - Social Share Buttons Example 4</title>
+<link rel="stylesheet" type="text/css" href="inc/layout.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/custom_social.css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="inc/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="inc/js/jquery.site.js"></script>
+<script type="text/javascript" src="js/jquery.social.share.2.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#social-share').dcSocialShare({
+		size: 'horizontal',
+		location: 'bottom',
+		offsetAlign: 0,
+		offsetLocation: 0,
+		buttons: 'twitter,facebook,linkedin,digg,stumbleupon,delicious,pinterest,buffer,xing,print,email',
+		floater: false,
+		loadOpen: true
+	});
+});
+</script>
+</head>
+
+<body>
+
+<!-- Begin Second Wrapper -->
+
+<div id="wrapper">
+ 
+  <div id="container"> 
+  <!-- Begin Question Block -->
+
+  <div class="opacity pad-btm">
+	<div id="banner">
+		<a href="http://www.designchemical.com/blog/index.php/premium-jquery-plugins/jquery-social-share-buttons-plugin/"><img src="inc/images/banner.png" alt="" /></a>
+		<h1>Example 4 - Creating a Social Share Toolbar</h1>
+	</div>
+	<div id="nav-container">
+		<ul id="dctsp-nav">
+			<li><a href="index.html">Documentation</a></li>
+		<li><a href="example_1.html">Example 1</a></li>
+		<li><a href="example_2.html">Example 2</a></li>
+		<li><a href="example_3.html">Example 3</a></li>
+		<li><a href="example_4.html">Example 4</a></li><li><a href="example_5.html">Example 5</a></li><li><a href="example_6.html">Example 6</a></li>
+		
+		</ul>
+		</div>
+	</div>
+	
+
+<div class="opacity">
+
+ <div class="title">
+    <h3>Example 4 - Creating a Social Share Toolbar</h3>
+	<p>The plugin is very versatile and with a few minor changes to the CSS and the default settings we can create a custom social share toolbar - see bottom of browser window.</p>
+	<h4>jQuery Code</h4>
+	<pre>$(document).ready(function($){
+	$('#social-share').dcSocialShare({
+	size: 'horizontal',
+		location: 'bottom',
+		offsetAlign: 0,
+		offsetLocation: 0,
+		buttons: 'twitter,facebook,linkedin,digg,stumbleupon,delicious,pinterest,buffer,print,email',
+		floater: false,
+		autoClose: true
+	});
+});</pre>
+<h4>HTML</h4>
+<pre>&lt;div id="social-share"&gt;&lt;/div&gt;</pre>
+	<p>Using the "classOpen", "classClose" & "classToggle" options we can create external links that will hide/show the toolbar:</p>
+	<p><a href="#" class="dc-toggle">Click To Toggle Open/Close</a></p>
+	<pre>&lt;a href="#" class="dc-toggle"&gt;Click To Toggle Open/Close&lt;/a&gt;</pre>
+	<p><a href="#" class="dc-open">Click To Open</a></p>
+	<pre>&lt;a href="#" class="dc-open"&gt;Click To Open&lt;/a&gt;</pre>
+	<p><a href="#" class="dc-close">Click To Close</a></p>
+	<pre>&lt;a href="#" class="dc-close"&gt;Click To Close&lt;/a&gt;</pre>
+	<h4>Toolbar Custom CSS</h4>
+	<pre>
+/* Button panel */
+.dcssb-float {
+	background: #E6EDF4;
+	padding: 10px 0;
+	height: 20px;
+	width: 100%;
+	box-shadow: 0 -3px 5px 0 #555;
+}
+.dcssb-content {
+	width: 940px;
+	margin: 0 auto;
+	
+}
+.dcssb-btn {
+	float: left;
+	margin-right: 10px;
+}
+	</pre>
+	<p>Note: Google plus button will not show for local addresses.</p>
+  </div>
+
+
+<!-- Begin Question Block -->
+<div class="toggle demo-height">
+
+</div>
+<!-- End Question Block -->
+
+</div>
+
+ 
+  
+  <div id="copyright">
+	Social Share Buttons WordPress plugin was created by <a href="http://www.designchemical.com">Design Chemical</a>.
+  </div>
+</div>
+<!-- End Wrapper -->
+<div id="social-share"></div>
+</body>
+</html>

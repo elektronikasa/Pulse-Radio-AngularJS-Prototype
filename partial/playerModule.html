@@ -1,0 +1,64 @@
+<div class="player-container  clearfix  js-player-component">
+
+    <div class="player__close icons icons-cross js-player-close"></div>
+
+    <div class="player">
+
+
+        <audio id="audio1" controls="controls"  style="display: none">
+            Your browser does not support the HTML5 Audio Tag.
+        </audio>
+        <div class="player__controls">
+            <div class="player__btn player__controls-prev">
+                <div class="player__btn-icon  icons  icons-player-arrow-left"></div>
+            </div>
+            <div class="player__btn player__controls-pause">
+                <div class="player__btn-icon  icons  icons-player-pause"></div>
+            </div>
+            <div class="player__btn player__controls-next">
+                <div class="player__btn-icon  icons  icons-player-arrow-right"></div>
+            </div>
+        </div>
+        <div class="player-slider-container">
+
+            <input name="sliderControl" class="player__input-slider js-player-range"
+                   type="range"
+                   max="240"
+                   min="0"
+                   step="1"
+                   value="147">
+        </div>
+
+        <div class="player__vol">
+            <div class="player__btn  player__vol-item">
+                <div class="player__btn-icon  icons  icons-player-volume"></div>
+            </div>
+            <div class="player__btn  player__btn--vol">
+                <input name="volumeControl" type="range" class="js-slider-range">
+            </div>
+        </div> <!-- .player__vol -->
+    </div> <!-- .player -->
+
+    <div class="player-list">
+        <div class="player-list__tabs">
+            <div class="player-list__tab-item  player-list__tab-item--pulse">
+                <div class="player-list__tab-icon  icons  icons-heart-sm"></div>
+            </div>
+            <div class="player-list__tab-item  player-list__tab-item--charts">
+                <div class="player-list__tab-icon  icons  icons-charts"></div>
+            </div>
+        </div>
+        <div id="play-list-container" class="player-list__list-container">
+            <script id="main-playerlist-tmp" type="text/x-handlebars-template">
+                <ul id="player-list" class="player-list__list">
+                {{#each this}}
+                <li class="player-list__item player-list__item--active" data-track="{{track}}">
+                {{name}}&nbsp;<label id='length'></label>
+                </li>
+                </div>
+                {{/each}}
+                </ul>
+            </script>
+        </div>
+    </div>
+</div>

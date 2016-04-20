@@ -1,0 +1,94 @@
+// ==========================================================================
+// The side nav - Desktop only
+// ==========================================================================
+$width: 70px;
+
+.nav-side {
+    background-color: #141414;
+    @include border-radius(6px);
+    width: $width;
+    position: absolute;
+    left: -($width + 20px);
+    top: 20px;
+
+    @include bp(1156px) {
+        display: block;
+    }
+}
+
+    .nav-side__item {
+        border-top: 1px solid #222;
+        border-bottom: 1px solid #0e0e0e;
+        cursor: pointer;
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        width: 100%;
+
+        // &:hover {
+        //     @include background(linear-gradient(#141414, #302f2f));
+        // }
+    }
+
+    .nav-side__item--first {
+        border-top: 0;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .nav-side__item--last {
+        border-bottom: 0;
+
+        &:hover {
+            background: none;
+            opacity: 0.8;
+        }
+    }
+
+    .nav-side__item--logo {
+        height: auto;
+        padding: 15px 0;
+    }
+
+        .nav-side__item-icon--profile {
+            display: inline-block;
+            @include background(linear-gradient(#949393, #676767));
+            height: 40px;
+            margin: -2px auto 0;
+            padding: 3px;
+            vertical-align: middle;
+            width: 40px;
+            position: relative;
+
+            &:before {
+                content: '';
+                opacity: 0;
+                background: #fff;
+                @include transition(opacity 0.3s ease);
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 0;
+            }
+
+            &:hover:before {
+                opacity: 1;
+            }
+        }
+
+            .nav-side__item-img {
+                float: left;
+                position: relative;
+                z-index: 1;
+            }
+
+        .nav-side__item-icon--general {
+            @include transition(all 0.3s ease);
+
+            .nav-side__item:hover & {
+                @include filter(brightness(500%));
+            }
+        }

@@ -1,0 +1,84 @@
+$words: #e32143;
+$music: #3fb8af;
+$events: #ffbe40;
+
+.nav-sub-container {
+    background-color: #000;
+}
+
+.nav-sub-container--words {
+    border-bottom-color: $words;
+}
+
+.nav-sub-container--music {
+    border-bottom-color: $music;
+}
+
+.nav-sub-container--events {
+    border-bottom-color: $events;
+}
+
+.nav-sub {
+    font-family: 'Karla', sans-serif;
+    padding-top: 10px;
+}
+
+    .nav-sub__border {
+        border-top: 4px solid #000;
+    }
+
+    .nav-sub__border--words {
+    }
+
+    .nav-sub__border--music {
+    }
+
+    .nav-sub__border--events {
+    }
+
+    .nav-sub__list {
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+
+        .nav-sub__list-item {
+            list-style: none;
+            text-transform: uppercase;
+        }
+
+            .nav-sub__list-link {
+                @include border-radius(0);
+                color: #888;
+                display: block;
+                font-size: 12px;
+                font-weight: 700;
+                padding: 8px 5px;
+
+                &:hover {
+                    color: #888;
+                    background-color: #eee;
+                    text-decoration: none;
+
+                    &:after {
+                        content: '>';
+                        color: #000;
+                    }
+                }
+            }
+
+                // Bootstrap specificity battling
+                .nav-sub-container--events .active > .nav-sub__list-link {
+                    background-color: $events;
+                    color: #222;
+                }
+
+                .nav-sub-container--music .active > .nav-sub__list-link {
+                    background-color: $music;
+                    color: #fff;
+                }
+
+                .nav-sub-container--words .active > .nav-sub__list-link {
+                    background-color: $words;
+                    color: #fff;
+                }

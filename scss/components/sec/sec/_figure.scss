@@ -1,0 +1,52 @@
+// ==========================================================================
+// Sec Figure
+// ==========================================================================
+
+.sec__figure {
+    position: relative;
+}
+    .sec__img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .sec__figure-overlay {
+        opacity: 0;
+        @include transition(opacity 0.2s ease);
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
+        .sec-list__item:hover & {
+            opacity: 1;
+        }
+    }
+
+        .sec__figure-overlay-bg {
+            background-color: rgba(0,0,0,0.7);
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+        }
+
+    .sec__caption-container {
+        display: table;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+        .sec__caption {
+            color: #fff;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }

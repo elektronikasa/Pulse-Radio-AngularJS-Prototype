@@ -1,0 +1,99 @@
+$words: #e32143;
+$music: #3fb8af;
+$events: #ffbe40;
+
+.article-list {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+    .article-list__item {
+
+    }
+
+    .article-list__item-figure {}
+
+    .article-list__item-img {}
+
+    .article-list__tags {
+        margin: 0;
+        padding: 0;
+    }
+
+        .article-list__tag-item {
+            display: inline-block;
+            font-size: 10px;
+        }
+
+            .article-list__tag-link {
+
+                &:hover {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+
+            .article-list__tag-link--words {
+                color: $words;
+
+                &:hover {
+                    background-color: $words;
+                }
+            }
+
+            .article-list__tag-link--music {
+                color: $music;
+
+                &:hover {
+                    background-color: $music;
+                }
+            }
+
+            .article-list__tag-link--events {
+                color: $events;
+
+                &:hover {
+                    color: #000;
+                    background-color: $events;
+                }
+            }
+
+    .article-list__item-title {
+        color: #fff;
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Karla', sans-serif;
+        margin: 10px 0;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .article-list__item-sub-title {
+        color: #888;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .article-list__item-btn {}
+
+    .article-list__item-btn--words {
+        background-color: $words;
+        border-color: $words;
+    }
+
+    .article-list__item-btn--music {
+        background-color: $music;
+        border-color: $music;
+    }
+
+    .article-list__item-btn--events {
+        color: #000;
+        background-color: $events;
+        border-color: $events;
+    }
+
+    .article-list__item-link,
+    .article-list__item-link:hover {
+        color: #fff;
+    }

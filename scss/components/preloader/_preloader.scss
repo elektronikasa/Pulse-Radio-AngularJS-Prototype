@@ -1,0 +1,30 @@
+// ==========================================================================
+// Site Preloader
+// ==========================================================================
+
+.preloader {
+      background-color: #fff;
+      height: 100%;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+}
+
+    .preloader__wrap {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+        .preloader__content {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .preloader__loader {
+            display: block;
+            margin: 20px auto 0;
+        }

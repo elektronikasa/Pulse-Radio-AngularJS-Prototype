@@ -1,0 +1,151 @@
+// text
+.t-left {
+	text-align: left;
+}
+
+.t-center {
+	text-align: center;
+}
+
+.t-right {
+	text-align: right;
+}
+
+
+// text styles
+.t-c-light {
+	color: #777;
+}
+
+.t-bold {
+	font-weight: 700;
+	font-style: normal;
+}
+
+.t-uppercase {
+	text-transform: uppercase;
+}
+
+// listing
+.listing {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+// layout
+.container-alt {
+	padding: 15px;
+}
+
+.nudge-top {
+	margin-top: 10px;
+}
+
+.nudge-top-small {
+	margin-top: 5px;
+}
+
+.nudge-top-large {
+	margin-top: 20px;
+}
+
+.nudge-bottom {
+	margin-bottom: 10px;
+}
+
+.nudge-bottom-small {
+	margin-bottom: 5px;
+}
+
+.nudge-bottom-large {
+	margin-bottom: 20px;
+}
+
+.nudge-left {
+	margin-left: 10px;
+}
+
+.nudge-left-small {
+	margin-left: 5px;
+}
+
+.nudge-right {
+	margin-right: 10px;
+}
+
+.nudge-right-large {
+	margin-right: 20px;
+}
+
+.nudge-right-small {
+	margin-right: 5px;
+}
+
+.v-middle {
+	vertical-align: middle;
+}
+
+// this is to deal with the responsive development. honestly WTF. How has this not been commuinicated until now. jesus fucking christ
+.for-mobile {
+
+	@media only screen and (min-width: $bp-sm) {
+		display: none;
+	}
+}
+
+.for-tablet {
+	display: none;
+
+	@media only screen and (min-width: $bp-sm) {
+		display: block;
+	}
+}
+
+.for-desktop {
+	display: none;
+
+	@media only screen and (min-width: $bp-lg) {
+		display: block;
+	}
+}
+
+// grids responsive dev
+
+// accoutns - cells to be 100% until after tablet
+.grid-sm--20col .grid-sm__cell--10col {
+	@media only screen and (max-width: $bp-sm) {
+		width: 100% !important;
+	}
+}
+
+// sidebar image container - not sure if used elsewhere, so it's global for now
+.img-container {
+	display: block;
+	text-align: center;
+}
+
+// sick of the random colors everywhere
+// NOT BEING USED YET
+$dark: #000000;
+$dark-lighter: #000000;
+$dark-lighter: #000000;
+$dark-lightest: #000000;
+$dark-darkest: #000000;
+
+$light: #000000;
+$light-lighter: #000000;
+$light-lightest: #000000;
+$light-darker: #000000;
+$light-darkest: #000000;
+
+.tc-dark-lighter {
+	color: $dark-lighter;
+}
+
+// being used
+.copy {
+	margin: 20px 0;
+    font: 700 13px/1 'Karla', sans-serif;
+    color: #777;
+}

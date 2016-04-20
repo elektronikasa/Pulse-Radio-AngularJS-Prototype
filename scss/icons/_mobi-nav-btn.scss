@@ -1,0 +1,24 @@
+.icn-mobi-nav-btn {
+    width: 20px;
+    height: 18px;
+}
+
+    .icn-mobi-nav-btn__line {
+        height: 4px;
+        @include box-shadow(1px 1px 2px rgba(0,0,0,0.42));
+        width: 100%;
+        margin-top: 3px;
+    }
+
+    .icn-mobi-nav-btn__line--first {
+        @include background(linear-gradient(#959494, #8f8e8e));
+        margin-top: 0;
+    }
+
+    .icn-mobi-nav-btn__line--middle {
+        @include background(linear-gradient(#838383, #797979));
+    }
+
+    .icn-mobi-nav-btn__line--last {
+        @include background(linear-gradient(#6d6c6c, #666666));
+    }

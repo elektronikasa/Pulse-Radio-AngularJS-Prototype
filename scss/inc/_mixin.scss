@@ -1,0 +1,187 @@
+// ==========================================================================
+// List of mixins
+// ==========================================================================
+
+ @mixin bp($point) {
+    @if $point == sm {
+        @media (min-width: $bp-sm) {
+            @content;
+        }
+    }
+    @else if $point == md {
+        @media (min-width: $bp-md) {
+            @content;
+        }
+    }
+    @else if $point == lg {
+        @media (min-width: $bp-lg) {
+            @content;
+        }
+    }
+    @else {
+        @media (min-width: $point) {
+            @content;
+        }
+    }
+}
+
+// Calculate the perc width of the column
+@function grid-cell-width($cell-total, $cell-count) {
+    // Percentage width per column
+    @return (100 / ($cell-total / $cell-count)) * 1%;
+}
+
+@mixin animation($animation) {
+    -webkit-animation: $animation;
+       -moz-animation: $animation;
+            animation: $animation;
+}
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+
+// Retina Sprite
+// https://gist.github.com/JamyGolden/6448466
+// Mixin that generates both a regular and retina sprite (using the Compass
+// Sprite Helpers) and returns the appropriate declarations and media
+// queries.
+// The output is equivalent to @include all-spritname-sprites(true), but
+// with retina display support.
+//
+// $folder - The name of the folder that contains the icons to sprite.
+// The folder must accompany another folder with the same name, but with an
+//  added -retina suffix
+// for example:
+// folder
+// - img
+// -- icons
+// -- icons-retina
+// ==========================================================================
+
+@mixin retina-sprite($folder) {
+	// Generates a sprite containing every icon in the supplied folder.
+	// Icon spacing 2px included to prevent browser zoom in/out sprite bug
+	$sprites: sprite-map("#{$folder}/*.png", $icon-spacing: 2px);
+	// Generates a second sprite containing every icon at retina resolution.
+	$sprites-retina: sprite-map("#{$folder}-retina/*.png", $icon-spacing: 2px);
+
+	.#{$folder}-sprite {
+		@include inline-block();
+		text-indent: -9999px;
+	}
+
+	.#{$folder} {
+		background-image: sprite-url($sprites);
+		background-repeat: no-repeat;
+	}
+
+	// Create classes for main sprites folder
+	@each $sprite in sprite-names($sprites) {
+		.#{$folder}-#{$sprite} {
+			// Extend the parent class with background properties
+			// This will also extend the retina version
+			@extend .#{$folder};
+
+			background-position: sprite-position($sprites, $sprite);
+			height: image-height(sprite-file($sprites, $sprite));
+			width: image-width(sprite-file($sprites, $sprite));
+		}
+	}
+
+	@media (min-resolution: 2dppx),
+	(min-device-pixel-ratio: 2),
+	(-o-min-device-pixel-ratio: 2/1),
+	(-webkit-min-device-pixel-ratio: 2) {
+		.#{$folder} {
+			background-image: sprite-url($sprites-retina);
+			@include background-size(ceil(image-width(sprite-path($sprites-retina)) / 2) auto);
+		}
+
+		@each $sprite in sprite-names($sprites-retina) {
+			.#{$folder}-#{$sprite} {
+				$pos: sprite-position($sprites-retina, $sprite);
+				background-position: nth($pos, 1) nth($pos, 2) / 2;
+			}
+		}
+	}
+}
+
+
+
+// Grid
+// ==========================================================================
+
+// @media query shortcut mixin
+ @mixin bp($point) {
+    $bp-xs-obj: nth($bps, 1);
+    $bp-xs: nth($bp-xs-obj, 1);
+
+    @if $point == $bp-xs {
+        @content;
+    }
+
+    @else {
+        @each $bp in $bps {
+            $bp-name: nth($bp, 1);
+            $bp-width: nth($bp, 2);
+
+            @if $point == $bp-name {
+                @media (min-width: $bp-width) {
+                    @content;
+                }
+            }
+
+        }
+    }
+
+}
+
+// Return relevent gutter based on viewport
+@function gd-gutter($size, $horizontal) {
+
+    @if $horizontal == true {
+
+        @each $bp in $bps {
+            $bp-name: nth($bp, 1);
+            $bp-h-gutter: nth($bp, 3);
+
+            @if $size == $bp-name {
+                @return $bp-h-gutter;
+            }
+        }
+    }
+
+    @else {
+        @each $bp in $bps {
+            $bp-name: nth($bp, 1);
+            $bp-v-gutter: nth($bp, 4);
+
+            @if $size == $bp-name {
+                @return $bp-v-gutter;
+            }
+        }
+    }
+
+}
+
+// Calculate the perc width of the column
+@function gd-col-width($col-total, $col-count) {
+    // Percentage width per column
+    @return (100 / ($col-total / $col-count)) * 1%;
+}

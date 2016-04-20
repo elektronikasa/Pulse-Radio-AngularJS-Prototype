@@ -1,0 +1,36 @@
+// ==========================================================================
+// Settings
+// ==========================================================================
+
+
+.settings__item {
+    border: 1px solid #c7c7c7;
+    @include border-radius(3px);
+    @include box-sizing(border-box);
+    height: 63px;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    position: relative;
+}
+
+.settings__item--dark {
+    background: #e8e8e8;
+}
+
+    .settings__edit {
+        color: #777;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .settings__arrow {
+        margin-left: 10px;
+    }
+
+    .settings__checkbox {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }

@@ -1,0 +1,112 @@
+// ==========================================================================
+// General helpers
+// ==========================================================================
+
+.divider {
+    background-color: $primary-color;
+    border: none;
+    height: 1px;
+    margin: 10px 0;
+    padding: 0;
+    width: 100%;
+}
+
+.divider--light {
+    background-color: #e8e8e8;
+}
+
+.divider--large {
+	margin: 30px ;
+}
+
+.l-right {
+    float: right;
+}
+
+.l-left {
+    float: left;
+}
+
+.l-full {
+    width: 100%;
+}
+
+.wrap {
+    padding: 15px;
+
+    @include bp(md) {
+        padding: 20px;
+    }
+}
+
+.wrap--small {
+    padding: 10px;
+}
+
+.wrap--large {
+    padding: 30px;
+}
+
+.valign-middle {
+    vertical-align: middle;
+}
+
+.muted {
+    color: #666;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+.is-invisible {
+    visibility: hidden;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.o-90 {
+    @include opacity(0.9);
+}
+
+.o-80 {
+    @include opacity(0.8);
+}
+
+.o-70 {
+    @include opacity(0.7);
+}
+
+.o-60 {
+    @include opacity(0.6);
+}
+
+.o-50 {
+    @include opacity(0.5);
+}
+
+.o-40 {
+    @include opacity(0.4);
+}
+
+.o-30 {
+    @include opacity(0.3);
+}
+
+.o-20 {
+    @include opacity(0.2);
+}
+
+.o-10 {
+    @include opacity(0.1);
+}
+
+.hide-overflow {
+    overflow: hidden;
+}
+
+.link-dark {
+    color: #111;
+}

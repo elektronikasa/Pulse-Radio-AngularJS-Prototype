@@ -1,0 +1,483 @@
+<div class="modal fade" id="pulseSignup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="container hidden-xs hidden-sm">
+
+                <a id="closeSignIn" class="js-side-nav-item" data-name="home" href="#" data-dismiss="modal" >
+                    <img src="images/desktop/btns/btn-close.png" width="18" height="18" class="pull-right" style="margin-top: 20px;">
+                </a>
+
+                <div class="clearfix"></div>
+
+                <!-- start step one container -->
+                <div class="signup-container signup-container--stepOne">
+
+                    <div class="signup-container--stepOne-Lhs">
+                        <h1 class="signup-step-one__headline">
+                            <em class="em">Connect</em> to
+                        </h1>
+
+                        <ul class="signup-step-one__listing">
+                            <li class="signup-step-one__item">
+                                <a href=""
+                                   class="signup-step-one__link">
+                                    <i class="icons icons-step-1-disc icons--step-1"></i>
+                                    <em class="em">Discover</em> &amp; Share New Music
+                                </a>
+                            </li>
+                            <li class="signup-step-one__item">
+                                <a href=""
+                                   class="signup-step-one__link">
+                                    <i class="icons icons-step-1-headphones icons--step-1"></i>
+                                    <em class="em">Connect</em> with your Favourite DJs
+                                </a>
+                            </li>
+                            <li class="signup-step-one__item">
+                                <a href=""
+                                   class="signup-step-one__link">
+                                    <i class="icons icons-step-1-download Selling icons--step-1"></i>
+                                    <em class="em">Download</em> Mixes for Free
+                                </a>
+                            </li>
+                            <li class="signup-step-one__item">
+                                <a href=""
+                                   class="signup-step-one__link">
+                                    <i class="icons icons-step-1-ticket icons--step-1"></i>
+                                    <em class="em">Start Selling</em> Tickets to your Events Today
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="signup-container--stepOne-Rhs text-center">
+
+                        <i class="icons icons-step-1-logo"></i>
+                        <h1 class="signup__social__headline">
+                            My pulse
+                        </h1>
+
+                        <div id="signUp">  
+                            <div class="signup__social__copy">
+                                Use <em class="em">Facebook,</em> <em class="em">Twitter</em> or <em class="em">Email</em> to connect to <em class="em">My Pulse</em>.
+                            </div>
+                            <a href="javascript:;"
+                               class="btnSignUp-StepTwo">
+                                <img src="images/desktop/signup/step1/btn-facebook.png"
+                                     class="mtop20 hoverFade">
+                            </a>
+
+                            <a href="javascript:;"
+                               class="btnSignUp-StepTwo">
+                                <img src="images/desktop/signup/step1/btn-twitter.png"
+                                     class="mtop10 hoverFade">
+                            </a>
+
+                            <a href="javascript:;"
+                               class="btnSignUp-StepTwo">
+                                <img src="images/desktop/signup/step1/btn-email.png"
+                                     class="mtop10 hoverFade mleft05">
+                            </a>
+                        </div>
+                        <div id="signIn" style="display: none" >   
+                            <div style="padding-left:20px; padding-right:20px">
+                                <div class="container"  style="width: 300px">
+                                    <h3 >Login to Pulse Radio</h3>
+                                    <hr/>
+                                    <form name="loginForm">
+                                        <fieldset>
+                                            <div style="text-align: left">
+                                                <label for="username">User name:</label>
+                                            </div>
+                                            <div style="text-align: left">
+                                                <input id="username" type="text" required placeholder="User name here..." ng-model="logonInfo.username" />
+                                            </div>
+                                            <div style="text-align: left">
+                                                <label for="password">Password:</label>
+                                            </div>
+                                            <div style="text-align: left">
+                                                <input id="password" type="password" required  ng-model="logonInfo.password" />
+                                            </div>
+                                        </fieldset>
+                                        <br />
+
+                                        <button type="submit" class="btn btn-primary" ng-click="logon(logonInfo, loginForm)">Login</button>
+                                        <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix mtop20"></div>
+                        <span class="text-center">Already have a MyPulse Account? <a href ng-click="signOn()" >Sign in</a></span>
+                        <!--<span class="text-center">Already have a MyPulse Account? <a href ng-click="signOn()"  class="btnSignUp-StepTwo">Sign in</a></span>-->     
+                    </div>
+                </div> <!-- .signup-container\stepOne -->
+
+
+                <!-- start step two container -->
+                <div class="signup-container signup-container--stepTwo">
+                    <h1 class="signup-step-two__headline">
+                        <em class="em">Personalise</em> your <em class="em">Pulse experience</em>
+                    </h1>
+
+                    <h2 class="signup-stepTwo__headline-sub">
+                        Let us get to know you so we can provide you with the content you want
+                    </h2>
+
+                    <form class="user-personalise-form">
+                        <label for="user-personalise-channel"
+                               class="user-personalise-form__label">
+                            Channel name
+                        </label>
+                        <input type="text"
+                               placeholder="Type here"
+                               class="user-personalise-form__field"
+                               id="user-personalise-channel">
+
+                        <br>
+
+                        <label for="user-personalise-location"
+                               class="user-personalise-form__label">
+                            Location
+                        </label>
+                        <select class="user-personalise-form__field"
+                                id="user-personalise-location">
+                            <option value="" disabled="disabled" selected="selected">Please select a location</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                        </select>
+
+                        <br>
+
+                        <label for="user-personalise-gender"
+                               class="user-personalise-form__label">
+                            Gender
+                        </label>
+                        <select class="user-personalise-form__field"
+                                id="user-personalise-gender">
+                            <option value="" disabled="disabled" selected="selected">Gender</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+
+                        <br>
+
+                        <label for="user-personalise-birthyear"
+                               class="user-personalise-form__label">
+                            Birth year
+                        </label>
+                        <input type="text"
+                               placeholder="1983"
+                               class="user-personalise-form__field"
+                               id="user-personalise-birthyear">
+
+                        <br>
+
+                        <a href="#"
+                           class="btn-signup btn-signup--stepTwo btnSignUp-StepThree">
+                            Next
+                        </a>
+
+                    </form>
+                </div> <!-- .signup-container\stepTwo -->
+
+                <!-- start step three container -->
+                <div class="signup-container signup-container--stepThree">
+
+                    <div class="signup__headline-container">
+                        <i class="icons icons-genres-logo-main"></i>
+                        <h1 class="signup__headline signup__headline--stepThree">
+                            <em class="em">genres</em> to Personalise your Pulse
+                        </h1>
+                    </div> <!-- .signup__headline-container -->
+
+                    <ul class="genres-listing">
+
+                        <li class="genres-item">
+
+                            <div class="genres-item__image-container">
+                                <img src="img/genres/genres-image.jpg"
+                                     class="genres-item__image">
+                                <div class="genres-item__image-triangle"></div>
+                                <div class="genres-item__image-overlay"></div>
+                                <i class="icons icons-genres-logo genres-logo"></i>
+                                <i class="icons icons-genres-logo-selected genres-logo genres-logo--selected"></i>
+                            </div>
+
+                            <div class="genres-item__title">
+                                Title
+                            </div>
+
+                            <i class="icons icons-genres-selected genres-tick"></i>
+
+                        <li class="genres-item is-selected">
+
+                            <div class="genres-item__image-container">
+                                <img src="img/genres/genres-image.jpg"
+                                     class="genres-item__image">
+                                <div class="genres-item__image-triangle"></div>
+                                <div class="genres-item__image-overlay"></div>
+                                <i class="icons icons-genres-logo genres-logo"></i>
+                                <i class="icons icons-genres-logo-selected genres-logo genres-logo--selected"></i>
+                            </div>
+                            <div class="genres-item__title">
+                                Title
+                            </div>
+                            <i class="icons icons-genres-selected genres-tick"></i>
+
+                        <li class="genres-item">
+
+                            <div class="genres-item__image-container">
+                                <img src="img/genres/genres-image.jpg"
+                                     class="genres-item__image">
+                                <div class="genres-item__image-triangle"></div>
+                                <div class="genres-item__image-overlay"></div>
+                                <i class="icons icons-genres-logo genres-logo"></i>
+                                <i class="icons icons-genres-logo-selected genres-logo genres-logo--selected"></i>
+                            </div>
+
+                            <div class="genres-item__title">
+                                Title
+                            </div>
+
+                            <i class="icons icons-genres-selected genres-tick"></i>
+
+                        <li class="genres-item last-desktop">
+
+                            <div class="genres-item__image-container">
+                                <img src="img/genres/genres-image.jpg"
+                                     class="genres-item__image">
+                                <div class="genres-item__image-triangle"></div>
+                                <div class="genres-item__image-overlay"></div>
+                                <i class="icons icons-genres-logo genres-logo"></i>
+                                <i class="icons icons-genres-logo-selected genres-logo genres-logo--selected"></i>
+                            </div>
+
+                            <div class="genres-item__title">
+                                Title
+                            </div>
+
+                            <i class="icons icons-genres-selected genres-tick"></i>
+
+                        <li class="genres-item">
+
+                            <div class="genres-item__image-container">
+                                <img src="img/genres/genres-image.jpg"
+                                     class="genres-item__image">
+                                <div class="genres-item__image-triangle"></div>
+                                <div class="genres-item__image-overlay"></div>
+                                <i class="icons icons-genres-logo genres-logo"></i>
+                                <i class="icons icons-genres-logo-selected genres-logo genres-logo--selected"></i>
+                            </div>
+
+                            <div class="genres-item__title">
+                                Title
+                            </div>
+
+                            <i class="icons icons-genres-selected genres-tick"></i>
+
+                        <li class="genres-item genres-item--next">
+                            <a href="#"
+                               class="btn-signup btn-signup--stepThree btnSignUp-StepFour">
+                                Next
+                            </a>
+                    </ul>
+                </div> <!-- .signup-container\stepThree -->
+
+                <!-- start step four container -->
+                <div class="signup-container signup-container--stepFour">
+
+                    <div class="signup__headline-container text-center">
+                        <i class="icons icons-dj-logo-main dj-logo-main"></i>
+                        <h1 class="signup__headline signup__headline--stepFour">
+                            <em class="em">djs</em> to Personalise your Pulse
+                        </h1>
+                    </div> <!-- .signup__headline-container -->
+
+                    <!-- only one slide atm. seeing as it's fucked -->
+                    <div id="dj-slider" class="dj-slider">
+
+                        <div class="slide">
+
+                            <ul class="dj-listing">
+                                <li class="dj-item">
+                                    <img src="img/djs/dj-image.jpg"
+                                         class="dj-slider__image">
+
+                                    <div class="dj-slider__copy dj-slider__copy--genre">
+                                        Tech house
+                                    </div>
+
+                                    <div class="dj-slider__copy dj-slider__copy--name">
+                                        Hoops
+                                    </div>
+
+                                    <a href="#"
+                                       class="btn
+                                       btn--dj-slider">
+                                        <i class="icons icons-dj-logo dj-logo"></i>
+                                        Follow
+                                    </a>
+
+                                </li>
+
+                                <li class="dj-item">
+                                    <img src="img/djs/dj-image.jpg"
+                                         class="dj-slider__image">
+
+                                    <div class="dj-slider__copy dj-slider__copy--genre">
+                                        Tech house
+                                    </div>
+
+                                    <div class="dj-slider__copy dj-slider__copy--name">
+                                        Hoops
+                                    </div>
+
+                                    <a href="#"
+                                       class="btn
+                                       btn--dj-slider
+                                       is-active">
+                                        <i class="icons icons-dj-logo dj-logo"></i>
+                                        Follow
+                                    </a>
+
+                                </li>
+
+                                <li class="dj-item">
+                                    <img src="img/djs/dj-image.jpg"
+                                         class="dj-slider__image">
+
+                                    <div class="dj-slider__copy dj-slider__copy--genre">
+                                        Tech house
+                                    </div>
+
+                                    <div class="dj-slider__copy dj-slider__copy--name">
+                                        Hoops
+                                    </div>
+
+                                    <a href="#"
+                                       class="btn
+                                       btn--dj-slider">
+                                        <i class="icons icons-dj-logo dj-logo"></i>
+                                        Follow
+                                    </a>
+
+                                </li>
+
+                                <li class="dj-item">
+                                    <img src="img/djs/dj-image.jpg"
+                                         class="dj-slider__image">
+
+                                    <div class="dj-slider__copy dj-slider__copy--genre">
+                                        Tech house
+                                    </div>
+
+                                    <div class="dj-slider__copy dj-slider__copy--name">
+                                        Hoops
+                                    </div>
+
+                                    <a href="#"
+                                       class="btn
+                                       btn--dj-slider">
+                                        <i class="icons icons-dj-logo dj-logo"></i>
+                                        Follow
+                                    </a>
+
+                                </li>
+
+                                <li class="dj-item">
+                                    <img src="img/djs/dj-image.jpg"
+                                         class="dj-slider__image">
+
+                                    <div class="dj-slider__copy dj-slider__copy--genre">
+                                        Tech house
+                                    </div>
+
+                                    <div class="dj-slider__copy dj-slider__copy--name">
+                                        Hoops
+                                    </div>
+
+                                    <a href="#"
+                                       class="btn
+                                       btn--dj-slider">
+                                        <i class="icons icons-dj-logo dj-logo"></i>
+                                        Follow
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div><!-- .dj-slider -->
+
+                    <a href="#"
+                       class="btn btn-signup btn-signup--stepFour btnSignUp-StepFive">Next</a>
+                </div> <!-- .signup-container\stepFour -->
+
+                <!-- start step five container -->
+                <div class="signup-container signup-container--stepFive text-center">
+
+                    <div class="signup__headline-container">
+                        <h1 class="signup__headline signup__headline--stepFive">
+                            <em class="em">you are</em> now ready to
+                        </h1>
+                    </div> <!-- .signup__headline-container -->
+
+                    <ul class="signup__complete-listing">
+                        <li class="signup__complete-item signup__complete-item--channel">
+                            <a href=""
+                               class="signup__complete-link"
+                               data-dismiss="modal">
+                                <div class="signup__complete-link-image">
+                                    <i class="icons icons-signup-complete-logo"></i>
+                                </div>
+                                Check out your channel
+                            </a>
+
+                        <li class="signup__complete-item signup__complete-item--event">
+                            <a href=""
+                               class="signup__complete-link"
+                               data-dismiss="modal">
+                                <div class="signup__complete-link-image">
+                                    <i class="icons icons-signup-complete-event"></i>
+                                </div>
+                                Create an event and sell tickets
+                            </a>
+
+                        <li class="signup__complete-item signup__complete-item--music">
+                            <a href=""
+                               class="signup__complete-link"
+                               data-dismiss="modal">
+                                <div class="signup__complete-link-image">
+                                    <i class="icons icons-signup-complete-cd"></i>
+                                </div>
+                                Upload and share music
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- .signup-container\stepFive -->
+
+                <div class="clearfix"></div>
+
+            </div> <!-- .container -->
+
+            <!-- start footer -->
+            <footer id="signupFooter">
+
+                <div class="row">
+                    <div class="col-md-4 footer1"></div>
+                    <div class="col-md-4 footer2"></div>
+                    <div class="col-md-4 footer3"></div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="container">
+                    <div class="row text-center">
+                        <span class="singupfooterTxt">Copyright &copy; PulseRadio 2013 - <a href="javascript:;">Terms &amp; Conditions</a> - <a href="javascript:;">Privacy Policy</a></span>
+                    </div>
+                </div>
+            </footer>
+
+        </div> <!-- .modal-content -->
+    </div><!-- .modal-dialog -->
+</div><!-- .modal -->

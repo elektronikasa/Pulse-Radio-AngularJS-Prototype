@@ -1,0 +1,96 @@
+// ==========================================================================
+// Snap plugin
+//
+// This recreates the native drawer feel
+// ==========================================================================
+
+.snap-content {
+    background: #f2f2f2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.snap-content--listing {
+    @include bp($bp-sm) {
+        overflow: hidden;
+    }
+
+    @include bp($bp-md) {
+        overflow: auto;
+    }
+}
+
+    .snap-item {
+        margin-top: 77px;
+
+        @include bp(sm) {
+            margin-top: 92px;
+        }
+
+        @include bp(md) {
+            margin-top: 50px;
+            min-height: 640px;
+        }
+    }
+
+
+    .snap-drawers {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        width: auto;
+        height: auto;
+    }
+
+        .snap-drawer {
+            padding-top: 92px;
+            position: absolute;
+            top: 0;
+            right: auto;
+            bottom: 0;
+            left: auto;
+            width: 265px;
+            height: auto;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+            -webkit-transition: width 0.3s ease;
+            -moz-transition: width 0.3s ease;
+            -ms-transition: width 0.3s ease;
+            transition: width 0.3s ease;
+        }
+
+        .snap-drawer-left {
+            background: #1C1C1C;
+            left: 0;
+            z-index: 1;
+        }
+
+        .snap-drawer-right {
+            right: 0;
+            z-index: 1;
+        }
+
+.snapjs-left .snap-drawer-right,
+.snapjs-right .snap-drawer-left {
+    display: none;
+}
+
+.snapjs-expand-left .snap-drawer-left,
+.snapjs-expand-right .snap-drawer-right {
+    width: 100%;
+}

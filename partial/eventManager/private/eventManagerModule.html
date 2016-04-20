@@ -1,0 +1,1111 @@
+<!-- start manage event page -->
+<div id="manageEvent"
+     class="container snap-item js-snap-item js-snap-manageEvent">
+
+    <div class="row">
+        <div top-Nav-Module title="{{title}}" navdata="{{navdata}}">
+            {{module.content}}
+        </div>
+
+        <div class="panel clearfix">
+            <div class="panel__side  col-xs-3">
+                <div class="wrap--large">
+                    <div class="nav-content-side">
+                        <a href="#TicketingTools-summary"
+                           data-toggle="tab"
+                           class="img-container nudge-bottom">
+                            <img src="images/desktop/temp/myevents/item1.jpg"
+                                 class="profile-img">                    <!-- TODO: is this ID necessary? -->
+                        </a>
+
+                        <div class="nav-content-side__title first">
+                            Event summary
+                        </div>
+
+                        <div class="nav-content-side__title">
+                            Promote
+                        </div>
+
+                        <ul class="nav-content-side__list promote"
+                            id="navlist">
+                            <li class="nav-content-side__item">
+                                <a href="#TicketingTools-socialPush"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Publish to social sites
+                                </a>
+                            </li>
+
+                            <li class="nav-content-side__item">
+                                <a href="#TicketingTools-buyNowButtons"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Buy now buttons
+                                </a>
+                            </li>
+
+
+                        </ul> <!-- .nav-content-side -->
+                    </div> <!-- .nav-content-side -->
+
+                    <div class="nav-content-side">
+                        <div class="nav-content-side__title">
+                            Statistics
+                        </div>
+                        <ul class="nav-content-side__list statistics">
+                            <li class="nav-content-side__item">
+                                <a href="#TicketingTools-eventReports"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Event reports
+                                </a>
+                            </li>
+                            <li class="nav-content-side__item">
+                                <a href="#TicketingTools-salesRevenueChart"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab" onclick="salesRevenueChart();
+                                                       return false;">
+                                    Sales revenue chart
+                                </a>
+                            </li>
+                            <li class="nav-content-side__item">
+                                <a href="#TicketingTools-attendeeLocations"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Attendee locations
+                                </a>
+                            </li>
+                            <li class="nav-content-side__item">
+                                <a href="#TicketingTools-ticketSales"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab" onclick="ticketSalesChart();
+                                                       return false;">
+                                    Ticket sales
+                                </a>
+                            </li>
+                        </ul> <!-- .nav-content-side__list -->
+                    </div> <!-- .nav-content-side -->
+
+                    <div class="nav-content-side">
+                        <div class="nav-content-side__title">
+                            Attendees
+                        </div>
+                        <ul class="nav-content-side__list attendees">
+                            <li class="nav-content-side__item">
+                                <a href="#TicketingTools-addAttendees"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Add attendees
+                                </a>
+                            </li>
+                            <li class="nav-content-side__item">
+                                <a href="#TicketingTools-guestlist"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Guestlist
+                                </a>
+                            </li>
+                        </ul> <!-- .nav-content-side__list -->
+                    </div> <!-- .nav-content-side -->
+
+                    <div class="nav-content-side">
+                        <div class="nav-content-side__title">
+                            day of the event
+                        </div>
+                        <ul class="nav-content-side__list dayofevent">
+                            <li class="nav-content-side__item">
+                                <a href="#TicketingTools-checkAttendees"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Check attendees
+                                </a>
+                            </li>
+                            <li class="nav-content-side__item">
+                                <a href="#TicketingTools-downloadAttendees"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Download attendee list
+                                </a>
+                            </li>
+                        </ul> <!-- .nav-content-side__list -->
+                    </div> <!-- .nav-content-side -->
+
+                </div>
+            </div> <!-- .panel__side -->
+
+            <div class="panel__main  col-md-9  myEvents-container-rhs">
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+
+                    <!-- start My Events Overview Tab -->
+                    <div class="tab-pane active"
+                         id="TicketingTools-summary">
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+
+
+                                <div class="panel__title  panel__title--copy">
+                                    <div class="emphasis">Stereosonic &amp; Lost Disco Present Maceo Plex &amp; Breach</div>
+                                    <div>
+                                        <span class="t-bold">Date:</span> Fri 06/12/2013 At 09:00AM - Sat 07/12/2013 At 04:00AM
+                                    </div>
+                                    <div>
+                                        <span class="t-bold">Location:</span> The Ivy Pool, 1/330 George St, Sydney, NSW, 2000, Australia
+                                    </div>
+                                </div>
+
+                                <div class="manageEventSummaryChart" style="max-width:720px;height: 280px; margin: 0 auto;"></div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>EVENT NAME</th>
+                                            <th>VENUE</th>
+                                            <th>DATE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>STERESONIC &amp; LOST DISCO</td>
+                                            <td>1/330 Goerge Street, Sydney</td>
+                                            <td>06/12/2013</td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col-md-12">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>TICKET TYPE</th>
+                                            <th>SALE ENDS</th>
+                                            <th>STATUS</th>
+                                            <th>TICKET PRICE</th>
+                                            <th>TICKET SALES</th>
+                                            <th>SALES</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>First Release</td>
+                                            <td>08/12/2013</td>
+                                            <td>selling</td>
+                                            <td>$45.00</td>
+                                            <td>256/400</td>
+                                            <td>$11,500.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Second Release</td>
+                                            <td>08/12/2013</td>
+                                            <td>selling</td>
+                                            <td>$45.00</td>
+                                            <td>256/400</td>
+                                            <td>$1,500.00</td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col-md-12">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>YOUR LINKS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Your Event URL: http://pulseradio.net/events/view/4730</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col-md-4">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>STATISTICS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>STATUS : SELLING</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PAGE VIEWS : 1120</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TICKETS SOLD : 256</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TICKETS AVAILABLE : 1000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PERCENTAGE SOLD : 26%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col-md-4">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>SALES</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ONLINE SALES : 256</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MANUAL SALES : 0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GUESTLIST : 0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TICKETS SALES : 256</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col-md-4">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>EMAIL EVENT SUMMARY</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="valign-middle">
+                                                    <select name="venu" class="js-select">
+                                                        <option data-filter="*">Select one</option>
+                                                        <option data-filter=".FinelyTuned">YES</option>
+                                                        <option data-filter=".WeAreTheNoise">NO</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div> <!-- .tab-pane -->
+
+                    <!-- start My Events Overview Tab -->
+                    <div class="tab-pane"
+                         id="TicketingTools-socialPush">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel__title  panel__title--sm">
+                                    PUBLISH YOUR EVENT TO SOCIAL NETWORKS
+                                </div>
+
+                                <div class="article__share" style="margin-top: 20PX; margin-left: 20PX;">
+                                    2.3k shares
+
+                                    <div class="article__share-item  article__share-btn article__share-btn--fb">
+                                        <i class="article__share-btn-icon  icons  icons-article-fb"></i> Share on Facebook
+                                    </div>
+                                    <div class="article__share-item  article__share-btn article__share-btn--tw">
+                                        <i class="article__share-btn-icon  icons  icons-article-tw"></i> Share on Twitter
+                                    </div>
+                                    <div class="article__share-item  article__share-icon-container">
+                                        <div class="article__share-icon icn icn-plus"></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> <!-- .tab-pane -->
+
+
+                    <!-- start My Events Overview Tab -->
+                    <div class="tab-pane"
+                         id="TicketingTools-buyNowButtons">
+
+                        <div class="row">
+
+                            <div class="panel__title  panel__title--sm">
+                                BUY NOW BUTTONS
+                            </div>
+
+                            <img src="images/desktop/temp/ticketingtools/03-buynow.jpg" width="732" height="624" />
+
+                        </div>
+                    </div> <!-- .tab-pane -->
+
+
+                    <!-- start My Events Overview Tab -->
+                    <div class="tab-pane"
+                         id="TicketingTools-eventReports">
+
+                        <div class="panel__title  panel__title--copy">
+                            <div class="emphasis">Stereosonic &amp; Lost Disco Present Maceo Plex &amp; Breach</div>
+                            <div>
+                                <span class="t-bold">Date:</span> Fri 06/12/2013 At 09:00AM - Sat 07/12/2013 At 04:00AM
+                            </div>
+                            <div>
+                                <span class="t-bold">Location:</span> The Ivy Pool, 1/330 George St, Sydney, NSW, 2000, Australia
+                            </div>
+                        </div>
+
+                        <div class="wrap--large">
+
+                            <div class="inner-header">
+                                <div class="inner-header__copy">
+                                    Event Reports
+                                </div>
+                            </div>
+
+
+                            <form action=""
+                                  class="create-event">
+
+                                <div class="row nudge-bottom-large">
+                                    <div class="col-sm-4">
+                                        <label for="report-type"
+                                               class="form-label form-label--large">
+                                            Report Type <span class="field-required">*</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-sm-8">
+                                        <select class="js-select" id="report-type">
+                                            <option value="" selected="selected">Sales</option>
+                                            <option value="2">Option 1</option>
+                                            <option value="2">Option 1</option>
+                                        </select>
+                                    </div>
+
+
+                                </div> <!-- .row -->
+
+
+
+                                <!-- Date and time -->
+                                <div class="row nudge-bottom-large">
+                                    <div class="col-sm-3">
+                                        <label for="report-date-range"
+                                               class="form-label form-label--large">
+                                            Date Range <span class="field-required">*</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-sm-1">
+                                        <div class="form-additional-info">
+                                            From
+                                        </div>
+                                    </div>
+
+                                    <div class="events-overview__tab-left col-sm-8">
+
+                                        <div class="bfh-datepicker form-select-inline">
+                                        </div><!--
+
+                                        --><div class="select-seperator select-seperator--small nudge-left nudge-right">
+                                            To
+                                        </div><!--
+                    
+                                        --><div class="bfh-datepicker form-select-inline">
+                                        </div>
+
+                                    </div>
+                                </div> <!-- .row -->
+
+                                <div class="row nudge-bottom-large">
+                                    <div class="col-sm-4">
+                                        <label for="report-ticket-type"
+                                               class="form-label form-label--large">
+                                            Ticket Type <span class="field-required">*</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-sm-8">
+                                        <select class="js-select" id="report-ticket-type">
+                                            <option value="" selected="selected">All Tickets</option>
+                                            <option value="2">Option 1</option>
+                                            <option value="2">Option 1</option>
+                                        </select>
+                                    </div>
+
+
+                                </div> <!-- .row -->
+
+                                <div class="grid-sm grid-sm--12col">
+
+                                    <div class="grid-sm__row">
+
+                                        <div class="col-sm-4">
+                                            <label for="event-captcha" class="label-create-ticket">
+                                                human test (7+3) =
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <input type="text"
+                                                   class="input-text t-center"
+                                                   placeholder="10"
+                                                   id="event-captcha">
+                                        </div>
+                                        <div class="col-sm-6 t-right">
+                                            <a href="#"
+                                               class="btn
+                                               btn--alt
+                                               btn--alt-primary">
+                                                Submit
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                            <!-- end event reports form -->
+
+                            <div class="inner-header" style="margin-top: 30px;">
+                                <div class="inner-header__copy l-left">
+                                    Sales by all tickets
+
+
+                                </div>
+
+                                <div class="col-sm-2" style="float: right; margin-top: 8px;">
+                                    <select class="js-select" id="event-ages">
+                                        <option value="" selected="selected">25</option>
+                                        <option value="2">50</option>
+                                        <option value="2">100</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>DATE</th>
+                                                <th>NAME</th>
+                                                <th>SURNAME</th>
+                                                <th>EMAIL</th>
+                                                <th>QTY</th>
+                                                <th>TICKET TYPE</th>
+                                                <th>ORDER #</th>
+                                                <th>TOTAL PAID</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>28/11/2014</td>
+                                                <td>Ashleigh</td>
+                                                <td>Mcmanus</td>
+                                                <td>ash.mc@gmail.com</td>
+                                                <td>2</td>
+                                                <td>First Release</td>
+                                                <td>PUL16400</td>
+                                                <td>$99</td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+                    </div> <!-- .tab-pane -->
+
+
+                    <!-- start My Events Overview Tab -->
+                    <div class="tab-pane"
+                         id="TicketingTools-salesRevenueChart">
+
+                        <div class="panel__title  panel__title--copy">
+                            <div class="emphasis">Stereosonic &amp; Lost Disco Present Maceo Plex &amp; Breach</div>
+                            <div>
+                                <span class="t-bold">Date:</span> Fri 06/12/2013 At 09:00AM - Sat 07/12/2013 At 04:00AM
+                            </div>
+                            <div>
+                                <span class="t-bold">Location:</span> The Ivy Pool, 1/330 George St, Sydney, NSW, 2000, Australia
+                            </div>
+                        </div>
+
+                        <div class="wrap--large">
+                            <div class="inner-header">
+                                <div class="inner-header__copy">
+                                    Sales Revenue Chart
+                                </div>
+                            </div>
+
+
+
+                            <div id="manageEventSalesChart" style="width:688px;height: 280px; margin: 0 auto;"></div>
+
+                        </div>
+
+                    </div> <!-- .tab-pane -->
+
+
+                    <!-- start My Events Overview Tab -->
+                    <div class="tab-pane"
+                         id="TicketingTools-attendeeLocations">
+
+                        <div class="panel__title  panel__title--copy">
+                            <div class="emphasis">Stereosonic &amp; Lost Disco Present Maceo Plex &amp; Breach</div>
+                            <div> <span class="t-bold">Date:</span> Fri 06/12/2013 At 09:00AM - Sat 07/12/2013 At 04:00AM </div>
+                            <div> <span class="t-bold">Location:</span> The Ivy Pool, 1/330 George St, Sydney, NSW, 2000, Australia </div>
+                        </div>
+
+                        <div class="wrap--large">
+                            <div class="inner-header">
+                                <div class="inner-header__copy">
+                                    Attendee Locations
+                                </div>
+                            </div>
+
+                            <div id="attendeeLocations" style="width: 688px; height: 440px;"></div>
+
+                        </div>
+
+                    </div> <!-- .tab-pane -->
+
+
+                    <!-- start My Events Overview Tab -->
+                    <div class="tab-pane"
+                         id="TicketingTools-ticketSales">
+
+                        <div class="panel__title  panel__title--copy">
+                            <div class="emphasis">Stereosonic &amp; Lost Disco Present Maceo Plex &amp; Breach</div>
+                            <div> <span class="t-bold">Date:</span> Fri 06/12/2013 At 09:00AM - Sat 07/12/2013 At 04:00AM </div>
+                            <div> <span class="t-bold">Location:</span> The Ivy Pool, 1/330 George St, Sydney, NSW, 2000, Australia </div>
+                        </div>
+
+                        <div class="wrap--large">
+                            <div class="inner-header">
+                                <div class="inner-header__copy">
+                                    Ticket Sales
+                                </div>
+                            </div>
+
+                            <div id="chartContainer" style="width: 688px; height: 600px;"></div>
+
+                        </div>
+
+
+
+                    </div> <!-- .tab-pane -->
+
+
+                    <!-- start My Events Overview Tab -->
+                    <div class="tab-pane"
+                         id="TicketingTools-addAttendees">
+
+
+                        <div class="panel__title  panel__title--copy">
+                            <div class="emphasis">Stereosonic &amp; Lost Disco Present Maceo Plex &amp; Breach</div>
+                            <div>
+                                <span class="t-bold">Date:</span> Fri 06/12/2013 At 09:00AM - Sat 07/12/2013 At 04:00AM
+                            </div>
+                            <div>
+                                <span class="t-bold">Location:</span> The Ivy Pool, 1/330 George St, Sydney, NSW, 2000, Australia
+                            </div>
+                        </div>
+
+
+                        <div class="wrap--large">
+                            <div class="inner-header">
+                                <div class="inner-header__copy">
+                                    Add attendees
+                                </div>
+                            </div>
+
+                            <div class="copy
+                                 t-uppercase">
+                                Add manual ticket sales and new attendees. No fees are charged for manual sales.
+                            </div>
+
+
+
+                            <form action="post">
+                                <div class="grid-sm grid-sm--2col">
+
+                                    <div class="grid-sm__row nudge-bottom">
+
+                                        <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                            <label for="attendee-name"
+                                                   class="form-label form-label--large">
+                                                First name
+                                            </label>
+
+                                            <input type="text"
+                                                   class="input-text
+                                                   l-right
+                                                   input-md"
+                                                   id="attendee-name">
+                                        </div>
+
+                                        <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                            <label for="attendee-surname"
+                                                   class="form-label form-label--large">
+                                                Last name
+                                            </label>
+
+                                            <input type="text"
+                                                   class="input-text
+                                                   l-right
+                                                   input-md"
+                                                   id="attendee-surname">
+                                        </div>
+                                    </div> <!-- row -->
+
+
+                                    <div class="grid-sm__row">
+
+                                        <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                            <label for="attendee-email"
+                                                   class="form-label form-label--large">
+                                                Email
+                                            </label>
+
+                                            <input type="text"
+                                                   class="input-text
+                                                   l-right
+                                                   input-md"
+                                                   id="attendee-email">
+                                        </div>
+
+                                        <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                            <label for="attendee-price"
+                                                   class="form-label form-label--large">
+                                                Price
+                                            </label>
+
+                                            <input type="text"
+                                                   class="input-text
+                                                   nudge-left
+                                                   input-sm"
+                                                   id="attendee-price">
+
+                                            <label for="attendee-qty"
+                                                   class="form-label form-label--large nudge-left">
+                                                Qty
+                                            </label>
+
+                                            <input type="text"
+                                                   class="input-text
+                                                   nudge-left
+                                                   input-vsm"
+                                                   id="attendee-qty">
+
+                                            <a href="#"
+                                               class="btn
+                                               btn--alt
+                                               btn--alt-primary
+                                               btn--pd-sm
+                                               l-right">
+                                                Add
+                                            </a>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div> <!-- grid -->
+                            </form>
+
+                            <hr class="divider divider--large divider--light">
+
+
+
+                            <ul class="grid-sm grid-sm--6col cell-listing">
+                                <li class="grid-sm__row cell-item">
+                                    <div class="grid-sm__cell grid-sm__cell--1col">
+                                        <div class="table-cell-title">
+                                            First name
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--1col">
+                                        <div class="table-cell-title">
+                                            Last name
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--1col">
+                                        <div class="table-cell-title">
+                                            Price
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--1col">
+                                        <div class="table-cell-title">
+                                            Qty
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-title">
+                                            Status
+                                        </div>
+                                    </div>
+                                </li> <!-- .grid-sm__row -->
+
+                                <li class="grid-sm__row odd cell-item">
+                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                        <div class="table-cell-content table-1">
+                                            <a href="#"
+                                               class="">
+                                                Attendee
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                        <div class="table-cell-content">
+                                            <a href="#"
+                                               class="">
+                                                Name
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                        <div class="table-cell-content">
+                                            $45.00
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                        <div class="table-cell-content">
+                                            2
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                        <div class="table-cell-content">
+                                            Manual
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                        <div class="table-cell-content">
+                                            <ul class="icon-listing">
+                                                <li class="icon-item icons-child-hover">
+                                                    <i class="icons icons-pen-light"></i>
+                                                    <i class="icons icons-pen-dark icons--is-hover"></i>
+
+                                                <li class="icon-item icons-child-hover">
+                                                    <i class="icons icons-ticket-white"></i>
+                                                    <i class="icons icons-ticket-dark icons--is-hover"></i>
+
+                                                <li class="icon-item icons-child-hover">
+                                                    <i class="icons icons-email-white"></i>
+                                                    <i class="icons icons-email-dark icons--is-hover"></i>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li> <!-- .grid-sm__row -->
+                            </ul>
+
+
+
+
+                        </div>
+
+                    </div> <!-- .tab-pane -->
+
+
+                    <!-- start My Events Overview Tab -->
+                    <div class="tab-pane"
+                         id="TicketingTools-guestlist">
+
+
+                        <div class="panel__title  panel__title--copy">
+                            <div class="emphasis">Stereosonic &amp; Lost Disco Present Maceo Plex &amp; Breach</div>
+                            <div>
+                                <span class="t-bold">Date:</span> Fri 06/12/2013 At 09:00AM - Sat 07/12/2013 At 04:00AM
+                            </div>
+                            <div>
+                                <span class="t-bold">Location:</span> The Ivy Pool, 1/330 George St, Sydney, NSW, 2000, Australia
+                            </div>
+                        </div>
+
+
+                        <div class="wrap--large">
+                            <div class="inner-header">
+                                <div class="inner-header__copy">
+                                    Guestlist
+                                </div>
+                            </div>
+
+                            <div class="copy
+                                 t-uppercase">
+                                Add the new attendees and manage your guestlist
+                            </div>
+
+
+
+                            <form action="post">
+                                <div class="grid-sm grid-sm--2col">
+
+                                    <div class="grid-sm__row nudge-bottom">
+
+                                        <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                            <label for="attendee-name"
+                                                   class="form-label form-label--large">
+                                                First name
+                                            </label>
+
+                                            <input type="text"
+                                                   class="input-text
+                                                   l-right
+                                                   input-md"
+                                                   id="attendee-name">
+                                        </div>
+
+                                        <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                            <label for="attendee-surname"
+                                                   class="form-label form-label--large">
+                                                Last name
+                                            </label>
+
+                                            <input type="text"
+                                                   class="input-text
+                                                   l-right
+                                                   input-md"
+                                                   id="attendee-surname">
+                                        </div>
+                                    </div> <!-- row -->
+
+
+                                    <div class="grid-sm__row">
+
+                                        <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                            <label for="attendee-email"
+                                                   class="form-label form-label--large">
+                                                Email
+                                            </label>
+
+                                            <input type="text"
+                                                   class="input-text
+                                                   l-right
+                                                   input-md"
+                                                   id="attendee-email">
+                                        </div>
+
+                                        <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+
+                                            <label for="attendee-qty"
+                                                   class="form-label form-label--large nudge-left">
+                                                Qty
+                                            </label>
+
+                                            <input type="text"
+                                                   class="input-text
+                                                   nudge-left
+                                                   input-vsm"
+                                                   id="attendee-qty">
+
+                                            <a href="#"
+                                               class="btn
+                                               btn--alt
+                                               btn--alt-primary
+                                               btn--pd-sm
+                                               l-right">
+                                                Add
+                                            </a>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div> <!-- grid -->
+                            </form>
+
+                            <hr class="divider divider--large divider--light">
+
+                            <div class="copy
+                                 t-uppercase">
+                                Add bulk guest list using a csv file. <a href="javascript:;">download the template here</a>
+                            </div>
+
+                            <label class="create-event__artwork-label">
+                                Upload CSV file
+                            </label>
+
+                            <a href="#" class="btn btn-typical nudge-top-large">
+                                Choose file
+                            </a>
+
+                            <a href="#"
+                               class="btn
+                               btn--alt
+                               btn--alt-primary
+                               btn--pd-sm
+                               l-right">
+                                Add
+                            </a>
+
+                            <hr class="divider divider--large divider--light">
+
+
+
+                            <ul class="grid-sm grid-sm--6col cell-listing">
+                                <li class="grid-sm__row cell-item">
+                                    <div class="grid-sm__cell grid-sm__cell--1col">
+                                        <div class="table-cell-title">
+                                            First name
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--1col">
+                                        <div class="table-cell-title">
+                                            Last name
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--1col">
+                                        <div class="table-cell-title">
+                                            Qty
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-title">
+                                            Status
+                                        </div>
+                                    </div>
+                                </li> <!-- .grid-sm__row -->
+
+                                <li class="grid-sm__row odd cell-item">
+                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                        <div class="table-cell-content table-1">
+                                            <a href="#"
+                                               class="">
+                                                Attendee
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                        <div class="table-cell-content">
+                                            <a href="#"
+                                               class="">
+                                                Name
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                        <div class="table-cell-content">
+                                            2
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                        <div class="table-cell-content">
+                                            Manual
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--1col">
+                                        <div class="table-cell-title">
+                                            <!-- empty cell -->
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--1col">
+                                        <div class="table-cell-content">
+                                            <ul class="icon-listing">
+                                                <li class="icon-item icons-child-hover">
+                                                    <i class="icons icons-pen-light"></i>
+                                                    <i class="icons icons-pen-dark icons--is-hover"></i>
+
+                                                <li class="icon-item icons-child-hover">
+                                                    <i class="icons icons-ticket-white"></i>
+                                                    <i class="icons icons-ticket-dark icons--is-hover"></i>
+
+                                                <li class="icon-item icons-child-hover">
+                                                    <i class="icons icons-email-white"></i>
+                                                    <i class="icons icons-email-dark icons--is-hover"></i>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li> <!-- .grid-sm__row -->
+                            </ul>
+
+
+
+
+                        </div>
+
+                    </div> <!-- .tab-pane -->
+
+
+                    <!-- start My Events Overview Tab -->
+                    <div class="tab-pane"
+                         id="TicketingTools-checkAttendees">
+
+                        <div class="panel__title  panel__title--copy">
+                            <div class="emphasis">Stereosonic &amp; Lost Disco Present Maceo Plex &amp; Breach</div>
+                            <div>
+                                <span class="t-bold">Date:</span> Fri 06/12/2013 At 09:00AM - Sat 07/12/2013 At 04:00AM
+                            </div>
+                            <div>
+                                <span class="t-bold">Location:</span> The Ivy Pool, 1/330 George St, Sydney, NSW, 2000, Australia
+                            </div>
+                        </div>
+
+                        <div class="wrap--large">
+
+                            <div class="inner-header">
+                                <div class="inner-header__copy">
+                                    Check Attendees
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="inner-header">
+                                <div class="inner-header__copy">
+                                    Search
+                                </div>
+                            </div>
+
+
+                            <div class="inner-header">
+                                <div class="inner-header__copy">
+                                    Attendee List
+                                </div>
+                            </div>
+
+                            <img src="images/desktop/temp/ticketingtools/10.jpg" width="758" height="868" />
+                        </div>
+
+                    </div> <!-- .tab-pane -->
+
+
+                    <!-- start My Events Overview Tab -->
+                    <div class="tab-pane"
+                         id="TicketingTools-downloadAttendees">
+
+                        <div class="row">
+
+                            <div class="panel__title  panel__title--sm">
+                                DOWNLAOD ATTENDEE LIST
+                            </div>
+
+                            <img src="images/desktop/temp/ticketingtools/11.jpg" width="735" height="301" />
+
+                        </div>
+
+                    </div> <!-- .tab-pane -->
+
+
+                </div>
+            </div>
+        </div>
+    </div> <!-- .row -->
+
+</div>
+<!-- end manage event page -->

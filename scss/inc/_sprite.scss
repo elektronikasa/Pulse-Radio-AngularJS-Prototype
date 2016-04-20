@@ -1,0 +1,52 @@
+// ==========================================================================
+// Sass sprites
+// ==========================================================================
+
+// Sass sprites
+//
+// Sass creates a class name, named after the image added to the sprite.
+// This class has the width, height and background position added
+// automatically
+// ==========================================================================
+
+// The following have been commented out because these image folders
+// current don't exist. This will break the compile if included
+// and the folders (with .png images inside) aren't there.
+
+// $icon-spacing: 2px; // adding sprite spacing for zoom in/out bug
+// @import "icon/*.png";
+// @include all-icon-sprites(true);
+
+// $main-spacing: 2px; // adding sprite spacing for zoom in/out bug
+// @import "main/*.png";
+// @include all-main-sprites(true);
+
+// $table-spacing: 2px; // adding sprite spacing for zoom in/out bug
+// @import "table-legend/*.png";
+// @include all-table-legend-sprites(true);
+
+// General sprite styling
+// This/these classes need to be added to the html element manually
+// ==========================================================================
+
+$icons: sprite-map("icons/*.png", $icon-spacing: 2px);
+$icons-url: sprite-url($icons);
+.icons {
+    @include inline-block();
+    text-indent: -9999px;
+    background-image: $icons-url;
+    background-repeat: no-repeat;
+}
+
+// Create classes for main sprites folder
+@each $icon in sprite-names($icons) {
+    .icons-#{$icon} {
+        // Extend the parent class with background properties
+        // This will also extend the retina version
+        @extend .icons;
+
+        background-position: sprite-position($icons, $icon);
+        height: image-height(sprite-file($icons, $icon));
+        width: image-width(sprite-file($icons, $icon));
+    }
+}

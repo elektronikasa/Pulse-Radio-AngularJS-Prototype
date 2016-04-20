@@ -1,0 +1,110 @@
+// ==========================================================================
+// General container file
+// ==========================================================================
+
+// Grid clearfix
+.grid-cf {
+    &:before, &:after {
+        content: ' ';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+// ==========================================================================
+// Small Grid
+// ==========================================================================
+
+$gutter: 10px;
+$gutter-alt: 0px;
+$grid-column-total: 30;
+
+.grid-sm {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    clear: both;
+
+    @extend .grid-cf;
+}
+
+    .grid-sm__container {
+        padding: 0 $gutter;
+    }
+
+    .grid-sm__row {
+        margin-left: -$gutter;
+        margin-right: -$gutter;
+
+        @extend .grid-cf;
+    }
+
+        .grid-sm__cell {
+            @include box-sizing(border-box);
+            float: left;
+            padding-left: $gutter;
+            padding-right: $gutter;
+            margin-top: $gutter;
+            margin-bottom: $gutter;
+
+        	&.grid-sm__cell--alt {
+	            margin-top: $gutter-alt;
+	            margin-bottom: $gutter-alt;
+        	}
+        }
+
+        @for $i from 2 through $grid-column-total {
+            $grid-columns: $i;
+
+            .grid-sm--#{$i}col {
+                .grid-sm__cell {
+                    width: 100% / $grid-columns;
+                }
+
+                @for $i from 2 through $grid-columns {
+                    .grid-sm__cell--#{$i}col {
+                        width: grid-cell-width($grid-columns, $i);
+                    }
+                }
+            }
+        } // @for
+
+.grid-sm--margin-sm {
+    .grid-sm__container {
+        padding: 0 $gutter/2;
+    }
+
+    .grid-sm__row {
+        margin-left: -$gutter/2;
+        margin-right: -$gutter/2;
+
+        @extend .grid-cf;
+    }
+
+        .grid-sm__cell {
+            @include box-sizing(border-box);
+            float: left;
+            padding-left: $gutter/2;
+            padding-right: $gutter/2;
+            margin-top: $gutter/2;
+            margin-bottom: $gutter/2;
+        }
+}
+
+// Remove margin
+.grid-sm--no-margin {
+    & > .grid-sm__row {
+        margin-left: 0;
+        margin-right: 0;
+
+        & > .grid-sm__cell {
+            padding-left: 0;
+            padding-right: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}

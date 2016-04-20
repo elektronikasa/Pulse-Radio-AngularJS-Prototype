@@ -1,0 +1,41 @@
+// ==========================================================================
+// Scrollbar
+// ==========================================================================
+
+// ==========================================================================
+// http://css-tricks.com/custom-scrollbars-in-webkit/
+// Only add custom scrollbars to to items within .app
+// Don't apply for touch devices - Class applied by Modernizr - .no-touch
+// ==========================================================================
+
+body {
+    // For IE
+    scrollbar-arrow-color: #f1f1f1;
+    scrollbar-base-color: #f1f1f1;
+    scrollbar-face-color: #424242;
+    scrollbar-highlight-color: #f1f1f1;
+    scrollbar-shadow-color: #424242;
+}
+
+// Exclude mobile
+.no-touch {
+    ::-webkit-scrollbar {
+        height: 5px;
+        width: 5px;
+    }
+
+    // Thumb track area
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    // The draggable bar itself
+    ::-webkit-scrollbar-thumb {
+        background: #424242;
+        @include transition(background 0.3s ease);
+
+        &:hover {
+            background: #666;
+        }
+    }
+}

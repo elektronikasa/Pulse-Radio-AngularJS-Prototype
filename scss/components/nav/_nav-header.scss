@@ -1,0 +1,68 @@
+// ==========================================================================
+// Nav header
+// ==========================================================================
+
+.nav-header {
+    background-color: #F2F2F2;
+    border-bottom: 5px solid #DCDCDC;
+    color: #878787;
+    display: none;
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 0px;
+}
+
+    .nav-header__title {
+        text-transform: uppercase;
+    }
+
+        .nav-header__title-em {
+            color: #111;
+            font-style: normal;
+        }
+
+    .nav-header__list {
+        color: #878787;
+        font-size: 12px;
+        font-weight: 700;
+        height: 50px;
+        line-height: 50px;
+        list-style: none;
+        margin: 0 0 0 70px;
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+    .nav-header__list--center  {
+        display: table;
+        margin: 0 auto;
+    }
+
+        .nav-header__item {
+            box-sizing: border-box;
+            cursor: pointer;
+            float: left;
+            list-style-type: none;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 25px;
+            padding-right: 25px;
+
+            &:hover {
+                border-bottom: 5px solid #858585;
+            }
+        }
+
+            .nav-header__link {
+                color: #878787;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                .nav-header__item:hover & {
+                    color: #222;
+                }
+            }

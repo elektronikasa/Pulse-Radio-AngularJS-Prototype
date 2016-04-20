@@ -1,0 +1,26 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+
+.header {
+    background-color: #222;
+    position: relative;
+    overflow: hidden;
+}
+
+    .logo {
+        margin-left: 15px;
+    }
+
+    .header__banner {
+        background-color: #141414;
+        position: relative;
+        z-index: 1;
+    }
+
+        // .header__banner-img {
+        //     display: block;
+        //     margin: 0 auto;
+        //     max-width: 100%;
+        //     padding: 15px 0;
+        // }

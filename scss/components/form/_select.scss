@@ -1,0 +1,154 @@
+// ==========================================================================
+// General custom select
+// ==========================================================================
+
+$height: 34px;
+
+.form-select-lg {
+    @include inline-block;
+    width: 360px;
+}
+
+.form-select-md {
+    @include inline-block;
+    width: 100%;
+
+	@media only screen and (min-width: $bp-sm) {
+		width: 260px;
+	}
+}
+
+.form-select-third {
+    @include inline-block;
+    width: 32%;
+}
+
+.form-select-inline {
+	@include inline-block;
+}
+
+.form-select-stretch {
+
+	.form-select {
+		@include inline-block;
+		width: 100%;
+	}
+}
+
+.form-select,
+.bfh-selectbox-toggle,
+.bfh-datepicker-toggle,
+.bfh-timepicker-toggle {
+    @include background(linear-gradient(#fff, #f7f7f7));
+    @include box-shadow(1px 1px 1px rgba(0,0,0,0.1));
+    box-sizing: border-box;
+    @include border-radius(1px);
+    overflow: hidden;
+    cursor: pointer;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8;
+    color: #3d3d3d;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-transform: none;
+
+    font-size: 14px;
+    font-family: sans-serif;
+    height: $height;
+    line-height: $height;
+    cursor: default;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    position: relative;
+
+    &:hover {
+        @include background(linear-gradient(#f7f7f7, #ececec));
+        color: #666;
+    }
+}
+
+    .form-select-element {
+        @include opacity(0);
+        height: $height;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .form-select__placeholder,
+    .bfh-selectbox-option {
+        overflow: hidden;
+        text-align: left;
+        height: 32px !important;
+        position: absolute;
+        left: 17px;
+        right: 0;
+        top: 0;
+    }
+
+    .form-select__dropdown-button,
+    .selectbox-caret,
+    .input-group-addon {
+    	@include background(linear-gradient(#fff, #f7f7f7));
+    	border: 0;
+        border-left: 1px solid #ddd;
+        height: $height;
+        width: $height;
+        margin: 0 !important;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        // Button arrow
+        &:after {
+            content: '';
+		    background: url(../img/icons/arrow-down.png) no-repeat;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+			margin-top: -3px;
+			margin-left: -6px;
+			height: 6px;
+			width: 12px;
+        }
+    }
+
+
+    .selectbox-caret,
+    .input-group-addon {
+
+        .glyphicon {
+			margin: -7px 0 0 -7px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+	    }
+	}
+
+	.bfh-timepicker-popover {
+
+	    .input-group-addon {
+			position: relative;
+		}
+	}
+
+	// hide border on date and timepicker
+	.form-control {
+
+		.bfh-datepicker &,
+		.bfh-timepicker & {
+			border: 0px;
+		}
+	}
+
+	// hide :after arrow on date and timepicker
+	.input-group-addon:after {
+
+		.bfh-datepicker &,
+		.bfh-timepicker & {
+			display: none;
+		}
+	}

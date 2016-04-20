@@ -1,0 +1,45 @@
+// ==========================================================================
+// Section list
+// ==========================================================================
+
+.sec-list__col {
+    box-sizing: border-box;
+    width: 100%;
+
+    @include bp(sm) {
+        float: left;
+        overflow: auto;
+        width: 33.333333%;
+    }
+
+    @include bp(md) {
+        width: 28%;
+    }
+}
+
+.sec-list__col--md-medium {
+    @include bp(md) {
+        width: 32%;
+    }
+}
+.sec-list__col--md-large {
+    @include bp(md) {
+        width: 40%;
+    }
+
+}
+
+    .sec-list__col-wrap {
+        width: 100%;
+
+        @include bp(sm) {
+            padding: 10px;
+        }
+    }
+
+
+    .sec-list__item {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }

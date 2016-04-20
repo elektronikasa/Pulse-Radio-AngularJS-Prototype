@@ -1,0 +1,2211 @@
+<!-- start my pulse dashboard -->
+<div id="userMyPulseDashboard" class="container  snap-item  js-snap-item  js-snap-mypulsedashboard">
+
+    <div class="row">
+        <div class="container">
+          <!--  <div class="nav-header  hidden-xs  clearfix">
+                <div class="nav-header__title  l-left">
+                    My Pulse &gt; <em class="nav-header__title-em">DASHBOARD</em>
+                </div>
+
+                <ul class="nav-header__list  l-right  option-set  clearfix">
+                    <li class="nav-header__item js-side-nav-item" data-name="myevents">
+                        MY EVENTS
+                    </li>
+                    <li class="nav-header__item js-side-nav-item" data-name="myaffiliate">
+                        MY AFFILIATES
+                    </li>
+                    <li class="nav-header__item js-side-nav-item" data-name="ticketing">
+                        MY TICKETS
+                    </li>
+                    <li class="nav-header__item js-side-nav-item" data-name="settings">
+                        MY SETTINGS
+                    </li>
+                </ul>
+
+            </div> <!-- .nav-header -->
+           
+           <!--Navigation-->
+            <div top-Nav-Module title="{{title}}" navdata="{{navdata}}">
+                {{module.content}}
+            </div>
+            <div class="panel row">
+                <div class="panel__side  col-md-3">
+
+                    <div class="wrap--large">
+                        <div class="nav-content-side">
+                            <div class="nav-content-side__title">
+                                <img src="images/desktop/temp/mychannels/icon.jpg" width="140" height="140" /> </div>
+                            <div class="nav-content-side__title">
+                                WE ARE THE NOISE
+                            </div>
+                            <div class="nav-content-side__title">
+                                DASHBOARD
+                            </div>
+                            <div class="nav-content-side__title">
+                                EVENTS
+                            </div>
+                            <ul class="nav-content-side__list"
+                                id="navlist">
+                                <li class="nav-content-side__item">
+                                    <a href="#myChannels-myevents"
+                                       class="nav-content-side__link"
+                                       data-toggle="tab">
+                                        My Events
+                                    </a>
+                                </li>
+
+                                <li class="nav-content-side__item">
+                                    <a href="#myChannels-createevent"
+                                       class="nav-content-side__link"
+                                       data-toggle="tab">
+                                        Create Event
+                                    </a>
+                                </li>
+
+                                <li class="nav-content-side__item js-side-nav-item" data-name="ticketing">
+                                    <a href="javascript:;">
+                                        My Tickets
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="nav-content-side__title">
+                                CHANNELS
+                            </div>
+
+
+                            <ul class="nav-content-side__list"
+                                id="navlist">
+                                <li class="nav-content-side__item">
+                                    <a href="#myChannels-managemixtapes"
+                                       class="nav-content-side__link"
+                                       data-toggle="tab">
+                                        Manage Mixtapes
+                                    </a>
+                                </li>
+
+                                <li class="nav-content-side__item">
+                                    <a href="#myChannels-uploadmix"
+                                       class="nav-content-side__link"
+                                       data-toggle="tab">
+                                        Upload a Mix
+                                    </a>
+                                </li>
+
+                                <!--<li class="nav-content-side__item">
+                                    <a href="#myChannels-channeldetails"
+                                     class="nav-content-side__link"
+                                     data-toggle="tab">
+                                        Channel Details
+                                    </a>
+                                </li> -->
+
+                                <!-- <li class="nav-content-side__item">
+                                    <a href="#myChannels-channellinks"
+                                     class="nav-content-side__link"
+                                     data-toggle="tab">
+                                        Channel Links
+                                    </a>
+                                </li> -->
+
+                                <li class="nav-content-side__item">
+                                    <a href="#myChannels-mypeople"
+                                       class="nav-content-side__link"
+                                       data-toggle="tab">
+                                        My People
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="nav-content-side__title">
+                                ACCOUNT
+                            </div>
+
+                            <ul class="nav-content-side__list"
+                                id="navlist">
+                                <!--<li class="nav-content-side__item">
+                                    <a href="#myChannels-mychannels"
+                                     class="nav-content-side__link"
+                                     data-toggle="tab">
+                                        My Channels
+                                    </a>
+                                </li> -->
+                                <li class="nav-content-side__item">
+                                    <a href="#myChannels-myaccounts"
+                                       class="nav-content-side__link"
+                                       data-toggle="tab">
+                                        My Accounts
+                                    </a>
+                                </li>
+                                <li class="nav-content-side__item js-side-nav-item" data-name="settings">
+                                    <a href="javascript:;">
+                                        Password &amp; Profiles
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- .nav-content-side -->
+                        </div> <!-- .nav-content-side -->
+                    </div> <!-- .wrap -->
+                </div>
+                <div class="panel__main  col-md-9 myEvents-container-rhs">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="myChannels-myevents">
+                            <!-- skipped this section entirely. It's an afternoon -->
+                            <div class="panel__title">
+                                Filter event by organisation
+
+                                <div class="l-right panel__title-controls">
+                                    <div class="form-select-lg valign-middle">
+                                        <select class="js-select">
+                                            <option data-filter="*">Show All</option>
+                                            <option data-filter=".FinelyTuned">Finely Tuned</option>
+                                            <option data-filter=".WeAreTheNoise">We are the noise</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div> <!-- end header -->
+
+                            <!-- start content filterable block -->
+                            <div id="myEventsOverviewFilter">
+
+                                <div class="wrap--large">
+                                    <div class="events-overview__item FinelyTuned">
+                                        <div class="row">
+                                            <div class="events-overview__tab-left col-sm-4">
+                                                <a href="#">
+                                                    <img src="images/desktop/temp/myevents/event1.jpg" class="events-overview__img">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-8">
+                                                <div class="events-overview__tab-right">
+                                                    <h2 class="events-overview__tab-headline">
+                                                        The terminal project afterparty / The revenge &amp; Hinqo
+                                                    </h2>
+
+                                                    <ul class="listing">
+                                                        <li class="item">
+                                                            <div class="icon-container nudge-right-small">
+                                                                <i class="icons icons-calender-light"></i>
+                                                            </div>
+                                                            <em class="t-bold t-uppercase">Date:</em> 06 December 2013 21:00 PM
+                                                        </li>
+                                                        <div class="icon-container nudge-right-small">
+                                                            <i class="icons icons-clock-light"></i>
+                                                        </div>
+                                                        <em class="t-bold t-uppercase">Status:</em> Published
+                                                        <li class="item">
+
+                                                        </li>
+                                                        <div class="icon-container nudge-right-small">
+                                                            <i class="icons icons-price-tag-light"></i>
+                                                        </div>
+                                                        <em class="t-bold t-uppercase">tickets sold:</em> 232
+                                                        <li class="item">
+
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="btn-group
+                                                         nudge-top">
+
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn-default
+                                                           icons-child-hover
+                                                           js-side-nav-item"
+                                                           data-name="manageEvent">
+
+                                                            <i class="icons
+                                                               icons-cog-dark
+                                                               nudge-right-small">
+                                                            </i>
+
+                                                            <i class="icons
+                                                               icons-cog-light
+                                                               icons--is-hover
+                                                               nudge-right-small">
+                                                            </i>
+                                                            Manage
+                                                        </a>
+
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn-default
+                                                           icons-child-hover">
+
+                                                            <i class="icons
+                                                               icons-eye-dark
+                                                               nudge-right-small">
+                                                            </i>
+
+                                                            <i class="icons
+                                                               icons-eye-light
+                                                               icons--is-hover
+                                                               nudge-right-small">
+                                                            </i>
+                                                            View
+                                                        </a>
+
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn-default
+                                                           icons-child-hover">
+
+                                                            <i class="icons
+                                                               icons-pen-dark
+                                                               nudge-right-small">
+                                                            </i>
+
+                                                            <i class="icons
+                                                               icons-pen-light
+                                                               icons--is-hover
+                                                               nudge-right-small">
+                                                            </i>
+                                                            Edit
+                                                        </a>
+
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn-default
+                                                           icons-child-hover">
+
+                                                            <i class="icons
+                                                               icons-bin-dark
+                                                               nudge-right-small">
+                                                            </i>
+
+                                                            <i class="icons
+                                                               icons-bin-light
+                                                               icons--is-hover
+                                                               nudge-right-small">
+                                                            </i>
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- .row -->
+                                    </div> <!-- .events-overview__item -->
+
+                                    <!-- start item -->
+                                    <div class="events-overview__item WeAreTheNoise">
+                                        <div class="row">
+                                            <div class="events-overview__tab-left col-sm-4">
+                                                <a href="#">
+                                                    <img src="images/desktop/temp/myevents/event3.jpg" class="events-overview__img">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-8">
+                                                <div class="events-overview__tab-right">
+                                                    <h2 class="events-overview__tab-headline">
+                                                        The terminal project afterparty / The revenge &amp; Hinqo
+                                                    </h2>
+
+                                                    <ul class="listing">
+                                                        <li class="item">
+                                                            <div class="icon-container nudge-right-small">
+                                                                <i class="icons icons-calender-light"></i>
+                                                            </div>
+                                                            <em class="t-bold t-uppercase">Date:</em> 06 December 2013 21:00 PM
+                                                        </li>
+                                                        <div class="icon-container nudge-right-small">
+                                                            <i class="icons icons-clock-light"></i>
+                                                        </div>
+                                                        <em class="t-bold t-uppercase">Status:</em> Published
+                                                        <li class="item">
+
+                                                        </li>
+                                                        <div class="icon-container nudge-right-small">
+                                                            <i class="icons icons-price-tag-light"></i>
+                                                        </div>
+                                                        <em class="t-bold t-uppercase">tickets sold:</em> 232
+                                                        <li class="item">
+
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="btn-group
+                                                         nudge-top">
+
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn-default
+                                                           icons-child-hover
+                                                           js-side-nav-item"
+                                                           data-name="manageEvent">
+
+                                                            <i class="icons
+                                                               icons-cog-dark
+                                                               nudge-right-small">
+                                                            </i>
+
+                                                            <i class="icons
+                                                               icons-cog-light
+                                                               icons--is-hover
+                                                               nudge-right-small">
+                                                            </i>
+                                                            Manage
+                                                        </a>
+
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn-default
+                                                           icons-child-hover">
+
+                                                            <i class="icons
+                                                               icons-eye-dark
+                                                               nudge-right-small">
+                                                            </i>
+
+                                                            <i class="icons
+                                                               icons-eye-light
+                                                               icons--is-hover
+                                                               nudge-right-small">
+                                                            </i>
+                                                            View
+                                                        </a>
+
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn-default
+                                                           icons-child-hover">
+
+                                                            <i class="icons
+                                                               icons-pen-dark
+                                                               nudge-right-small">
+                                                            </i>
+
+                                                            <i class="icons
+                                                               icons-pen-light
+                                                               icons--is-hover
+                                                               nudge-right-small">
+                                                            </i>
+                                                            Edit
+                                                        </a>
+
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn-default
+                                                           icons-child-hover">
+
+                                                            <i class="icons
+                                                               icons-bin-dark
+                                                               nudge-right-small">
+                                                            </i>
+
+                                                            <i class="icons
+                                                               icons-bin-light
+                                                               icons--is-hover
+                                                               nudge-right-small">
+                                                            </i>
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- .row -->
+                                    </div> <!-- .events-overview__item -->
+
+                                    <div class="events-overview__item WeAreTheNoise">
+                                        <div class="row">
+                                            <div class="events-overview__tab-left col-sm-4">
+                                                <a href="#">
+                                                    <img src="images/desktop/temp/myevents/event4.jpg" class="events-overview__img">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-8">
+                                                <div class="events-overview__tab-right">
+                                                    <h2 class="events-overview__tab-headline">
+                                                        The terminal project afterparty / The revenge &amp; Hinqo
+                                                    </h2>
+
+                                                    <ul class="listing">
+                                                        <li class="item">
+                                                            <div class="icon-container nudge-right-small">
+                                                                <i class="icons icons-calender-light"></i>
+                                                            </div>
+                                                            <em class="t-bold t-uppercase">Date:</em> 06 December 2013 21:00 PM
+                                                        </li>
+                                                        <div class="icon-container nudge-right-small">
+                                                            <i class="icons icons-clock-light"></i>
+                                                        </div>
+                                                        <em class="t-bold t-uppercase">Status:</em> Published
+                                                        <li class="item">
+
+                                                        </li>
+                                                        <div class="icon-container nudge-right-small">
+                                                            <i class="icons icons-price-tag-light"></i>
+                                                        </div>
+                                                        <em class="t-bold t-uppercase">tickets sold:</em> 232
+                                                        <li class="item">
+
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="btn-group
+                                                         nudge-top">
+
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn-default
+                                                           icons-child-hover
+                                                           js-side-nav-item"
+                                                           data-name="manageEvent">
+
+                                                            <i class="icons
+                                                               icons-cog-dark
+                                                               nudge-right-small">
+                                                            </i>
+
+                                                            <i class="icons
+                                                               icons-cog-light
+                                                               icons--is-hover
+                                                               nudge-right-small">
+                                                            </i>
+                                                            Manage
+                                                        </a>
+
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn-default
+                                                           icons-child-hover">
+
+                                                            <i class="icons
+                                                               icons-eye-dark
+                                                               nudge-right-small">
+                                                            </i>
+
+                                                            <i class="icons
+                                                               icons-eye-light
+                                                               icons--is-hover
+                                                               nudge-right-small">
+                                                            </i>
+                                                            View
+                                                        </a>
+
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn-default
+                                                           icons-child-hover">
+
+                                                            <i class="icons
+                                                               icons-pen-dark
+                                                               nudge-right-small">
+                                                            </i>
+
+                                                            <i class="icons
+                                                               icons-pen-light
+                                                               icons--is-hover
+                                                               nudge-right-small">
+                                                            </i>
+                                                            Edit
+                                                        </a>
+
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn-default
+                                                           icons-child-hover">
+
+                                                            <i class="icons
+                                                               icons-bin-dark
+                                                               nudge-right-small">
+                                                            </i>
+
+                                                            <i class="icons
+                                                               icons-bin-light
+                                                               icons--is-hover
+                                                               nudge-right-small">
+                                                            </i>
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- .row -->
+                                    </div> <!-- .events-overview__item -->
+                                </div>
+
+                            </div> <!-- #myEventsOverviewFilter -->
+
+                        </div> <!-- .tab-pane -->
+
+                        <div class="tab-pane" id="myChannels-createevent">
+                            <div class="wrap--large">
+                                <form action=""
+                                      class="create-event">
+
+                                    <!-- step 1 -->
+                                    <div class="create-event-step clearfix">
+                                        <div class="inner-header clearfix">
+                                            <div class="inner-header__number">
+                                                01
+                                            </div>
+                                            <div class="inner-header__copy">
+                                                Event details <span class="field-required">*</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-4">
+                                                <label for="event-name"
+                                                       class="form-label form-label--large">
+                                                    Your event name <span class="field-required">*</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-sm-8">
+                                                <input type="text"
+                                                       class="input-text"
+                                                       placeholder="E.g Holloween Rave"
+                                                       id="event-name">
+                                            </div>
+                                        </div> <!-- .row -->
+
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-4">
+                                                <label for="event-organisation"
+                                                       class="form-label form-label--large">
+                                                    Organisation <span class="field-required">*</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <select class="js-select" id="event-organisation">
+                                                    <option value="" selected="selected">Select organisation</option>
+                                                    <option value="2">Option 1</option>
+                                                    <option value="2">Option 1</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <a href="#"
+                                                   class="btn
+                                                   btn--alt
+                                                   btn--alt-primary">
+                                                    Add
+                                                </a>
+                                                <a href="#"
+                                                   class="btn
+                                                   btn--alt
+                                                   btn--alt-secondary">
+                                                    Edit
+                                                </a>
+                                            </div>
+                                        </div> <!-- .row -->
+
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-4">
+                                                <label for="event-venue"
+                                                       class="form-label form-label--large">
+                                                    Venue <span class="field-required">*</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <input type="text"
+                                                       class="input-text"
+                                                       id="event-venue">
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <a href="#"
+                                                   class="form-help">
+                                                    Use a Previous Address
+                                                </a>
+                                            </div>
+
+                                        </div> <!-- .row -->
+
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-4">
+                                                <label for="event-address"
+                                                       class="form-label form-label--large">
+                                                    Street address <span class="field-required">*</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <input type="text"
+                                                       class="input-text"
+                                                       id="event-address">
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <a href="#"
+                                                   class="form-help">
+                                                    Enter the address manually
+                                                </a>
+                                            </div>
+                                        </div> <!-- .row -->
+
+
+
+                                        <!-- Date and time -->
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-3">
+                                                <label for="event-date-start"
+                                                       class="form-label form-label--large">
+                                                    Date and time <span class="field-required">*</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-sm-1">
+                                                <div class="form-additional-info">
+                                                    Starts
+                                                </div>
+                                            </div>
+
+                                            <div class="events-overview__tab-left col-sm-8">
+
+                                                <div class="bfh-datepicker form-select-inline">
+                                                </div><!--
+        
+                                                --><div class="select-seperator select-seperator--small nudge-left nudge-right">
+                                                    At
+                                                </div><!--
+                            
+                                                --><div class="bfh-timepicker form-select-inline">
+                                                </div>
+
+                                            </div>
+                                        </div> <!-- .row -->
+
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-3">
+                                            </div>
+
+                                            <div class="col-sm-1">
+                                                <div class="form-additional-info">
+                                                    Ends
+                                                </div>
+                                            </div>
+
+                                            <div class="events-overview__tab-left col-sm-8">
+
+                                                <div class="bfh-datepicker form-select-inline">
+                                                </div><!--
+        
+                                                --><div class="select-seperator select-seperator--small nudge-left nudge-right">
+                                                    At
+                                                </div><!--
+                            
+                                                --><div class="bfh-timepicker form-select-inline">
+                                                </div>
+
+                                            </div>
+                                        </div> <!-- .row -->
+
+                                        <!-- textarea 1 -->
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-4">
+                                                <label for="event-lineup"
+                                                       class="form-label form-label--large">
+                                                    Lineup <span class="field-required">*</span>
+                                                </label>
+
+                                                <br>
+
+                                                <div class="form-additional-info form-additional-info--small">
+                                                    Use commas to seperate artists
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-8">
+                                                <textarea name="textarea"
+                                                          class="input-text"
+                                                          rows="5"
+                                                          id="event-lineup">E.g Some random name</textarea>
+                                            </div>
+                                        </div> <!-- .row -->
+
+                                        <hr class="divide">
+
+                                        <!-- textarea 2 -->
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-4">
+                                                <label for="event-about"
+                                                       class="form-label form-label--large">
+                                                    About <span class="field-required">*</span>
+                                                </label>
+
+                                                <br>
+
+                                                <div class="form-additional-info form-additional-info--small">
+                                                    About event
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-8">
+                                                <textarea name="textarea"
+                                                          class="input-text"
+                                                          rows="5"
+                                                          id="event-about">E.g Some random text</textarea>
+                                            </div>
+                                        </div> <!-- .row -->
+
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-4">
+                                                <label for="event-ages"
+                                                       class="form-label form-label--large">
+                                                    Ages allowed
+                                                </label>
+                                            </div>
+
+                                            <div class="col-sm-2">
+                                                <select class="js-select" id="event-ages">
+                                                    <option value="" selected="selected">All</option>
+                                                    <option value="2">Option 1</option>
+                                                    <option value="2">Option 1</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-sm-2 t-center">
+                                                <div class="select-seperator">
+                                                    Event type
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <select class="js-select">
+                                                    <option value="" selected="selected">Select Event Type</option>
+                                                    <option value="2">Option 1</option>
+                                                    <option value="2">Option 1</option>
+                                                </select>
+                                            </div>
+                                        </div> <!-- .row -->
+
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-4">
+                                                <label for="event-genres"
+                                                       class="form-label form-label--large">
+                                                    Genres
+                                                </label>
+                                            </div>
+
+                                            <div class="col-sm-8">
+                                                <div class="form-select-third nudge-right-small">
+                                                    <select class="js-select"
+                                                            id="event-genres">
+                                                        <option value="" selected="selected">Select Genre</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-select-third nudge-right-small">
+                                                    <select class="js-select">
+                                                        <option value="" selected="selected">Select Genre</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-select-third">
+                                                    <select class="js-select">
+                                                        <option value="" selected="selected">Select Genre</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div> <!-- .row -->
+
+                                        <hr class="divide">
+
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-4">
+                                                <label for="event-status"
+                                                       class="form-label form-label--large">
+                                                    Status
+                                                </label>
+                                            </div>
+
+                                            <div class="col-sm-5">
+                                                <select class="js-select"
+                                                        id="event-status">
+                                                    <option value="" selected="selected">Select Status</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-sm-3">
+                                            </div>
+                                        </div> <!-- .row -->
+
+                                        <hr class="divide">
+
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-4">
+                                                <label for="event-currency"
+                                                       class="form-label form-label--large">
+                                                    Currency Code
+                                                </label>
+                                            </div>
+
+                                            <div class="col-sm-5">
+                                                <select class="js-select"
+                                                        id="event-currency">
+                                                    <option value="" selected="selected">Select Currency</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                </select>
+                                            </div>
+
+
+                                            <div class="col-sm-3">
+                                            </div>
+                                        </div> <!-- .row -->
+                                    </div> <!-- .create-event-step -->
+
+                                    <!-- step 2 -->
+                                    <div class="create-event-step clearfix">
+                                        <div class="inner-header clearfix">
+                                            <div class="inner-header__number">
+                                                02
+                                            </div>
+                                            <div class="inner-header__copy">
+                                                Create ticket <span class="field-required">*</span>
+                                            </div>
+                                        </div>
+
+                                        <label class="form-label form-label--large">
+                                            Create Tickets for each price, sales date, or other options. <span class="field-required">*</span>
+                                        </label>
+
+                                        <div class="grid-sm grid-sm--20col create-ticket grid-sm--margin-sm">
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--4col">
+                                                    <label for="event-ticket-name"
+                                                           class="label-create-ticket">
+                                                        Ticket name
+                                                        <span class="field-required">*</span>
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--3col">
+                                                    <label for="event-ticket-quantity"
+                                                           class="label-create-ticket">
+                                                        Ticket qty
+                                                        <span class="field-required">*</span>
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--3col">
+                                                    <label for="event-ticket-price"
+                                                           class="label-create-ticket">
+                                                        Ticket price
+                                                        <span class="field-required">*</span>
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--2col">
+                                                    <label class="label-create-ticket">
+                                                        Fee
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--2col">
+                                                    <label class="label-create-ticket">
+                                                        Total
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--3col">
+                                                    <label class="label-create-ticket">
+                                                        Sale status
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--3col">
+                                                    <label class="label-create-ticket">
+                                                        Settings
+                                                    </label>
+                                                </div>
+                                            </div> <!-- .grid-sm__row -->
+                                        </div>
+
+                                        <div class="ticket-options">
+                                            <div class="grid-sm grid-sm--20col grid-sm--margin-sm">
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--4col table-cell">
+
+                                                        <input type="text"
+                                                               class="input-text
+                                                               input-text-small"
+                                                               placeholder="General admission"
+                                                               id="event-ticket-name">
+
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--3col table-cell">
+                                                        <input type="text"
+                                                               class="input-text
+                                                               input-text-small
+                                                               percentage-58"
+                                                               placeholder="0"
+                                                               id="event-ticket-quantity">
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--3col table-cell">
+                                                        <span class="nudge-right">US$</span>
+                                                        <input type="text"
+                                                               class="input-text
+                                                               input-text-small
+                                                               percentage-58"
+                                                               placeholder="0.00"
+                                                               id="event-ticket-price">
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--2col table-cell">
+                                                        US$ 0.00
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--2col table-cell">
+                                                        US$ 0.00
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--6col table-cell">
+                                                        <span class="nudge-right">On Sale</span>
+
+                                                        <div class="l-right">
+                                                            <a href="#"
+                                                               class="btn
+                                                               btn--small
+                                                               btn--alt
+                                                               btn--alt-secondary">
+                                                                More
+                                                            </a>
+
+                                                            <div class="btn btn-typical nudge-left-small">
+                                                                <i class="icons icons-bin"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> <!-- .grid-sm__row -->
+                                            </div>
+                                        </div>
+
+                                        <div class="ticket-options">
+                                            <div class="grid-sm grid-sm--20col">
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--4col table-cell">
+                                                        <label for=""
+                                                               class="label-create-ticket">
+                                                            Total tickets
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--3col table-cell">
+                                                        <input type="text"
+                                                               class="input-text
+                                                               input-text-small
+                                                               t-right"
+                                                               placeholder="0"
+                                                               id="event-name">
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--13col table-cell t-right">
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn--small
+                                                           btn--alt
+                                                           btn--alt-primary">
+                                                            add another ticket
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- .create-event-step -->
+
+                                    <!-- step 3 -->
+                                    <div class="create-event-step clearfix">
+                                        <div class="inner-header clearfix">
+                                            <div class="inner-header__number">
+                                                03
+                                            </div>
+                                            <div class="inner-header__copy">
+                                                Event artwork <span class="field-required">*</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row nudge-bottom-large">
+                                            <div class="col-sm-3">
+                                                <img src="img/temp/placeholder-portrait.jpg"
+                                                     class="create-event__artwork">
+                                            </div>
+
+                                            <div class="col-sm-3">
+                                                <label class="create-event__artwork-label">
+                                                    Upload an Image for your event
+                                                </label>
+
+                                                <a href="#"
+                                                   class="btn
+                                                   btn-typical
+                                                   nudge-top-large">
+                                                    Choose file
+                                                </a>
+
+                                                <p class="create-event__artwork-status-text">
+                                                    No file chosen
+                                                </p>
+
+                                                <p class="create-event__artwork-additional-text">
+                                                    Must be JPG, GIF, or PNG smaller than 200Kb. Dimensions are limited to 250 x 500 px. Images larger than this will be resized.
+                                                </p>
+                                            </div>
+
+                                            <div class="col-sm-3">
+                                                <img src="img/temp/placeholder-landscape.jpg"
+                                                     class="create-event__artwork">
+                                            </div>
+
+                                            <div class="col-sm-3">
+                                                <label class="create-event__artwork-label">
+                                                    Your thumbnail image
+                                                </label>
+
+                                                <a href="#"
+                                                   class="btn
+                                                   btn-typical
+                                                   nudge-top-large">
+                                                    Choose file
+                                                </a>
+
+                                                <p class="create-event__artwork-status-text">
+                                                    No file chosen
+                                                </p>
+
+                                                <p class="create-event__artwork-additional-text">
+                                                    Must be JPG, GIF, or PNG smaller than 200Kb. Dimensions are limited to 250 x 500 px. Images larger than this will be resized.
+                                                </p>
+                                            </div>
+                                        </div> <!-- .row -->
+
+                                        <hr class="divide">
+
+
+                                        <div class="grid-sm grid-sm--12col">
+
+                                            <div class="grid-sm__row">
+                                                <div class="col-sm-3">
+                                                    <label for="event-captcha" class="label-create-ticket">
+                                                        human test (7+3) =
+                                                    </label>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <input type="text"
+                                                           class="input-text t-center"
+                                                           placeholder="10"
+                                                           id="event-captcha">
+                                                </div>
+                                                <div class="col-sm-7 t-right">
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn--alt
+                                                       btn--alt-secondary">
+                                                        Preview
+                                                    </a>
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn--alt
+                                                       btn--alt-primary">
+                                                        Save
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- .create-event-step -->
+                                </form>
+                            </div>
+                        </div> <!-- .tab-pane -->
+
+
+                        <div class="tab-pane" id="myChannels-managemixtapes">
+                            <div class="panel__title hidden-xs"> Manage Mixtapes </div>
+                            <div class="wrap">
+                                <div class="row">
+
+                                    <!-- start event item -->
+                                    <!-- filter classes are filterlatest filtertrending filterwhatshot filtermypulse -->
+
+                                    <div class="uploaded recommended">
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <article>
+                                                <div class="sec-list__item  js-sec-list-item">
+                                                    <div class="sec sec-item">
+                                                        <div class="sec__figure">
+                                                            <img class="sec__img" src="images/desktop/temp/music-3.jpg">
+
+                                                            <div class="sec__figure-overlay">
+                                                                <div class="sec__figure-overlay-bg"></div> <!-- .sec__figure-overlay -->
+                                                                <div class="sec__caption-container">
+                                                                    <div class="sec__caption">
+                                                                        <div class="wrap">
+                                                                            <a href="#" data-item="1" class="colBlue">Play</a> / <a href="#" class="colBlue">Queue</a>
+                                                                            <hr>
+
+                                                                            <a href="#">
+                                                                                <img src="images/desktop/btns/btn-hoverpanel-fb.png"
+                                                                                     width="25"
+                                                                                     height="27"
+                                                                                     class="mtop10">
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <img src="images/desktop/btns/btn-hoverpanel-tw.png"
+                                                                                     width="30"
+                                                                                     height="27"
+                                                                                     class="mtop10">
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <img src="images/desktop/btns/btn-hoverpanel-mypulse.png"
+                                                                                     width="27"
+                                                                                     height="27"
+                                                                                     class="mtop10">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div> <!-- .sec__caption -->
+                                                                </div> <!-- .sec__caption-container -->
+                                                            </div> <!-- .sec__figure-overlay -->
+                                                        </div>
+
+                                                        <div class="sec-item__content">
+                                                            <div class="wrap">
+                                                                <h2 class="sec__sub-title">
+                                                                    DJ Mixes
+                                                                </h2>
+                                                                <h1 class="sec__title">
+                                                                    Ricardo Vilalobos
+                                                                </h1>
+                                                                <h3 class="sec__text">
+                                                                    Description can go here along with the date.
+                                                                </h3>
+
+                                                                <div class="clearfix"></div>
+
+
+                                                                <div class="nudge-top-small">
+                                                                    <span class="meta nudge-right-small"><img src="images/desktop/btns/notification-icons/ico-pulse.jpg" width="15" height="17" /></span>
+                                                                    <span class="nudge-right-small">238</span>
+                                                                    <img src="images/desktop/btns/notification-icons/ico-play.jpg" class="nudge-right-small" width="17" height="17" />
+                                                                    <span class="nudge-right">105</span>
+
+                                                                </div>
+
+                                                                <div class="btn-group
+                                                                     nudge-top">
+
+
+                                                                    <a href="#"
+                                                                       class="btn
+                                                                       btn-default
+                                                                       icons-child-hover">
+
+                                                                        <i class="icons
+                                                                           icons-eye-dark
+                                                                           nudge-right-small">
+                                                                        </i>
+
+                                                                        <i class="icons
+                                                                           icons-eye-light
+                                                                           icons--is-hover
+                                                                           nudge-right-small">
+                                                                        </i>
+                                                                    </a>
+
+                                                                    <a href="#"
+                                                                       class="btn
+                                                                       btn-default
+                                                                       icons-child-hover">
+
+                                                                        <i class="icons
+                                                                           icons-pen-dark
+                                                                           nudge-right-small">
+                                                                        </i>
+
+                                                                        <i class="icons
+                                                                           icons-pen-light
+                                                                           icons--is-hover
+                                                                           nudge-right-small">
+                                                                        </i>
+                                                                    </a>
+
+                                                                    <a href="#"
+                                                                       class="btn
+                                                                       btn-default
+                                                                       icons-child-hover">
+
+                                                                        <i class="icons
+                                                                           icons-bin-dark
+                                                                           nudge-right-small">
+                                                                        </i>
+
+                                                                        <i class="icons
+                                                                           icons-bin-light
+                                                                           icons--is-hover
+                                                                           nudge-right-small">
+                                                                        </i>
+                                                                    </a>
+                                                                </div>
+
+
+
+
+
+
+                                                            </div> <!-- .wrap -->
+                                                        </div> <!-- .sec__content -->
+                                                    </div>
+                                                </div> <!-- .sec-list__item -->
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <!-- end music item -->
+
+
+                                    <!-- start event item -->
+                                    <!-- filter classes are filterlatest filtertrending filterwhatshot filtermypulse -->
+
+                                    <div class="uploaded recommended">
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <article>
+                                                <div class="sec-list__item  js-sec-list-item">
+                                                    <div class="sec sec-item">
+                                                        <div class="sec__figure">
+                                                            <img class="sec__img" src="images/desktop/temp/music-3.jpg">
+
+                                                            <div class="sec__figure-overlay">
+                                                                <div class="sec__figure-overlay-bg"></div> <!-- .sec__figure-overlay -->
+                                                                <div class="sec__caption-container">
+                                                                    <div class="sec__caption">
+                                                                        <div class="wrap">
+                                                                            <a href="#" data-item="1" class="colBlue">Play</a> / <a href="#" class="colBlue">Queue</a>
+                                                                            <hr>
+
+                                                                            <a href="#">
+                                                                                <img src="images/desktop/btns/btn-hoverpanel-fb.png"
+                                                                                     width="25"
+                                                                                     height="27"
+                                                                                     class="mtop10">
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <img src="images/desktop/btns/btn-hoverpanel-tw.png"
+                                                                                     width="30"
+                                                                                     height="27"
+                                                                                     class="mtop10">
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <img src="images/desktop/btns/btn-hoverpanel-mypulse.png"
+                                                                                     width="27"
+                                                                                     height="27"
+                                                                                     class="mtop10">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div> <!-- .sec__caption -->
+                                                                </div> <!-- .sec__caption-container -->
+                                                            </div> <!-- .sec__figure-overlay -->
+                                                        </div>
+
+                                                        <div class="sec-item__content">
+                                                            <div class="wrap">
+                                                                <h2 class="sec__sub-title">
+                                                                    DJ Mixes
+                                                                </h2>
+                                                                <h1 class="sec__title">
+                                                                    Ricardo Vilalobos
+                                                                </h1>
+                                                                <h3 class="sec__text">
+                                                                    Description can go here along with the date.
+                                                                </h3>
+
+                                                                <div class="clearfix"></div>
+
+
+                                                                <div class="nudge-top-small">
+                                                                    <span class="meta nudge-right-small"><img src="images/desktop/btns/notification-icons/ico-pulse.jpg" width="15" height="17" /></span>
+                                                                    <span class="nudge-right-small">238</span>
+                                                                    <img src="images/desktop/btns/notification-icons/ico-play.jpg" class="nudge-right-small" width="17" height="17" />
+                                                                    <span class="nudge-right">105</span>
+
+                                                                </div>
+
+                                                                <div class="btn-group
+                                                                     nudge-top">
+
+
+                                                                    <a href="#"
+                                                                       class="btn
+                                                                       btn-default
+                                                                       icons-child-hover">
+
+                                                                        <i class="icons
+                                                                           icons-eye-dark
+                                                                           nudge-right-small">
+                                                                        </i>
+
+                                                                        <i class="icons
+                                                                           icons-eye-light
+                                                                           icons--is-hover
+                                                                           nudge-right-small">
+                                                                        </i>
+                                                                    </a>
+
+                                                                    <a href="#"
+                                                                       class="btn
+                                                                       btn-default
+                                                                       icons-child-hover">
+
+                                                                        <i class="icons
+                                                                           icons-pen-dark
+                                                                           nudge-right-small">
+                                                                        </i>
+
+                                                                        <i class="icons
+                                                                           icons-pen-light
+                                                                           icons--is-hover
+                                                                           nudge-right-small">
+                                                                        </i>
+                                                                    </a>
+
+                                                                    <a href="#"
+                                                                       class="btn
+                                                                       btn-default
+                                                                       icons-child-hover">
+
+                                                                        <i class="icons
+                                                                           icons-bin-dark
+                                                                           nudge-right-small">
+                                                                        </i>
+
+                                                                        <i class="icons
+                                                                           icons-bin-light
+                                                                           icons--is-hover
+                                                                           nudge-right-small">
+                                                                        </i>
+                                                                    </a>
+                                                                </div>
+
+
+
+
+
+
+                                                            </div> <!-- .wrap -->
+                                                        </div> <!-- .sec__content -->
+                                                    </div>
+                                                </div> <!-- .sec-list__item -->
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <!-- end music item -->
+
+
+
+                                    <!-- start event item -->
+                                    <!-- filter classes are filterlatest filtertrending filterwhatshot filtermypulse -->
+
+                                    <div class="uploaded recommended">
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <article>
+                                                <div class="sec-list__item  js-sec-list-item">
+                                                    <div class="sec sec-item">
+                                                        <div class="sec__figure">
+                                                            <img class="sec__img" src="images/desktop/temp/music-3.jpg">
+
+                                                            <div class="sec__figure-overlay">
+                                                                <div class="sec__figure-overlay-bg"></div> <!-- .sec__figure-overlay -->
+                                                                <div class="sec__caption-container">
+                                                                    <div class="sec__caption">
+                                                                        <div class="wrap">
+                                                                            <a href="#" data-item="1" class="colBlue">Play</a> / <a href="#" class="colBlue">Queue</a>
+                                                                            <hr>
+
+                                                                            <a href="#">
+                                                                                <img src="images/desktop/btns/btn-hoverpanel-fb.png"
+                                                                                     width="25"
+                                                                                     height="27"
+                                                                                     class="mtop10">
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <img src="images/desktop/btns/btn-hoverpanel-tw.png"
+                                                                                     width="30"
+                                                                                     height="27"
+                                                                                     class="mtop10">
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <img src="images/desktop/btns/btn-hoverpanel-mypulse.png"
+                                                                                     width="27"
+                                                                                     height="27"
+                                                                                     class="mtop10">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div> <!-- .sec__caption -->
+                                                                </div> <!-- .sec__caption-container -->
+                                                            </div> <!-- .sec__figure-overlay -->
+                                                        </div>
+
+                                                        <div class="sec-item__content">
+                                                            <div class="wrap">
+                                                                <h2 class="sec__sub-title">
+                                                                    DJ Mixes
+                                                                </h2>
+                                                                <h1 class="sec__title">
+                                                                    Ricardo Vilalobos
+                                                                </h1>
+                                                                <h3 class="sec__text">
+                                                                    Description can go here along with the date.
+                                                                </h3>
+
+                                                                <div class="clearfix"></div>
+
+
+                                                                <div class="nudge-top-small">
+                                                                    <span class="meta nudge-right-small"><img src="images/desktop/btns/notification-icons/ico-pulse.jpg" width="15" height="17" /></span>
+                                                                    <span class="nudge-right-small">238</span>
+                                                                    <img src="images/desktop/btns/notification-icons/ico-play.jpg" class="nudge-right-small" width="17" height="17" />
+                                                                    <span class="nudge-right">105</span>
+
+                                                                </div>
+
+                                                                <div class="btn-group
+                                                                     nudge-top">
+
+
+                                                                    <a href="#"
+                                                                       class="btn
+                                                                       btn-default
+                                                                       icons-child-hover">
+
+                                                                        <i class="icons
+                                                                           icons-eye-dark
+                                                                           nudge-right-small">
+                                                                        </i>
+
+                                                                        <i class="icons
+                                                                           icons-eye-light
+                                                                           icons--is-hover
+                                                                           nudge-right-small">
+                                                                        </i>
+                                                                    </a>
+
+                                                                    <a href="#"
+                                                                       class="btn
+                                                                       btn-default
+                                                                       icons-child-hover">
+
+                                                                        <i class="icons
+                                                                           icons-pen-dark
+                                                                           nudge-right-small">
+                                                                        </i>
+
+                                                                        <i class="icons
+                                                                           icons-pen-light
+                                                                           icons--is-hover
+                                                                           nudge-right-small">
+                                                                        </i>
+                                                                    </a>
+
+                                                                    <a href="#"
+                                                                       class="btn
+                                                                       btn-default
+                                                                       icons-child-hover">
+
+                                                                        <i class="icons
+                                                                           icons-bin-dark
+                                                                           nudge-right-small">
+                                                                        </i>
+
+                                                                        <i class="icons
+                                                                           icons-bin-light
+                                                                           icons--is-hover
+                                                                           nudge-right-small">
+                                                                        </i>
+                                                                    </a>
+                                                                </div>
+
+
+
+
+
+
+                                                            </div> <!-- .wrap -->
+                                                        </div> <!-- .sec__content -->
+                                                    </div>
+                                                </div> <!-- .sec-list__item -->
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <!-- end music item -->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="myChannels-uploadmix">
+                            <div class="panel__title"> Upload Mix </div>
+                            <div class="wrap">
+                                <div class="row">
+                                    <div class="col-md-12"> </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane" id="myChannels-channeldetails">
+
+                        </div>
+
+                        <div class="tab-pane" id="myChannels-channellinks">
+
+                        </div>
+
+                        <div class="tab-pane" id="myChannels-mypeople">
+                            <div class="panel__title hidden-xs"> My People </div>
+                            <div class="wrap">
+                                <div class="row">
+
+                                    <!-- start event item -->
+                                    <!-- filter classes are filterlatest filtertrending filterwhatshot filtermypulse -->
+
+                                    <div class="uploaded recommended">
+                                        <div class="col-xs-12 col-sm-4 col-md-4" style="margin-top: 10px;">
+                                            <article>
+                                                <div class="sec-list__item  js-sec-list-item" style="border: 1px solid #ccc; padding-top: 0px !important;">
+
+                                                    <img src="img/djs/dj-image.jpg"
+                                                         class="dj-slider__image img-responsive">
+
+                                                    <div class="dj-slider__copy dj-slider__copy--genre">
+                                                        Josh Wink
+                                                    </div>
+
+                                                    <div class="dj-slider__copy dj-slider__copy--name">
+                                                        Hoops
+                                                    </div>
+
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn--dj-slider">
+                                                        <i class="icons icons-dj-logo dj-logo"></i>
+                                                        Follow
+                                                    </a>
+
+                                                </div> <!-- .sec-list__item -->
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <!-- end music item -->
+
+                                    <!-- start event item -->
+                                    <!-- filter classes are filterlatest filtertrending filterwhatshot filtermypulse -->
+
+                                    <div class="uploaded recommended">
+                                        <div class="col-xs-12 col-sm-4 col-md-4" style="margin-top: 10px;">
+                                            <article>
+                                                <div class="sec-list__item  js-sec-list-item" style="border: 1px solid #ccc; padding-top: 0px !important;">
+
+                                                    <img src="img/djs/dj-image.jpg"
+                                                         class="dj-slider__image img-responsive">
+
+                                                    <div class="dj-slider__copy dj-slider__copy--genre">
+                                                        Josh Wink
+                                                    </div>
+
+                                                    <div class="dj-slider__copy dj-slider__copy--name">
+                                                        Hoops
+                                                    </div>
+
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn--dj-slider">
+                                                        <i class="icons icons-dj-logo dj-logo"></i>
+                                                        Follow
+                                                    </a>
+
+                                                </div> <!-- .sec-list__item -->
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <!-- end music item -->
+
+
+                                    <!-- start event item -->
+                                    <!-- filter classes are filterlatest filtertrending filterwhatshot filtermypulse -->
+
+                                    <div class="uploaded recommended">
+                                        <div class="col-xs-12 col-sm-4 col-md-4" style="margin-top: 10px;">
+                                            <article>
+                                                <div class="sec-list__item  js-sec-list-item" style="border: 1px solid #ccc; padding-top: 0px !important;">
+
+                                                    <img src="img/djs/dj-image.jpg"
+                                                         class="dj-slider__image img-responsive">
+
+                                                    <div class="dj-slider__copy dj-slider__copy--genre">
+                                                        Josh Wink
+                                                    </div>
+
+                                                    <div class="dj-slider__copy dj-slider__copy--name">
+                                                        Hoops
+                                                    </div>
+
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn--dj-slider">
+                                                        <i class="icons icons-dj-logo dj-logo"></i>
+                                                        Follow
+                                                    </a>
+
+                                                </div> <!-- .sec-list__item -->
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <!-- end music item -->
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane" id="myChannels-mychannels">
+
+                        </div>
+
+                        <div class="tab-pane" id="myChannels-myaccounts">
+                            <div class="panel__title">
+
+                                Organisation
+
+                                <div class="panel__title-controls nudge-left">
+                                    <div class="form-select-md
+                                         form-select-inline">
+                                        <select name="venu" class="js-select">
+                                            <option data-filter="*">Show All</option>
+                                            <option data-filter=".FinelyTuned">Finely Tuned</option>
+                                            <option data-filter=".WeAreTheNoise">We are the noise</option>
+                                        </select>
+                                    </div>
+                                </div> <!-- .panel__title-controls -->
+
+                                <div class="l-right">
+                                    <div class="panel__title-controls t-right">
+                                        <a href="#"
+                                           class="btn
+                                           btn--alt
+                                           btn--alt-primary
+                                           for-mobile-styling">
+
+                                            <i class="icons
+                                               icons-add-small-light
+                                               for-mobile">
+                                            </i>
+                                            <span class="for-tablet">Add</span>
+                                        </a>
+                                        <a href="#"
+                                           class="btn
+                                           btn--alt
+                                           btn--alt-secondary
+                                           for-mobile-styling">
+
+                                            <i class="icons
+                                               icons-pen-light
+                                               for-mobile">
+                                            </i>
+                                            <span class="for-tablet">Edit</span>
+                                        </a>
+                                    </div> <!-- .panel__title-controls -->
+                                </div> <!-- l-right -->
+
+                            </div> <!-- .pane__title -->
+
+                            <form action="post">
+
+                                <div class="wrap--large">
+
+                                    <div class="grid-sm grid-sm--20col">
+
+                                        <div class="grid-sm__row">
+
+                                            <!-- grid left -->
+                                            <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--10col">
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                        <h2 class="accountFormHeader">
+                                                            Contact Information
+                                                        </h2>
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-first-name"
+                                                               class="form-label">
+                                                            First name
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="contact-first-name">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-last-name"
+                                                               class="form-label">
+                                                            Last name
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="contact-last-name">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-email"
+                                                               class="form-label">
+                                                            Email
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="contact-email">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-telephone"
+                                                               class="form-label">
+                                                            Telephone
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="contact-telephone">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-company-name"
+                                                               class="form-label">
+                                                            Company name
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="contact-company-name">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-business-tax-no"
+                                                               class="form-label">
+                                                            Business tax no.
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="contact-business-tax-no">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-address"
+                                                               class="form-label">
+                                                            Address
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="contact-address">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-address-2"
+                                                               class="form-label">
+                                                            Address 2
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="contact-address-2">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-city"
+                                                               class="form-label">
+                                                            City
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="contact-city">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-state-county"
+                                                               class="form-label">
+                                                            State / County
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <div class="bfh-selectbox bfh-states"
+                                                             data-country="countries_states2">
+                                                        </div>
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-state-county"
+                                                               class="form-label">
+                                                            State / County
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <div class="bfh-selectbox bfh-states"
+                                                             data-country="countries_states2">
+                                                        </div>
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-state-county"
+                                                               class="form-label">
+                                                            State / County
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <div class="bfh-selectbox bfh-states"
+                                                             data-country="countries_states2">
+                                                        </div>
+                                                    </div>
+                                                </div> <!-- row -->
+                                            </div><!-- END grid left -->
+
+                                            <!-- grid right -->
+                                            <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--10col">
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                        <h2 class="accountFormHeader">
+                                                            Payment information
+                                                        </h2>
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-zip-postcode"
+                                                               class="form-label">
+                                                            Zip / Postcode
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="contact-zip-postcode">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="contact-country"
+                                                               class="form-label">
+                                                            Country
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <div id="payment-country"
+                                                             class="bfh-selectbox bfh-countries"
+                                                             data-country="US"
+                                                             data-flags="true">
+                                                        </div>
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="payment-bank-name"
+                                                               class="form-label">
+                                                            Bank name
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="payment-bank-name">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="payment-bank-number"
+                                                               class="form-label">
+                                                            Bank number
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="payment-bank-number">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                        <div class="form-additional-info">
+                                                            (Routing Number / Sort Code / BSB)
+                                                        </div>
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="payment-account-number"
+                                                               class="form-label">
+                                                            Account number
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="payment-account-number">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                        <hr class="divide form-divide--small">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                        <label for="payment-paypal-email"
+                                                               class="form-label">
+                                                            Paypal email
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                        <input type="text"
+                                                               class="input-text"
+                                                               placeholder=""
+                                                               id="payment-paypal-email">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                        <hr class="divide form-divide--small">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                    </div>
+                                                </div> <!-- row -->
+
+                                                <div class="grid-sm__row">
+                                                    <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col t-right">
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn--alt
+                                                           btn--alt-primary">
+                                                            Save
+                                                        </a>
+                                                    </div>
+                                                </div> <!-- row -->
+                                            </div><!-- END grid right -->
+
+                                        </div> <!-- row -->
+                                    </div> <!-- grid -->
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane" id="myChannels-settings">
+                            <div id="userSettings" class="container  snap-item  snap-item  js-snap-item  js-snap-settings">
+
+                                <div class="row">
+                                    <div class="nav-header  hidden-xs  clearfix">
+                                        <div class="nav-header__title  l-left">
+                                            My Pulse &gt; <em class="nav-header__title-em">Settings</em>
+                                        </div>
+
+                                        <ul class="nav-header__list  l-right  option-set  clearfix">
+                                            <li class="nav-header__item js-side-nav-item" data-name="mypulsedashboard">
+                                                DASHBOARD
+                                            </li>
+                                            <li class="nav-header__item js-side-nav-item" data-name="myevents">
+                                                MY EVENTS
+                                            </li>
+                                            <li class="nav-header__item js-side-nav-item" data-name="myaffiliate">
+                                                MY AFFILIATES
+                                            </li>
+                                            <li class="nav-header__item js-side-nav-item" data-name="ticketing">
+                                                MY TICKETS
+                                            </li>
+                                        </ul>
+                                    </div> <!-- .nav-header -->
+
+                                    <div class="row">
+                                        <div class="col-xs-12">
+
+                                            <div class="settings  sec  sec__item">
+                                                <div class="sec-item__content  sec-item__content--full-border">
+                                                    <div class="wrap">
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                <div class="settings__item">
+                                                                    <div class="wrap">
+                                                                        Name, Phone, and Email
+                                                                        <div class="l-right settings__edit">
+                                                                            Edit <i class="settings__arrow icons icons-arrow-right o-30"></i>
+                                                                        </div>
+                                                                    </div><!-- .wrap -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <div class="settings__item">
+                                                                    <div class="wrap">
+                                                                        Password
+                                                                        <div class="l-right settings__edit">
+                                                                            Edit <i class="settings__arrow icons icons-arrow-right o-30"></i>
+                                                                        </div>
+                                                                    </div><!-- .wrap -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <br>
+
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                <div class="settings__item">
+                                                                    <div class="wrap">
+                                                                        Credit Card
+                                                                        <div class="l-right settings__edit">
+                                                                            Edit <i class="settings__arrow icons icons-arrow-right o-30"></i>
+                                                                        </div>
+                                                                    </div><!-- .wrap -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <div class="settings__item">
+                                                                    <div class="wrap">
+                                                                        Notifications
+                                                                        <div class="l-right settings__edit">
+                                                                            Edit <i class="settings__arrow icons icons-arrow-right o-30"></i>
+                                                                        </div>
+                                                                    </div><!-- .wrap -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <br>
+
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                <div class="settings__item">
+                                                                    <div class="wrap">
+                                                                        What are you into?
+                                                                        <div class="l-right settings__edit js-side-nav-item" data-name="mychannels">
+                                                                            Edit <i class="settings__arrow icons icons-arrow-right o-30"></i>
+                                                                        </div>
+                                                                    </div><!-- .wrap -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <div class="settings__item">
+                                                                    <div class="wrap">
+                                                                        Your Location
+                                                                        <div class="l-right settings__edit">
+                                                                            Edit <i class="settings__arrow icons icons-arrow-right o-30"></i>
+                                                                        </div>
+                                                                    </div><!-- .wrap -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <br>
+
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                <div class="settings__item  settings__item--dark">
+                                                                    <div class="wrap">
+                                                                        Add Tickets to Calendar
+                                                                        <div class="l-right settings__checkbox">
+                                                                            <input type="checkbox" class="js-checkbox-switch pull-right">
+                                                                        </div>
+                                                                    </div><!-- .wrap -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <div class="settings__item  settings__item--dark">
+                                                                    <div class="wrap">
+                                                                        Update on Facebook?
+                                                                        <div class="l-right settings__checkbox">
+                                                                            <input type="checkbox" class="js-checkbox-switch pull-right">
+                                                                        </div>
+                                                                    </div><!-- .wrap -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <br>
+
+                                                        <button type="button" class="btn btn-primary btn-lg btn-block">Logout</button>
+
+                                                    </div> <!-- .wrap -->
+                                                </div>
+                                            </div> <!-- .sec -->
+                                        </div>
+                                    </div>
+                                </div> <!-- .row -->
+
+                            </div>
+                        </div>
+
+                    </div> <!-- .tab-content -->
+                </div> <!-- .panel__main -->
+            </div> <!-- .tab -->
+        </div> <!-- .container -->
+    </div> <!-- .row -->
+</div>
+<!-- end mypulse dashboard -->

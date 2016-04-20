@@ -1,0 +1,104 @@
+<!-- start nav logged out -->
+
+<div class="nav-side" ng-hide="islogin"
+     id="widgetNav">
+
+    <div class="nav-side__item  nav-side__item--logo  nav-side__item--first  js-side-nav-item"
+         data-toggle="modal"
+         data-target="#pulseSignup"
+         >
+        <div class="nav-side__item-icon  icons icons-side-logo">
+        </div>
+        <span>
+            <a href="javascript:;"
+               id="closeAdmin"
+               style="display:none;">
+                close
+            </a>
+        </span>
+    </div>
+
+    <div class="nav-side__item  nav-side__item--affiliate"
+         ng-click="link('My myaffiliates and token para 123','/affiliates')"
+         data-toggle="tooltip"
+         title="Sell Tickets to Your Event">
+        <div class="nav-side__item-icon nav-side__item-icon--general nav-side__item-icon--affiliate icons icons-affiliate">
+        </div>
+    </div>
+
+
+    <div class="nav-side__item  nav-side__item--ticket"
+         ng-click="link('My myaffiliates and token para 123','/cart')"
+         data-toggle="tooltip"
+         title="Ticket Cart">
+        <div class="nav-side__item-icon  nav-side__item-icon--general nav-side__item-icon--ticket  icons  icons-ticket">
+        </div>
+    </div>
+
+    <div class="nav-side__item  nav-side__item--settings"
+         ng-click="link('My myaffiliates and token para 123','/uploadmusic')"
+         data-toggle="tooltip"
+         title="Upload Music">
+        <div class="nav-side__item-icon  nav-side__item-icon--general nav-side__item-icon--settings  icons  icons-settings">
+        </div>
+    </div>
+<!-- ng-click="openPlayer(1)"-->
+    <div class="nav-side__item  nav-side__item--play  nav-side__item--last  js-player-btn"
+         data-toggle="tooltip"
+         ng-click="$emit('openPlayer',1)"
+         title="My Player">
+        <img src="img/animation/play-1.gif" alt="">
+    </div>
+</div> <!-- .nav-side -->
+
+<!-- end nav logged out -->
+
+<!-- start nav logged in -->
+<div class="nav-side" ng-show="islogin">
+
+    <div class="nav-side__item nav-side__item--profile nav-side__item--first">
+
+        <div class="nav-side__item-icon nav-side__item-icon--profile">
+            <a href ng-click="popoverClick()" id="popoverLoggedIn"  data-contentwrapper=".userMenuSide" data-trigger="click" data-template="partial/navOnline.html" data-placement="right" data-animation="am-flip-x"  bs-popover>
+                <img class="nav-side__item-img"
+                     src="img/temp/profile.png"
+                     alt="">
+            </a>
+
+        </div>
+    </div>
+
+    <div class="nav-side__item  nav-side__item--affiliate"
+         ng-click="link('My myaffiliates and token para 123','/affiliates')"
+         data-toggle="tooltip"
+         title="Sell Tickets to Your Event">
+        <div class="nav-side__item-icon nav-side__item-icon--general nav-side__item-icon--affiliate icons icons-affiliate">
+        </div>
+    </div>
+
+    <div class="nav-side__item" 
+         ng-click="link('My cart and token para 123','/cart')"
+         data-toggle="tooltip" 
+         title="Ticket Cart">
+
+        <div class="nav-side__item-icon  nav-side__item-icon--general nav-side__item-icon--ticket  icons  icons-ticket">
+        </div>
+
+    </div>
+
+    <div class="nav-side__item  nav-side__item--settings"
+         ng-click="link('My cart and token para 123','/uploadmusic')"
+         data-toggle="tooltip"
+         title="Upload Music">
+        <div class="nav-side__item-icon  nav-side__item-icon--general nav-side__item-icon--settings  icons  icons-settings">
+        </div>
+    </div>
+
+    <div class="nav-side__item  nav-side__item--play  nav-side__item--last  js-player-btn"
+         ng-click="openPlayer('My cart and token para 123')"
+         data-toggle="tooltip"
+         title="My Player">
+        <img src="img/animation/play-1.gif" alt="">
+    </div>
+</div> <!-- .nav-side -->
+<!-- end nav logged in -->

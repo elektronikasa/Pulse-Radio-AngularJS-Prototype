@@ -1,0 +1,1770 @@
+<!-- start my events page -->
+<div id="userMyEvents"
+     class="container snap-item js-snap-item js-snap-myevents">
+
+    <div class="row">
+        <div class="nav-header  hidden-xs  clearfix">
+            <div class="nav-header__title  l-left">
+                My Pulse &gt; <em class="nav-header__title-em">My Events</em>
+            </div>
+
+
+            <ul class="nav-header__list  l-right  option-set  clearfix">
+
+                <li class="nav-header__item">
+                    <a class="nav-header__link  js-myTicketFilters"
+                       data-option-key="filter"
+                       data-filter="pastevents"
+                       href="#filter">
+                        Past Events
+                    </a>
+                </li>
+
+                <li class="nav-header__item">
+                    <a class="nav-header__link  js-myTicketFilters"
+                       data-option-key="filter"
+                       data-filter="upcomingevents"
+                       href="#filter">
+                        Upcoming Events
+                    </a>
+                </li>
+
+                <li class="nav-header__item js-side-nav-item" data-name="mypulsedashboard">
+                    DASHBOARD
+                </li>
+
+            </ul>
+        </div> <!-- .nav-header -->
+
+        <div class="panel clearfix">
+            <div class="panel__side  col-md-3">
+                <div class="wrap--large">
+                    <div class="nav-content-side">
+
+                        <div class="nav-content-side__title">
+                            <img src="images/desktop/temp/mychannels/icon.jpg" width="140" height="140" /> </div>
+
+                        <div class="nav-content-side__title first">
+                            My Events
+                        </div>
+
+                        <ul class="nav-content-side__list myevents"
+                            id="navlist">
+                            <li class="nav-content-side__item active">
+                                <a href="#myEvents-overview"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Overview
+                                </a>
+                            </li>
+
+                            <li class="nav-content-side__item">
+                                <a href="#myEvents-accounts"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Accounts
+                                </a>
+                            </li>
+
+                            <li class="nav-content-side__item">
+                                <a href="#myEvents-create-event"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Create an Event
+                                </a>
+                            </li>
+                        </ul> <!-- .nav-content-side -->
+                    </div> <!-- .nav-content-side -->
+
+                    <div class="nav-content-side">
+                        <div class="nav-content-side__title">
+                            Statistics
+                        </div>
+                        <ul class="nav-content-side__list statistics">
+                            <!--<li class="nav-content-side__item">
+                                <a href="#myEvents-statistics-visitors"
+                                 class="nav-content-side__link"
+                                 data-toggle="tab">
+                                    Visitors
+                                </a>
+                            </li>-->
+                            <li class="nav-content-side__item">
+                                <a href="#myEvents-statistics-fans"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Top fans
+                                </a>
+                            </li>
+                        </ul> <!-- .nav-content-side__list -->
+                    </div> <!-- .nav-content-side -->
+
+                    <div class="nav-content-side">
+                        <div class="nav-content-side__title">
+                            Source performance
+                        </div>
+                        <ul class="nav-content-side__list demographics">
+                            <li class="nav-content-side__item">
+                                <a href="#myEvents-performance-demographics"
+                                   class="nav-content-side__link"
+                                   data-toggle="tab">
+                                    Demographics
+                                </a>
+                            </li>
+                        </ul> <!-- .nav-content-side__list -->
+                    </div> <!-- .nav-content-side -->
+                </div>
+            </div> <!-- .panel__side -->
+
+            <div class="panel__main  col-md-9  myEvents-container-rhs test">
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+
+                    <!-- start My Events Overview Tab -->
+                    <div class="tab-pane active"
+                         id="myEvents-overview">
+
+                        <!-- skipped this section entirely. It's an afternoon -->
+                        <div class="panel__title">
+                            Filter event by organisation
+
+                            <div class="l-right panel__title-controls">
+                                <div class="form-select-lg valign-middle">
+                                    <select class="js-select">
+                                        <option data-filter="*">Show All</option>
+                                        <option data-filter=".FinelyTuned">Finely Tuned</option>
+                                        <option data-filter=".WeAreTheNoise">We are the noise</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div> <!-- end header -->
+
+                        <!-- start content filterable block -->
+                        <div id="myEventsOverviewFilter">
+
+                            <div class="wrap--large">
+                                <div class="events-overview__item FinelyTuned">
+                                    <div class="row">
+                                        <div class="events-overview__tab-left col-sm-4">
+                                            <a href="#">
+                                                <img src="images/desktop/temp/myevents/event1.jpg" class="events-overview__img">
+                                            </a>
+                                        </div>
+
+                                        <div class="col-sm-8">
+                                            <div class="events-overview__tab-right">
+                                                <h2 class="events-overview__tab-headline">
+                                                    The terminal project afterparty / The revenge &amp; Hinqo
+                                                </h2>
+
+                                                <ul class="listing">
+                                                    <li class="item">
+                                                        <div class="icon-container nudge-right-small">
+                                                            <i class="icons icons-calender-light"></i>
+                                                        </div>
+                                                        <em class="t-bold t-uppercase">Date:</em> 06 December 2013 21:00 PM
+                                                    </li>
+                                                    <div class="icon-container nudge-right-small">
+                                                        <i class="icons icons-clock-light"></i>
+                                                    </div>
+                                                    <em class="t-bold t-uppercase">Status:</em> Published
+                                                    <li class="item">
+
+                                                    </li>
+                                                    <div class="icon-container nudge-right-small">
+                                                        <i class="icons icons-price-tag-light"></i>
+                                                    </div>
+                                                    <em class="t-bold t-uppercase">tickets sold:</em> 232
+                                                    <li class="item">
+
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn-group
+                                                     nudge-top">
+
+                                                    <a href="/eventmanager"
+                                                       class="btn
+                                                       btn-default
+                                                       icons-child-hover"
+                                                       >
+
+                                                        <i class="icons
+                                                           icons-cog-dark
+                                                           nudge-right-small">
+                                                        </i>
+
+                                                        <i class="icons
+                                                           icons-cog-light
+                                                           icons--is-hover
+                                                           nudge-right-small">
+                                                        </i>
+                                                        Manage
+                                                    </a>
+
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn-default
+                                                       icons-child-hover">
+
+                                                        <i class="icons
+                                                           icons-eye-dark
+                                                           nudge-right-small">
+                                                        </i>
+
+                                                        <i class="icons
+                                                           icons-eye-light
+                                                           icons--is-hover
+                                                           nudge-right-small">
+                                                        </i>
+                                                        View
+                                                    </a>
+
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn-default
+                                                       icons-child-hover">
+
+                                                        <i class="icons
+                                                           icons-pen-dark
+                                                           nudge-right-small">
+                                                        </i>
+
+                                                        <i class="icons
+                                                           icons-pen-light
+                                                           icons--is-hover
+                                                           nudge-right-small">
+                                                        </i>
+                                                        Edit
+                                                    </a>
+
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn-default
+                                                       icons-child-hover">
+
+                                                        <i class="icons
+                                                           icons-bin-dark
+                                                           nudge-right-small">
+                                                        </i>
+
+                                                        <i class="icons
+                                                           icons-bin-light
+                                                           icons--is-hover
+                                                           nudge-right-small">
+                                                        </i>
+                                                        Delete
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- .row -->
+                                </div> <!-- .events-overview__item -->
+                                <!-- start item -->
+                                <div class="events-overview__item WeAreTheNoise">
+                                    <div class="row">
+                                        <div class="events-overview__tab-left col-sm-4">
+                                            <a href="#">
+                                                <img src="images/desktop/temp/myevents/event3.jpg" class="events-overview__img">
+                                            </a>
+                                        </div>
+
+                                        <div class="col-sm-8">
+                                            <div class="events-overview__tab-right">
+                                                <h2 class="events-overview__tab-headline">
+                                                    The terminal project afterparty / The revenge &amp; Hinqo
+                                                </h2>
+
+                                                <ul class="listing">
+                                                    <li class="item">
+                                                        <div class="icon-container nudge-right-small">
+                                                            <i class="icons icons-calender-light"></i>
+                                                        </div>
+                                                        <em class="t-bold t-uppercase">Date:</em> 06 December 2013 21:00 PM
+                                                    </li>
+                                                    <div class="icon-container nudge-right-small">
+                                                        <i class="icons icons-clock-light"></i>
+                                                    </div>
+                                                    <em class="t-bold t-uppercase">Status:</em> Published
+                                                    <li class="item">
+
+                                                    </li>
+                                                    <div class="icon-container nudge-right-small">
+                                                        <i class="icons icons-price-tag-light"></i>
+                                                    </div>
+                                                    <em class="t-bold t-uppercase">tickets sold:</em> 232
+                                                    <li class="item">
+
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn-group
+                                                     nudge-top">
+
+                                                    <a href="/eventmanager"
+                                                       class="btn
+                                                       btn-default
+                                                       icons-child-hover
+                                                       js-side-nav-item"
+                                                       data-name="manageEvent">
+
+                                                        <i class="icons
+                                                           icons-cog-dark
+                                                           nudge-right-small">
+                                                        </i>
+
+                                                        <i class="icons
+                                                           icons-cog-light
+                                                           icons--is-hover
+                                                           nudge-right-small">
+                                                        </i>
+                                                        Manage
+                                                    </a>
+
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn-default
+                                                       icons-child-hover">
+
+                                                        <i class="icons
+                                                           icons-eye-dark
+                                                           nudge-right-small">
+                                                        </i>
+
+                                                        <i class="icons
+                                                           icons-eye-light
+                                                           icons--is-hover
+                                                           nudge-right-small">
+                                                        </i>
+                                                        View
+                                                    </a>
+
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn-default
+                                                       icons-child-hover">
+
+                                                        <i class="icons
+                                                           icons-pen-dark
+                                                           nudge-right-small">
+                                                        </i>
+
+                                                        <i class="icons
+                                                           icons-pen-light
+                                                           icons--is-hover
+                                                           nudge-right-small">
+                                                        </i>
+                                                        Edit
+                                                    </a>
+
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn-default
+                                                       icons-child-hover">
+
+                                                        <i class="icons
+                                                           icons-bin-dark
+                                                           nudge-right-small">
+                                                        </i>
+
+                                                        <i class="icons
+                                                           icons-bin-light
+                                                           icons--is-hover
+                                                           nudge-right-small">
+                                                        </i>
+                                                        Delete
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- .row -->
+                                </div> <!-- .events-overview__item -->
+                                <div class="events-overview__item WeAreTheNoise">
+                                    <div class="row">
+                                        <div class="events-overview__tab-left col-sm-4">
+                                            <a href="#">
+                                                <img src="images/desktop/temp/myevents/event4.jpg" class="events-overview__img">
+                                            </a>
+                                        </div>
+
+                                        <div class="col-sm-8">
+                                            <div class="events-overview__tab-right">
+                                                <h2 class="events-overview__tab-headline">
+                                                    The terminal project afterparty / The revenge &amp; Hinqo
+                                                </h2>
+
+                                                <ul class="listing">
+                                                    <li class="item">
+                                                        <div class="icon-container nudge-right-small">
+                                                            <i class="icons icons-calender-light"></i>
+                                                        </div>
+                                                        <em class="t-bold t-uppercase">Date:</em> 06 December 2013 21:00 PM
+                                                    </li>
+                                                    <div class="icon-container nudge-right-small">
+                                                        <i class="icons icons-clock-light"></i>
+                                                    </div>
+                                                    <em class="t-bold t-uppercase">Status:</em> Published
+                                                    <li class="item">
+
+                                                    </li>
+                                                    <div class="icon-container nudge-right-small">
+                                                        <i class="icons icons-price-tag-light"></i>
+                                                    </div>
+                                                    <em class="t-bold t-uppercase">tickets sold:</em> 232
+                                                    <li class="item">
+
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn-group
+                                                     nudge-top">
+
+                                                    <a href="/eventmanager"
+                                                       class="btn
+                                                       btn-default
+                                                       icons-child-hover
+                                                       js-side-nav-item"
+                                                       data-name="manageEvent">
+
+                                                        <i class="icons
+                                                           icons-cog-dark
+                                                           nudge-right-small">
+                                                        </i>
+
+                                                        <i class="icons
+                                                           icons-cog-light
+                                                           icons--is-hover
+                                                           nudge-right-small">
+                                                        </i>
+                                                        Manage
+                                                    </a>
+
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn-default
+                                                       icons-child-hover">
+
+                                                        <i class="icons
+                                                           icons-eye-dark
+                                                           nudge-right-small">
+                                                        </i>
+
+                                                        <i class="icons
+                                                           icons-eye-light
+                                                           icons--is-hover
+                                                           nudge-right-small">
+                                                        </i>
+                                                        View
+                                                    </a>
+
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn-default
+                                                       icons-child-hover">
+
+                                                        <i class="icons
+                                                           icons-pen-dark
+                                                           nudge-right-small">
+                                                        </i>
+
+                                                        <i class="icons
+                                                           icons-pen-light
+                                                           icons--is-hover
+                                                           nudge-right-small">
+                                                        </i>
+                                                        Edit
+                                                    </a>
+
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn-default
+                                                       icons-child-hover">
+
+                                                        <i class="icons
+                                                           icons-bin-dark
+                                                           nudge-right-small">
+                                                        </i>
+
+                                                        <i class="icons
+                                                           icons-bin-light
+                                                           icons--is-hover
+                                                           nudge-right-small">
+                                                        </i>
+                                                        Delete
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- .row -->
+                                </div> <!-- .events-overview__item -->
+                            </div>
+
+                        </div> <!-- #myEventsOverviewFilter -->
+
+                    </div> <!-- .tab-pane -->
+
+                    <!-- start my events accounts tab -->
+                    <div class="tab-pane"
+                         id="myEvents-accounts">
+
+                        <div class="panel__title">
+
+                            Organisation
+
+                            <div class="panel__title-controls nudge-left">
+                                <div class="form-select-md
+                                     form-select-inline">
+                                    <select name="venu" class="js-select">
+                                        <option data-filter="*">Show All</option>
+                                        <option data-filter=".FinelyTuned">Finely Tuned</option>
+                                        <option data-filter=".WeAreTheNoise">We are the noise</option>
+                                    </select>
+                                </div>
+                            </div> <!-- .panel__title-controls -->
+
+                            <div class="l-right">
+                                <div class="panel__title-controls t-right">
+                                    <a href="#"
+                                       class="btn
+                                       btn--alt
+                                       btn--alt-primary
+                                       for-mobile-styling">
+
+                                        <i class="icons
+                                           icons-add-small-light
+                                           for-mobile">
+                                        </i>
+                                        <span class="for-tablet">Add</span>
+                                    </a>
+                                    <a href="#"
+                                       class="btn
+                                       btn--alt
+                                       btn--alt-secondary
+                                       for-mobile-styling">
+
+                                        <i class="icons
+                                           icons-pen-light
+                                           for-mobile">
+                                        </i>
+                                        <span class="for-tablet">Edit</span>
+                                    </a>
+                                </div> <!-- .panel__title-controls -->
+                            </div> <!-- l-right -->
+
+                        </div> <!-- .pane__title -->
+
+                        <form action="post">
+
+                            <div class="wrap--large">
+
+                                <div class="grid-sm grid-sm--20col">
+
+                                    <div class="grid-sm__row">
+
+                                        <!-- grid left -->
+                                        <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--10col">
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                    <h2 class="accountFormHeader">
+                                                        Contact Information
+                                                    </h2>
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-first-name"
+                                                           class="form-label">
+                                                        First name
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="contact-first-name">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-last-name"
+                                                           class="form-label">
+                                                        Last name
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="contact-last-name">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-email"
+                                                           class="form-label">
+                                                        Email
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="contact-email">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-telephone"
+                                                           class="form-label">
+                                                        Telephone
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="contact-telephone">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-company-name"
+                                                           class="form-label">
+                                                        Company name
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="contact-company-name">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-business-tax-no"
+                                                           class="form-label">
+                                                        Business tax no.
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="contact-business-tax-no">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-address"
+                                                           class="form-label">
+                                                        Address
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="contact-address">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-address-2"
+                                                           class="form-label">
+                                                        Address 2
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="contact-address-2">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-city"
+                                                           class="form-label">
+                                                        City
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="contact-city">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-state-county"
+                                                           class="form-label">
+                                                        State / County
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <div class="bfh-selectbox bfh-states"
+                                                         data-country="countries_states2">
+                                                    </div>
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-state-county"
+                                                           class="form-label">
+                                                        State / County
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <div class="bfh-selectbox bfh-states"
+                                                         data-country="countries_states2">
+                                                    </div>
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-state-county"
+                                                           class="form-label">
+                                                        State / County
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <div class="bfh-selectbox bfh-states"
+                                                         data-country="countries_states2">
+                                                    </div>
+                                                </div>
+                                            </div> <!-- row -->
+                                        </div><!-- END grid left -->
+
+                                        <!-- grid right -->
+                                        <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--10col">
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                    <h2 class="accountFormHeader">
+                                                        Payment information
+                                                    </h2>
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-zip-postcode"
+                                                           class="form-label">
+                                                        Zip / Postcode
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="contact-zip-postcode">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="contact-country"
+                                                           class="form-label">
+                                                        Country
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <div id="payment-country"
+                                                         class="bfh-selectbox bfh-countries"
+                                                         data-country="US"
+                                                         data-flags="true">
+                                                    </div>
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="payment-bank-name"
+                                                           class="form-label">
+                                                        Bank name
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="payment-bank-name">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="payment-bank-number"
+                                                           class="form-label">
+                                                        Bank number
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="payment-bank-number">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                    <div class="form-additional-info">
+                                                        (Routing Number / Sort Code / BSB)
+                                                    </div>
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="payment-account-number"
+                                                           class="form-label">
+                                                        Account number
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="payment-account-number">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                    <hr class="divide form-divide--small">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--8col">
+                                                    <label for="payment-paypal-email"
+                                                           class="form-label">
+                                                        Paypal email
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--12col">
+                                                    <input type="text"
+                                                           class="input-text"
+                                                           placeholder=""
+                                                           id="payment-paypal-email">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                    <hr class="divide form-divide--small">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col">
+                                                </div>
+                                            </div> <!-- row -->
+
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--alt grid-sm__cell--20col t-right">
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn--alt
+                                                       btn--alt-primary">
+                                                        Save
+                                                    </a>
+                                                </div>
+                                            </div> <!-- row -->
+                                        </div><!-- END grid right -->
+
+                                    </div> <!-- row -->
+                                </div> <!-- grid -->
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <!-- start create event tab -->
+                    <div class="tab-pane"
+                         id="myEvents-create-event">
+
+                        <div class="wrap--large">
+                            <form action=""
+                                  class="create-event">
+
+                                <!-- step 1 -->
+                                <div class="create-event-step clearfix">
+                                    <div class="inner-header clearfix">
+                                        <div class="inner-header__number">
+                                            01
+                                        </div>
+                                        <div class="inner-header__copy">
+                                            Event details <span class="field-required">*</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-4">
+                                            <label for="event-name"
+                                                   class="form-label form-label--large">
+                                                Your event name <span class="field-required">*</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="col-sm-8">
+                                            <input type="text"
+                                                   class="input-text"
+                                                   placeholder="E.g Holloween Rave"
+                                                   id="event-name">
+                                        </div>
+                                    </div> <!-- .row -->
+
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-4">
+                                            <label for="event-organisation"
+                                                   class="form-label form-label--large">
+                                                Organisation <span class="field-required">*</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <select class="js-select" id="event-organisation">
+                                                <option value="" selected="selected">Select organisation</option>
+                                                <option value="2">Option 1</option>
+                                                <option value="2">Option 1</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <a href="#"
+                                               class="btn
+                                               btn--alt
+                                               btn--alt-primary">
+                                                Add
+                                            </a>
+                                            <a href="#"
+                                               class="btn
+                                               btn--alt
+                                               btn--alt-secondary">
+                                                Edit
+                                            </a>
+                                        </div>
+                                    </div> <!-- .row -->
+
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-4">
+                                            <label for="event-venue"
+                                                   class="form-label form-label--large">
+                                                Venue <span class="field-required">*</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <input type="text"
+                                                   class="input-text"
+                                                   id="event-venue">
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <a href="#"
+                                               class="form-help">
+                                                Use a Previous Address
+                                            </a>
+                                        </div>
+
+                                    </div> <!-- .row -->
+
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-4">
+                                            <label for="event-address"
+                                                   class="form-label form-label--large">
+                                                Street address <span class="field-required">*</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <input type="text"
+                                                   class="input-text"
+                                                   id="event-address">
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <a href="#"
+                                               class="form-help">
+                                                Enter the address manually
+                                            </a>
+                                        </div>
+                                    </div> <!-- .row -->
+
+
+
+                                    <!-- Date and time -->
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-3">
+                                            <label for="event-date-start"
+                                                   class="form-label form-label--large">
+                                                Date and time <span class="field-required">*</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="col-sm-1">
+                                            <div class="form-additional-info">
+                                                Starts
+                                            </div>
+                                        </div>
+
+                                        <div class="events-overview__tab-left col-sm-8">
+
+                                            <div class="bfh-datepicker form-select-inline">
+                                            </div><!--
+    
+                                            --><div class="select-seperator select-seperator--small nudge-left nudge-right">
+                                                At
+                                            </div><!--
+                        
+                                            --><div class="bfh-timepicker form-select-inline">
+                                            </div>
+
+                                        </div>
+                                    </div> <!-- .row -->
+
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-3">
+                                        </div>
+
+                                        <div class="col-sm-1">
+                                            <div class="form-additional-info">
+                                                Ends
+                                            </div>
+                                        </div>
+
+                                        <div class="events-overview__tab-left col-sm-8">
+
+                                            <div class="bfh-datepicker form-select-inline">
+                                            </div><!--
+    
+                                            --><div class="select-seperator select-seperator--small nudge-left nudge-right">
+                                                At
+                                            </div><!--
+                        
+                                            --><div class="bfh-timepicker form-select-inline">
+                                            </div>
+
+                                        </div>
+                                    </div> <!-- .row -->
+
+                                    <!-- textarea 1 -->
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-4">
+                                            <label for="event-lineup"
+                                                   class="form-label form-label--large">
+                                                Lineup <span class="field-required">*</span>
+                                            </label>
+
+                                            <br>
+
+                                            <div class="form-additional-info form-additional-info--small">
+                                                Use commas to seperate artists
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-8">
+                                            <textarea name="textarea"
+                                                      class="input-text"
+                                                      rows="5"
+                                                      id="event-lineup">E.g Some random name</textarea>
+                                        </div>
+                                    </div> <!-- .row -->
+
+                                    <hr class="divide">
+
+                                    <!-- textarea 2 -->
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-4">
+                                            <label for="event-about"
+                                                   class="form-label form-label--large">
+                                                About <span class="field-required">*</span>
+                                            </label>
+
+                                            <br>
+
+                                            <div class="form-additional-info form-additional-info--small">
+                                                About event
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-8">
+                                            <textarea name="textarea"
+                                                      class="input-text"
+                                                      rows="5"
+                                                      id="event-about">E.g Some random text</textarea>
+                                        </div>
+                                    </div> <!-- .row -->
+
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-4">
+                                            <label for="event-ages"
+                                                   class="form-label form-label--large">
+                                                Ages allowed
+                                            </label>
+                                        </div>
+
+                                        <div class="col-sm-2">
+                                            <select class="js-select" id="event-ages">
+                                                <option value="" selected="selected">All</option>
+                                                <option value="2">Option 1</option>
+                                                <option value="2">Option 1</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-sm-2 t-center">
+                                            <div class="select-seperator">
+                                                Event type
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <select class="js-select">
+                                                <option value="" selected="selected">Select Event Type</option>
+                                                <option value="2">Option 1</option>
+                                                <option value="2">Option 1</option>
+                                            </select>
+                                        </div>
+                                    </div> <!-- .row -->
+
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-4">
+                                            <label for="event-genres"
+                                                   class="form-label form-label--large">
+                                                Genres
+                                            </label>
+                                        </div>
+
+                                        <div class="col-sm-8">
+                                            <div class="form-select-third nudge-right-small">
+                                                <select class="js-select"
+                                                        id="event-genres">
+                                                    <option value="" selected="selected">Select Genre</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-select-third nudge-right-small">
+                                                <select class="js-select">
+                                                    <option value="" selected="selected">Select Genre</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-select-third">
+                                                <select class="js-select">
+                                                    <option value="" selected="selected">Select Genre</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div> <!-- .row -->
+
+                                    <hr class="divide">
+
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-4">
+                                            <label for="event-status"
+                                                   class="form-label form-label--large">
+                                                Status
+                                            </label>
+                                        </div>
+
+                                        <div class="col-sm-5">
+                                            <select class="js-select"
+                                                    id="event-status">
+                                                <option value="" selected="selected">Select Status</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-sm-3">
+                                        </div>
+                                    </div> <!-- .row -->
+
+                                    <hr class="divide">
+
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-4">
+                                            <label for="event-currency"
+                                                   class="form-label form-label--large">
+                                                Currency Code
+                                            </label>
+                                        </div>
+
+                                        <div class="col-sm-5">
+                                            <select class="js-select"
+                                                    id="event-currency">
+                                                <option value="" selected="selected">Select Currency</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="col-sm-3">
+                                        </div>
+                                    </div> <!-- .row -->
+                                </div> <!-- .create-event-step -->
+
+                                <!-- step 2 -->
+                                <div class="create-event-step clearfix">
+                                    <div class="inner-header clearfix">
+                                        <div class="inner-header__number">
+                                            02
+                                        </div>
+                                        <div class="inner-header__copy">
+                                            Create ticket <span class="field-required">*</span>
+                                        </div>
+                                    </div>
+
+                                    <label class="form-label form-label--large">
+                                        Create Tickets for each price, sales date, or other options. <span class="field-required">*</span>
+                                    </label>
+
+                                    <div class="grid-sm grid-sm--20col create-ticket grid-sm--margin-sm">
+
+                                        <div class="grid-sm__row">
+                                            <div class="grid-sm__cell grid-sm__cell--4col">
+                                                <label for="event-ticket-name"
+                                                       class="label-create-ticket">
+                                                    Ticket name
+                                                    <span class="field-required">*</span>
+                                                </label>
+                                            </div>
+                                            <div class="grid-sm__cell grid-sm__cell--3col">
+                                                <label for="event-ticket-quantity"
+                                                       class="label-create-ticket">
+                                                    Ticket qty
+                                                    <span class="field-required">*</span>
+                                                </label>
+                                            </div>
+                                            <div class="grid-sm__cell grid-sm__cell--3col">
+                                                <label for="event-ticket-price"
+                                                       class="label-create-ticket">
+                                                    Ticket price
+                                                    <span class="field-required">*</span>
+                                                </label>
+                                            </div>
+                                            <div class="grid-sm__cell grid-sm__cell--2col">
+                                                <label class="label-create-ticket">
+                                                    Fee
+                                                </label>
+                                            </div>
+                                            <div class="grid-sm__cell grid-sm__cell--2col">
+                                                <label class="label-create-ticket">
+                                                    Total
+                                                </label>
+                                            </div>
+                                            <div class="grid-sm__cell grid-sm__cell--3col">
+                                                <label class="label-create-ticket">
+                                                    Sale status
+                                                </label>
+                                            </div>
+                                            <div class="grid-sm__cell grid-sm__cell--3col">
+                                                <label class="label-create-ticket">
+                                                    Settings
+                                                </label>
+                                            </div>
+                                        </div> <!-- .grid-sm__row -->
+                                    </div>
+
+                                    <div class="ticket-options">
+                                        <div class="grid-sm grid-sm--20col grid-sm--margin-sm">
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--4col table-cell">
+
+                                                    <input type="text"
+                                                           class="input-text
+                                                           input-text-small"
+                                                           placeholder="General admission"
+                                                           id="event-ticket-name">
+
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--3col table-cell">
+                                                    <input type="text"
+                                                           class="input-text
+                                                           input-text-small
+                                                           percentage-58"
+                                                           placeholder="0"
+                                                           id="event-ticket-quantity">
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--3col table-cell">
+                                                    <span class="nudge-right">US$</span>
+                                                    <input type="text"
+                                                           class="input-text
+                                                           input-text-small
+                                                           percentage-58"
+                                                           placeholder="0.00"
+                                                           id="event-ticket-price">
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--2col table-cell">
+                                                    US$ 0.00
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--2col table-cell">
+                                                    US$ 0.00
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--6col table-cell">
+                                                    <span class="nudge-right">On Sale</span>
+
+                                                    <div class="l-right">
+                                                        <a href="#"
+                                                           class="btn
+                                                           btn--small
+                                                           btn--alt
+                                                           btn--alt-secondary">
+                                                            More
+                                                        </a>
+
+                                                        <div class="btn btn-typical nudge-left-small">
+                                                            <i class="icons icons-bin"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- .grid-sm__row -->
+                                        </div>
+                                    </div>
+
+                                    <div class="ticket-options">
+                                        <div class="grid-sm grid-sm--20col">
+                                            <div class="grid-sm__row">
+                                                <div class="grid-sm__cell grid-sm__cell--4col table-cell">
+                                                    <label for=""
+                                                           class="label-create-ticket">
+                                                        Total tickets
+                                                    </label>
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--3col table-cell">
+                                                    <input type="text"
+                                                           class="input-text
+                                                           input-text-small
+                                                           t-right"
+                                                           placeholder="0"
+                                                           id="event-name">
+                                                </div>
+                                                <div class="grid-sm__cell grid-sm__cell--13col table-cell t-right">
+                                                    <a href="#"
+                                                       class="btn
+                                                       btn--small
+                                                       btn--alt
+                                                       btn--alt-primary">
+                                                        add another ticket
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- .create-event-step -->
+
+                                <!-- step 3 -->
+                                <div class="create-event-step clearfix">
+                                    <div class="inner-header clearfix">
+                                        <div class="inner-header__number">
+                                            03
+                                        </div>
+                                        <div class="inner-header__copy">
+                                            Event artwork <span class="field-required">*</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row nudge-bottom-large">
+                                        <div class="col-sm-3">
+                                            <img src="img/temp/placeholder-portrait.jpg"
+                                                 class="create-event__artwork">
+                                        </div>
+
+                                        <div class="col-sm-3">
+                                            <label class="create-event__artwork-label">
+                                                Upload an Image for your event
+                                            </label>
+
+                                            <a href="#"
+                                               class="btn
+                                               btn-typical
+                                               nudge-top-large">
+                                                Choose file
+                                            </a>
+
+                                            <p class="create-event__artwork-status-text">
+                                                No file chosen
+                                            </p>
+
+                                            <p class="create-event__artwork-additional-text">
+                                                Must be JPG, GIF, or PNG smaller than 200Kb. Dimensions are limited to 250 x 500 px. Images larger than this will be resized.
+                                            </p>
+                                        </div>
+
+                                        <div class="col-sm-3">
+                                            <img src="img/temp/placeholder-landscape.jpg"
+                                                 class="create-event__artwork">
+                                        </div>
+
+                                        <div class="col-sm-3">
+                                            <label class="create-event__artwork-label">
+                                                Your thumbnail image
+                                            </label>
+
+                                            <a href="#"
+                                               class="btn
+                                               btn-typical
+                                               nudge-top-large">
+                                                Choose file
+                                            </a>
+
+                                            <p class="create-event__artwork-status-text">
+                                                No file chosen
+                                            </p>
+
+                                            <p class="create-event__artwork-additional-text">
+                                                Must be JPG, GIF, or PNG smaller than 200Kb. Dimensions are limited to 250 x 500 px. Images larger than this will be resized.
+                                            </p>
+                                        </div>
+                                    </div> <!-- .row -->
+
+                                    <hr class="divide">
+
+
+                                    <div class="grid-sm grid-sm--12col">
+
+                                        <div class="grid-sm__row">
+                                            <div class="col-sm-3">
+                                                <label for="event-captcha" class="label-create-ticket">
+                                                    human test (7+3) =
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <input type="text"
+                                                       class="input-text t-center"
+                                                       placeholder="10"
+                                                       id="event-captcha">
+                                            </div>
+                                            <div class="col-sm-7 t-right">
+                                                <a href="#"
+                                                   class="btn
+                                                   btn--alt
+                                                   btn--alt-secondary">
+                                                    Preview
+                                                </a>
+                                                <a href="#"
+                                                   class="btn
+                                                   btn--alt
+                                                   btn--alt-primary">
+                                                    Save
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- .create-event-step -->
+                            </form>
+                        </div>
+
+                    </div> <!-- end create event tab -->
+
+                    <div class="tab-pane"
+                         id="myEvents-statistics-visitors">
+
+                    </div>
+
+
+                    <div class="tab-pane"
+                         id="myEvents-statistics-fans">
+
+                        <div class="panel__title">
+                            <form class=""
+                                  role="form">
+
+                                <div class="l-left">
+                                    <label for="venu"
+                                           class="panelHeader__label">
+                                        Venue
+                                    </label>
+
+                                    <div class="valign-middle form-select-inline">
+                                        <select class="js-select">
+                                            <option data-filter="*">Show All</option>
+                                            <option data-filter=".FinelyTuned">Finely Tuned</option>
+                                            <option data-filter=".WeAreTheNoise">We are the noise</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <ul class="export-listing l-right">
+                                    <li class="export__item">
+                                        <a href="" class="export__link">
+                                            <i class="icons icons-xls-small nudge-right-small"></i>
+                                            Export as XLS
+                                        </a>
+                                    </li>
+                                    <li class="export__item">
+                                        <a href="" class="export__link">
+                                            <i class="icons icons-pdf-small nudge-right-small"></i>
+                                            Export as PDF
+                                        </a>
+                                    </li>
+                                    <li class="export__item">
+                                        <input type="checkbox"
+                                               class="panelHeader__checkbox"
+                                               id="exclude-resellers"
+                                               name="exlude-resellers"
+                                               value="exclude-resellers"><!--
+                              
+                                        --><label for="exclude-resellers"
+                                                  class="export__label">
+                                            Exclude resellers
+                                        </label>
+                                    </li>
+                                </ul> <!-- .export-listing -->
+                            </form>
+
+                        </div> <!-- end header -->
+                        <div class="container-alt">
+
+                            <ul class="grid-sm grid-sm--25col cell-listing">
+                                <li class="grid-sm__row cell-item">
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-title">
+                                            Rank
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--8col">
+                                        <div class="table-cell-title">
+                                            Name
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--2col t-center">
+                                        <div class="table-cell-title">
+                                            Fan
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-title">
+                                            Value
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--3col">
+                                        <div class="table-cell-title">
+                                            Attend
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--3col">
+                                        <div class="table-cell-title">
+                                            Spend.
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--3col">
+                                        <div class="table-cell-title">
+                                            Social
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-title">
+                                            Mark
+                                        </div>
+                                    </div>
+                                </li> <!-- .grid-sm__row -->
+
+                                <li class="grid-sm__row odd cell-item">
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-content table-cell-content--1">
+                                            1
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--8col">
+                                        <div class="table-cell-content table-cell-content--2">
+                                            <div class="fan-image">
+
+                                            </div>
+                                            <div class="fan-details">
+                                                <em class="fan-name">Michael Boudin</em>
+                                                <em class="fan-email">namesurname@gmail.com</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-content table-cell-content--3">
+                                            <i class="icons icons-fan-logo-active icons--fan-active"></i>
+                                            <i class="icons icons-fan-logo-inactive icons--fan-inactive"></i>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-content table-cell-content--4">
+                                            <em class="fan-value">$3,560</em>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--3col">
+                                        <div class="table-cell-content table-cell-content--5">
+                                            <div class="fan-bar">
+                                                <div class="fill fill--attend"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--3col">
+                                        <div class="table-cell-content table-cell-content--6">
+                                            <div class="fan-bar">
+                                                <div class="fill fill--spend"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--3col">
+                                        <div class="table-cell-content table-cell-content--7">
+                                            <div class="fan-bar">
+                                                <div class="fill fill--social"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-content table-cell-content--8">
+                                            <i class="icons icons-fan-mark-active icons--fan-mark-active"></i>
+                                            <i class="icons icons-fan-mark-inactive icons--fan-mark-inactive"></i>
+                                        </div>
+                                    </div>
+                                </li> <!-- .grid-sm__row -->
+
+                                <li class="grid-sm__row cell-item">
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-content table-cell-content--1">
+                                            2
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--8col">
+                                        <div class="table-cell-content table-cell-content--2">
+                                            <div class="fan-image">
+
+                                            </div>
+                                            <div class="fan-details">
+                                                <em class="fan-name">Michael Boudin</em>
+                                                <em class="fan-email">namesurname@gmail.com</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-content table-cell-content--3 is-active">
+                                            <i class="icons icons-fan-logo-active icons--fan-active"></i>
+                                            <i class="icons icons-fan-logo-inactive icons--fan-inactive"></i>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-content table-cell-content--4">
+                                            <em class="fan-value">$3,560</em>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--3col">
+                                        <div class="table-cell-content table-cell-content--5">
+                                            <div class="fan-bar">
+                                                <div class="fill fill--attend"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--3col">
+                                        <div class="table-cell-content table-cell-content--6">
+                                            <div class="fan-bar">
+                                                <div class="fill fill--spend"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--3col">
+                                        <div class="table-cell-content table-cell-content--7">
+                                            <div class="fan-bar">
+                                                <div class="fill fill--social"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-sm__cell grid-sm__cell--2col">
+                                        <div class="table-cell-content table-cell-content--8 is-active">
+                                            <i class="icons icons-fan-mark-active icons--fan-mark-active"></i>
+                                            <i class="icons icons-fan-mark-inactive icons--fan-mark-inactive"></i>
+                                        </div>
+                                    </div>
+                                </li> <!-- .grid-sm__row -->
+                            </ul>
+                        </div> <!-- .container-alt -->
+
+                    </div>
+
+
+
+                    <div class="tab-pane"
+                         id="myEvents-performance-demographics">
+
+                        <div class="panel__title">
+                            <form class=""
+                                  role="form">
+
+                                <div class="l-left panel__title-controls">
+                                    <label for="organisation"
+                                           class="panelHeader__label">
+                                        Organisation
+                                    </label>
+
+                                    <div class="valign-middle form-select-inline">
+                                        <select class="js-select"
+                                                id="organisation">
+                                            <option data-filter="*">Show All</option>
+                                            <option data-filter=".FinelyTuned">Finely Tuned</option>
+                                            <option data-filter=".WeAreTheNoise">We are the noise</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="l-right panel__title-controls">
+                                    <label for="organisation-gender"
+                                           class="panelHeader__label">
+                                        Type
+                                    </label>
+
+                                    <div class="valign-middle form-select-inline nudge-right">
+                                        <select class="js-select"
+                                                id="organisation-gender">
+                                            <option data-filter="*">Gender</option>
+                                            <option data-filter=".FinelyTuned">Finely Tuned</option>
+                                            <option data-filter=".WeAreTheNoise">We are the noise</option>
+                                        </select>
+                                    </div>
+
+                                    <a href="#"
+                                       class="btn
+                                       btn--alt
+                                       btn--alt-primary">
+                                        Update
+                                    </a>
+                                </div>
+                            </form>
+                        </div> <!-- .panel__title -->
+
+                        <div class="wrap">
+                            <div id="line-chart-alt"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- .row -->
+
+</div>
+<!-- end my events page -->

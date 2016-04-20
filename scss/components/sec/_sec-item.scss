@@ -1,0 +1,71 @@
+// ==========================================================================
+// Sec item
+// ==========================================================================
+
+$events: #ffbe40;
+$music: #3fb8af;
+$words: #e32143;
+
+
+.sec-item--img {
+    border: 1px solid #d6d6d6;
+}
+
+    .sec-item__head {
+        box-sizing: border-box;
+        height: 50px;
+        line-height: 30px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+    }
+
+    .sec-item__head--events {
+        background-color: $events;
+    }
+
+    .sec-item__head--music {
+        background-color: $music;
+    }
+
+    .sec-item__head--words {
+        background-color: $words;
+    }
+
+        .sec-item__close {
+            cursor: pointer;
+        }
+
+        .sec-item__head-title {
+            color: #141414;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+            .sec-item__head-title-em {
+                color: #fff;
+                text-shadow: 1px 1px 0 rgba(0,0,0,0.35);
+            }
+
+    .sec-item__title {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .sec-item__share-item {
+        display: inline-block;
+    }
+
+
+    .sec-item__content {
+        background-color: #fff;
+        border-left: 1px solid #d6d6d6;
+        border-right: 1px solid #d6d6d6;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    .sec-item__content--full-border {
+        border-top: 1px solid #d6d6d6;
+    }
+
+@import "sec-item-slider";

@@ -1,0 +1,601 @@
+// ==========================================================================
+// Sign up
+// ==========================================================================
+
+// hiding sections
+.signup-container--stepTwo,
+.signup-container--stepThree,
+.signup-container--stepFour,
+.signup-container--stepFive {
+    display: none;
+}
+
+// step 1
+.signup-container--stepOne-Lhs {
+    width: 350px;
+}
+
+    .signup-step-one__headline {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 57px;
+        line-height: 40px;
+        color: #ccc;
+        border-bottom: 1px solid #dadada;
+        margin: 45px 0 15px;
+        padding: 0 0 30px;
+
+        .em {
+            color: #777;
+            font-style: normal;
+        }
+    }
+
+    .signup-step-one__listing {
+        list-style-type: none;
+    }
+
+        .signup-step-one__item {
+            border-bottom: 1px solid #dadada;
+            position: relative;
+
+            &:hover {
+                border-bottom: 1px solid red;
+            }
+        }
+
+            .signup-step-one__link {
+                display: block;
+                font: 700 20px/1 'Karla', sans-serif;
+                text-transform: uppercase;
+                color: #777;
+                padding: 15px 0;
+                width: 115%;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                .em {
+                    color: #222;
+                    font-style: normal;
+                }
+
+            }
+
+                .icons--step-1 {
+                    position: absolute;
+                    left: -40px;
+                }
+
+
+    // social
+
+    .signup-container--stepOne-Rhs {
+        width: 450px;
+        padding: 45px 60px;
+        position: relative;
+        @include box-shadow (3px 3px 0 #dfdfdf);
+
+        & > a + a {
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        & > a + a + a {
+            float: right
+        }
+    }
+
+        .signup__social__headline {
+            font-family: 'Karla', sans-serif;
+            font-weight: 700;
+            font-size: 57px;
+            line-height: 40px;
+            color: #222;
+            @include inline-block;
+            vertical-align: middle;
+            margin: 0;
+        }
+
+        .signup__social__copy {
+            text-align: center;
+            font-family: 'Karla', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            color: #999;
+            border-top: 3px solid #e32143;
+            margin: 25px 0 0;
+            padding: 20px 0 0;
+
+            .em {
+                color: #222;
+                font-style: normal;
+            }
+        }
+
+
+// step 2
+.signup-container--stepThree {
+
+}
+
+    .signup-step-two__headline {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 30px;
+        color: #222;
+        border-bottom: 1px solid #dadada;
+        margin: 45px 0 0;
+        padding: 0 0 40px;
+        @include inline-block;
+
+        .em {
+            color: #777;
+            font-style: normal;
+            line-height: 30px;
+        }
+
+        .em + .em {
+            color: #222;
+            border-bottom: 3px solid #e32143;
+            padding-bottom: 27px;
+        }
+    }
+
+    .signup-stepTwo__headline-sub {
+        font-family: "Karla", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 15px;
+        color: #777;
+        margin: 40px 0 30px;
+    }
+
+    // form
+    .user-personalise-form__label {
+        font-family: "Karla", sans-serif;
+        font-weight: 700;
+        color: #CCC;
+        font-size: 36px;
+        text-transform: uppercase;
+        margin: 0 30px 0 0;
+    }
+
+    .user-personalise-form__field {
+        font-family: "Karla", sans-serif;
+        font-weight: 700;
+        color: #222;
+        font-size: 36px;
+        text-transform: uppercase;
+        background: none;
+        border: none;
+
+        &::-webkit-input-placeholder {
+           color: #222;
+        }
+
+        &:-moz-placeholder {
+           color: #222;
+        }
+
+        &::-moz-placeholder {
+           color: #222;
+        }
+
+        &:-ms-input-placeholder {
+           color: #222;
+        }
+    }
+
+    .btn-signup {
+        font-family: "Karla", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #e32143;
+        @include inline-block;
+
+        &:hover {
+            text-decoration: none;
+            color: #fff
+        }
+
+        &.btn-signup--stepTwo {
+            font-size: 36px;
+            line-height: 65px;
+            margin-top: 25px;
+            padding: 0 20px;
+            height: 65px;
+        }
+
+        &.btn-signup--stepThree {
+            display: block;
+            height: 100%;
+            font: 29px/49px "Karla", sans-serif;
+            font-weight: 700;
+            line-height: 49px;
+            text-align: center;
+        }
+    }
+
+
+// generic headline class
+.signup__headline-container {
+    margin-bottom: 40px;
+}
+// step 3 - genres
+.signup__headline--stepThree {
+    @include inline-block;
+    margin: 0 0 0 5px;
+    font: 45px/30px "Karla", sans-serif;
+    font-weight: 700;
+    color: #222;
+
+    .em {
+        color: #777;
+        font-style: normal;
+        line-height: 30px;
+    }
+}
+
+.genres-listing {
+    margin: 0;
+    padding: 0;
+}
+
+    .genres-item {
+        border: 1px solid #D6D6D6;
+        background-color: #FFF;
+        cursor: pointer;
+        width: 207px;
+        height: 51px;
+        position: relative;
+        margin: 0 10px 10px 0;
+        @include inline-block;
+
+
+        &:hover {
+            background: #333;
+            border: 1px solid #333;;
+
+            .genres-item__image-container {
+                border: 0px;
+            }
+
+                .genres-item__image-triangle {
+                    display: block;
+                }
+
+                .genres-item__image-overlay {
+                    box-shadow: inset 0 0 0 4px #3BBCB3;
+                }
+
+            .genres-item__title {
+                color: #fff;
+            }
+        }
+
+        &.last-desktop {
+            margin-right: 0;
+        }
+
+        &.genres-item--next {
+            border: 1px solid #E32143;
+        }
+
+        &.is-selected {
+            background-color: #f6f6f6;
+
+            .genres-item__image {
+                display: none;
+            }
+
+            .genres-item__image-overlay {
+                display: none;
+            }
+
+            .genres-logo {
+                display: none;
+            }
+
+            .genres-logo--selected {
+                display: block;
+            }
+
+            .genres-tick {
+                display: block;
+            }
+
+            &:hover {
+                .genres-item__image-container {
+                    border-right: 1px solid #333;
+                }
+
+                .genres-item__image-triangle {
+                    display: none;
+                }
+
+                .genres-item__title {
+                    color: #BCBCBC;
+                }
+            }
+        }
+    }
+
+        .genres-item__image-container {
+            border-right: 1px solid #D6D6D6;
+            position: absolute;
+            top: 0px;
+            width: 51px;
+            height: 50px;
+            @include inline-block;
+        }
+
+            .genres-item__image {
+                position: absolute;
+                top: -1px;
+                left: -1px;
+            }
+
+            .genres-item__image-overlay {
+                background: url(image/bg/bg-overlay-dark40.png) repeat;
+                background: rgba(0, 0, 0, 0.4);
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                bottom: 0px;
+                right: 0;
+            }
+
+            .genres-item__image-triangle {
+                display: none;
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-width: 4.5px 0 4.5px 5px;
+                border-color: transparent transparent transparent #3bbcb3;
+                position: absolute;
+                left: 100%;
+                top: 50%;
+                margin-top: -5px;
+            }
+
+            .genres-logo {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -10px;
+                margin-left: -10px;
+
+                &.genres-logo--selected {
+                    margin-left: -15px;
+                    margin-top: -14px;
+                    display: none;
+                }
+            }
+
+        .genres-item__title {
+            margin-left: 51px;
+            padding-left: 15px;
+            font: 17px/49px "Karla", sans-serif;
+            font-weight: 400;
+            line-height: 49px;
+            color: #BCBCBC;
+            text-transform: uppercase;
+        }
+
+        .genres-tick {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            margin-top: -5px;
+            display: none;
+        }
+
+// step 4
+.signup__headline--stepFour {
+    @include inline-block;
+    margin: 0 0 0 5px;
+    font: 51px/35px "Karla", sans-serif;
+    font-weight: 700;
+    color: #222;
+
+    .em {
+        color: #777;
+        font-style: normal;
+        line-height: 30px;
+    }
+}
+
+    // dj lisging
+    .dj-listing {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+        .dj-item {
+            @include inline-block;
+            margin: 0 10px;
+            height: 273px;
+            width: 167px;
+            text-align: left;
+            border: 1px solid #d6d6d6;
+        }
+
+            .dj-slider__image {
+                margin-bottom: 20px;
+            }
+
+            .dj-slider__copy {
+                margin: 0 0 2px 20px;
+                font: 13px/1 "Karla", sans-serif;
+                text-transform: uppercase;
+                color: #222;
+            }
+
+            .dj-slider__copy--genre {
+                color: #999;
+            }
+
+            .btn--dj-slider {
+                display: block;
+                margin: 10px 20px 0 20px;
+                height: 27px;
+                background-color: #E32143;
+                font: 14px/13px "Karla", sans-serif;
+                color: #FFF;
+
+                &.is-active {
+                    background-color: #999;
+                }
+            }
+
+            .btn--music-slider {
+                display: block;
+                margin: 10px auto;
+                height: 27px;
+                background-color: #3FB8AF;
+                font: 14px/13px "Karla", sans-serif;
+                color: #FFF;
+
+                &.is-active {
+                    background-color: #999;
+                }
+            }
+
+            .btn--event-slider {
+                display: block;
+                margin: 10px auto;
+                height: 27px;
+                background-color: #FFBE40;
+                font: 14px/13px "Karla", sans-serif;
+                color: #FFF;
+
+                &.is-active {
+                    background-color: #999;
+                }
+            }
+
+            .btn--words-slider {
+                display: block;
+                margin: 10px auto;
+                height: 27px;
+                background-color: #E32143;
+                font: 14px/13px "Karla", sans-serif;
+                color: #FFF;
+
+                &.is-active {
+                    background-color: #999;
+                }
+            }
+
+            .plusslider-dj-slider {
+                .prev,
+                .next {
+                    @include inline-block;
+                    height: 44px;
+                    width: 27px;
+                    text-indent: -9999px;
+                    cursor: pointer;
+                }
+
+                // not sprited atm
+                .prev {
+                    background: url(../img/icons/dj-slider-previous.png) no-repeat;
+                }
+
+                .next {
+                    background: url(../img/icons/dj-slider-next.png) no-repeat;
+                }
+            }
+
+    .btn-signup--stepFour {
+        float: right;
+        width: 166px;
+        height: 56px;
+        font: 34px/40px "Karla", sans-serif;
+        font-weight: bold;
+        background-color: #3fb8af;
+        border-radius: 0px;
+    }
+
+// step 5
+.signup__headline--stepFive {
+    padding-bottom: 45px;
+    border-bottom: 1px solid #dadada;
+    font: 56px/35px "Karla", sans-serif;
+    font-weight: 700;
+    color: #222;
+
+    .em {
+        color: #777;
+        font-style: normal;
+        line-height: 30px;
+    }
+}
+
+.signup__complete-listing {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+    .signup__complete-item {
+        @include inline-block;
+        margin-bottom: 10px;
+        vertical-align: middle;
+        font: 32px/65px "Karla", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &.signup__complete-item--channel {
+            background-color: #e32143;
+
+            // rgba doesn't match
+            .signup__complete-link-image {
+                background-color: #c61534;
+            }
+        }
+
+        &.signup__complete-item--event {
+            background-color: #ffbe40;
+
+            .signup__complete-link-image {
+                background-color: #eba112;
+            }
+        }
+
+        &.signup__complete-item--music {
+            background-color: #3fb8af;
+
+            .signup__complete-link-image {
+                background-color: #239b92;
+            }
+        }
+    }
+
+        .signup__complete-link {
+            display: block;
+            padding: 0 25px 0 0;
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+            .signup__complete-link-image {
+                @include inline-block;
+                margin-right: 25px;
+                vertical-align: top;
+                width: 65px;
+                height: 65px;
+                line-height: 59px;
+            }

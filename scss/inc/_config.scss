@@ -1,0 +1,59 @@
+// ==========================================================================
+// Config File
+// The variable used throughout the site will be defined here
+// This .scss file must be imported before all other .scss files
+// ==========================================================================
+
+// Font styles
+// ==========================================================================
+$base-font-family: 'Open Sans', unquote("sans-serif");
+$base-font-size: 14px;
+$base-line-height: 1.4;
+$primary-color: #C61534;
+$font-color: #111;
+$dark-font-color: #cdcdcd;
+$dark-heading-color: #fff;
+
+// Background colours
+// ==========================================================================
+$dark-background-color: #333;
+
+// Links
+// ==========================================================================
+$link-color: $primary-color;
+$link-visited-color: $primary-color;
+$link-hover-color: $primary-color;
+
+// Breakpoints
+// ==========================================================================
+$bp-vsm: 320px;
+$bp-sm: 768px;
+$bp-md: 992px;
+$bp-lg: 1030px;
+
+
+// Grid
+// ==========================================================================
+
+// Horizontal Gutter
+$lg-h-gutter: 10px; // Grid padding or gutter
+$md-h-gutter: 10px; // Allows for thinner MD gutter
+$sm-h-gutter: 10px; // Allows for thinner SM gutter
+$xs-h-gutter: 10px; // Allows for thinner XS gutter
+
+// Vertical Gutter
+$lg-v-gutter: 10px; // Grid padding or gutter
+$md-v-gutter: 10px; // Allows for thinner MD gutter
+$sm-v-gutter: 10px; // Allows for thinner SM gutter
+$xs-v-gutter: 10px; // Allows for thinner XS gutter
+
+$gd-column-total: 16; // Total number columns available
+
+// Breakpoints
+// $bps is an object containing a breakpoint list:
+// <NAME> <WIDTH> <HORIZONTAL-GUTTER> <VERTICAL-GUTTER>
+// ==========================================================================
+$bps: 'xs' 0  $xs-h-gutter $xs-v-gutter,
+      'sm' 768px $sm-h-gutter $sm-v-gutter,
+      'md' 992px $md-h-gutter $md-v-gutter,
+      'lg' 1200px $lg-h-gutter $lg-v-gutter;

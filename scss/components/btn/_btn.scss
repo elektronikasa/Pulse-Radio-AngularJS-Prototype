@@ -1,0 +1,207 @@
+// ==========================================================================
+// button elements
+//
+// this extends bootstrap
+// ==========================================================================
+
+.btn {
+    @include box-sizing (border-box);
+    font: 700 12px 'karla', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-default {
+	@include background (linear-gradient(#fff, #f7f7f7));
+    @include box-shadow (1px 1px 1px rgba(0,0,0,0.1));
+	@include border-radius (2px);
+	padding: 0 11px;
+	height: 34px;
+	line-height: 32px;
+	font-size: 13px;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8;
+
+    &:hover {
+        background: #222;
+        border: 1px solid #222;
+        color: #fff;
+    }
+}
+
+
+.btn-primary {
+    background-color: #e32143;
+    border-color: #e32143;
+
+    &:hover {
+        background-color: #222;
+        border-color: #222;
+        color: #fff;
+    }
+}
+
+.btn-tertiary {
+    background-color: #319e96;
+    border-color: #319e96;
+    color: #fff;
+
+    &:hover {
+        background-color: #222;
+        border-color: #222;
+        color: #fff;
+    }
+}
+
+.btn-secondary {
+    background-color: #444444;
+    border-color: #444444;
+    color: #fff;
+
+    &:hover {
+        background-color: #222;
+        border-color: #222;
+        color: #fff;
+    }
+}
+
+.btn-third {
+    background-color: #FFBE40;
+    border-color: #FFBE40;
+    color: #fff;
+
+    &:hover {
+        background-color: #222;
+        border-color: #222;
+        color: #fff;
+    }
+}
+
+
+.btn--alt {
+    padding: 0 20px;
+    height: 34px;
+    background-color: #f00;
+    border-color: #f00;
+    @include border-radius(2px);
+    font: 700 16px/34px 'karla', sans-serif;
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+    }
+
+    &.for-mobile-styling {
+    	@media only screen and (max-width: $bp-sm) {
+    		padding: 0;
+	    	height: 28px;
+	    	width: 28px;
+	    	line-height: 24px;
+	    }
+    }
+}
+
+.btn--alt-primary {
+    background-color: #e32143;
+
+    &:hover {
+        background-color: #d01939;
+    }
+}
+
+.btn--alt-secondary {
+    background-color: #222;
+    border-color: #222;
+
+    &:hover {
+        background-color: #000;
+        border-color: #000;
+    }
+}
+
+
+.btn-lg {
+    font-size: 20px;
+    height: 60px;
+    line-height: 40px;
+}
+
+.btn-typical {
+    @include background(linear-gradient(#fff, #f7f7f7));
+    @include box-shadow(1px 1px 1px rgba(0,0,0,0.1));
+    @include border-radius(1px);
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8;
+    color: #3d3d3d;
+    font-family: sans-serif;
+    font-weight: 700;
+    height: 30px;
+    line-height: 28px;
+    padding: 0 17px;
+    text-transform: none;
+
+    &:hover {
+        @include background(linear-gradient(#f7f7f7, #ececec));
+    }
+}
+
+.btn-foot {
+    @include border-radius(1px);
+}
+
+.btn--pd-lg {
+	padding: 0 20px;
+}
+
+.btn--pd-sm {
+	padding: 0 10px;
+}
+
+// Badly named class
+.btn--small {
+    font-size: 14px;
+    font-weight: 400;
+    height: 27px;
+    line-height: 26px;
+    padding: 0 10px;
+    width: auto;
+
+    &.btn--small-alt {
+    	height: 36px;
+    	line-height: 36px;
+    }
+}
+
+.btn-sm {
+    font-size: 10px;
+    padding: 2px 6px;
+}
+// .btn-primary {
+
+//     &:hover {
+//         background-color: #141414;
+//         border: 1px solid #141414;
+//     }
+// }
+
+// cta placed here for now
+.cta-large {
+	@include border-radius (6px);
+	display: block;
+	width: 100%;
+	height: 55px;
+	text-align: center;
+    font: 700 17px/55px 'karla', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #e32143;
+
+	&:hover {
+		background-color: #c51d3b;
+		color: #fff;
+		text-decoration: none;
+	}
+}

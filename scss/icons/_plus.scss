@@ -1,0 +1,25 @@
+// ==========================================================================
+// Plus icon
+// ==========================================================================
+
+$width: 12px;
+$bgcolor: #a9a9a9;
+
+.icn-plus {
+    background-color: $bgcolor;
+    display: inline-block;
+    height: $width / 3;
+    width: $width;
+    clear: both;
+    margin: ($width / 3) 0;
+
+    &:before {
+        content: '';
+        background-color: $bgcolor;
+        display: block;
+        height: $width;
+        width: ($width / 3);
+        margin-top: -($width / 3);
+        margin-left: ($width / 3);
+    }
+}

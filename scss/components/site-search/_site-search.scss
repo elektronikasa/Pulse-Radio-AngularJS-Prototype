@@ -1,0 +1,186 @@
+// ==========================================================================
+// Desktop search overlay
+// ==========================================================================
+
+.site-search {
+    @include box-sizing(border-box);
+    display: none;
+    font-family: "Karla", sans-serif;
+    padding: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+    .site-search__bg {
+        background-color: rgba(17, 17, 17, 0.98);
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .site-search__container {
+        position: relative;
+        z-index: 1;
+    }
+
+        .site-search__close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .site-search__header {
+            border-bottom: 1px solid #313131;
+            text-transform: uppercase;
+            margin-bottom: 45px;
+        }
+
+            .site-search__title {
+                color: #6e6e6e;
+                color: rgba(255,255,255,0.2);
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+                .site-search__title-highlight-1 {
+                    color: #e32143;
+                }
+
+                .site-search__title-highlight-2 {
+                    color: #434343;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+
+            .site-search__input {
+                background: none;
+                border: 0;
+                color: #fff;
+                font-size: 100px;
+                font-weight: 700;
+                padding: 30px 0;
+                text-transform: uppercase;
+                width: 100%;
+
+                &:focus {
+                    outline: 0;
+                }
+
+                &::-webkit-input-placeholder {
+                   color: #222;
+                }
+
+                &:-moz-placeholder {
+                   color: #222;
+                }
+
+                &::-moz-placeholder {
+                   color: #222;
+                }
+
+                &:-ms-input-placeholder {
+                   color: #222;
+                }
+            }
+
+            .site-search__col {
+                position: relative;
+            }
+
+                .site-search__col-title {
+                    border-bottom: 1px solid #e32143;
+                    color: #4d4d4c;
+                    font-size: 22px;
+                    line-height: 22px;
+                    font-weight: 700;
+                    padding: 20px 0;
+                    text-transform: uppercase;
+                }
+
+                    .site-search__col-title-btn {
+                        color: #6e6e6e;
+                        color: rgba(255,255,255,0.2);
+                        cursor: pointer;
+                        font-size: 11px;
+                        float: right;
+                    }
+
+                        .site-search__col-title-arrow {
+                            color: #e32143;
+                            font-size: 9px;
+                        }
+
+                 .site-search__list {
+                    padding-top: 25px;
+                 }
+
+                    .site-search__list-item {
+                        box-sizing: border-box;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 14px;
+                        line-height: 40px;
+                        margin-top: 10px;
+                        min-height: 40px;
+                        padding-left: 60px;
+                        position: relative;
+
+                        &:hover {
+                            color: #e32143;
+                            background-color: #fff;
+                        }
+                    }
+
+                    .site-search__list-item--no-hover {
+                        &:hover {
+                            color: #fff;
+                            background-color: transparent;
+                        }
+                    }
+
+                        .site-search__list-item-icon {
+                            background-color: #333;
+                            text-align: center;
+                            padding-top: 6px;
+                            width: 40px;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            bottom: 0;
+
+                            .site-search__list-item:hover & {
+                                background-color: #e32143;
+                            }
+
+                            .site-search__list-item--no-hover:hover & {
+                                background-color: #333;
+                            }
+                        }
+
+                            .site-search__list-item-img {
+                                vertical-align: top;
+                            }
+
+                        .site-search__list-item-text {
+                            line-height: 17px;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+
+                            .site-search__list-btn {
+                                @include border-radius(0);
+                                background-color: #313130;
+                                color: #767676;
+
+                                .site-search__list-item:hover & {
+                                    background-color: #e32143;
+                                    color: #fff;
+                                }
+                            }

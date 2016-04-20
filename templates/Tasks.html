@@ -1,0 +1,43 @@
+
+<div style="padding-left:20px; padding-right:20px">
+    <div class="container">
+        <h1>Your Tasks</h1>
+        <div>
+            <div>Name: <h4>{{name}}</h4></div>
+            <div>Email: <h4>{{email}}</h4></div>
+        </div>
+        <hr/>
+        <ul class="thumbnails">
+            <li ng-repeat="task in tasks|orderBy:sortorder" class="span5">
+                <img src="../content/trash_(delete).gif" ng-click="deleteTask(task)"  alt="Delete task" class="btn-close"/>
+                <a href="#" ng-click="editTask(task)">
+                    <div class="well hoverwell">
+                        <div class="row"><h2 class="span6">{{task.task}}
+                            </h2></div>
+                        <div class="row"><span class="span1">Status:</span>
+                            <span>{{task.status}}</span>
+                        </div>
+                        <div class="row"><span class="span1">Created:</span>
+                            <span>{{task.createdAt}}</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <button type="submit" class="btn btn-primary" ng-click="newTask(task)">Create New</button>
+        <div ng-show="editingTask" class="ng-hide">
+            <hr/>
+            <form name="editTaskForm">
+                <fieldset>
+                    <label for="eventName">Task:</label>
+                    <input id="eventName" type="text" required placeholder="Name of your task..." ng-model="task.task" />
+                    <label for="eventLocation" ng-show="editingTaskType">Status</label>
+                    <input id="eventLocation" type="number" required placeholder="Status of task..." ng-model="task.status" ng-show="editingTaskType" />
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary" ng-click="saveTask(task, editTaskForm)">Save</button>
+                <button type="button" class="btn btn-default" ng-click="cancelTask()">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>

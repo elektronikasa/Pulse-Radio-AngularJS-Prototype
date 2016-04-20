@@ -1,0 +1,22 @@
+.icn-grip {
+    width: 15px;
+    height: 6px;
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        height: 2px;
+        @include box-shadow(1px 1px 1px rgba(0,0,0,0.7));
+        width: 100%;
+    }
+
+    &:before {
+        background-color: #656565;
+    }
+
+    &:after {
+        background-color: #656565;
+        margin-top: 2px;
+    }
+}

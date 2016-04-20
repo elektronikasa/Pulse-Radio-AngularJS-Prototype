@@ -1,0 +1,233 @@
+<div class="nav-bot  js-nav-bot">
+    <div class="tab-play  visible-xs  visible-sm  js-play-component">
+        <div class="nav-bot__list  clearfix">
+            <div class="nav-bot__item nav-bot__item--left js-nav-bot-left-item">
+                <div class="nav-bot__item-content js-mobi-nav-main-item" id="openLeftMypulse" data-name="my-pulse-menu">
+                    <i class="nav-bot__icon  icons  icons-heart"></i>
+                </div>
+            </div>
+            <div class="nav-bot__item nav-bot__item--left js-nav-bot-left-item" style="display: none">
+                <div class="nav-bot__item-content js-mobi-nav-main-item">
+                    <!-- replace icon -->
+                    <i class="nav-bot__icon"><img src="images/mobile/player/controls/prev.jpg"></i>
+                </div>
+            </div>
+            <div class="nav-bot__item  nav-bot__item--main  js-open-play">
+                <div class="nav-bot__item-content nav-bot__item-content--main">
+                    <div>
+                        <div class="nav-bot__grip  icn  icn-grip"></div>
+                    </div>
+                    <i id="mobile_play" class="nav-bot__icon  icons  icons-play"></i>
+                </div>
+            </div>
+            <div class="nav-bot__item  nav-toggle nav-bot__item--right js-side-nav-item js-nav-bot-right-item" data-name="ticketing">
+                <div class="nav-bot__item-content">
+                    <i class="nav-bot__icon icons icons-ticket-text"></i>
+                </div>
+            </div>
+            <div class="nav-bot__item  nav-bot__item--right js-nav-bot-right-item" style="display: none">
+                <div class="nav-bot__item-content">
+                    <!-- replace icon -->
+                    <i class="nav-bot__icon"><img src="images/mobile/player/controls/next.jpg"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="player" class="clearfix">
+            <div class="row">
+                <div class="col-xs-2  timer-elapsed">
+                    00:24:06
+                </div>
+                <div class="col-xs-8">
+                    <div class="player-alt-mobile">
+                        <input name="mobile_sliderControl" type="range" class="js-slider-range mobile-slider l-full">
+                    </div>
+                </div>
+                <div class="col-xs-2  timer-remain">
+                    02:05:23
+                </div>
+            </div>
+        </div>
+
+        <!-- start cover section -->
+        <div id="playerMixCover">
+            <div class="mix-cover  tab-play__cover  clearfix">
+                <div class="tab-play__cover-figure">
+                    <img src="images/mobile/player/mixes/1.jpg" class="tab-play__cover-img">
+                </div>
+
+                <div class="tab-play__cover-footer">
+                    <a href="#" class="tab-play__cover-footer-item  tab-play__cover-footer-item--left">
+                        Share
+                    </a>
+                    <div class="stats  tab-play__cover-footer-item  tab-play__cover-footer-item--right">
+                        <div class="likes">238</div>
+                        <div class="plays">105</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end cover section -->
+
+
+        <!-- start tabbed player control section -->
+        <div id="playerMixTabs" style="display:none;">
+            <!-- start mix menu -->
+            <div class="row">
+
+                <div class="col-xs-12">
+
+                    <div class="mix-menu">
+
+                        <ul class="mix-menu-nav">
+
+                            <li><a href="#playerCued" data-toggle="tab">cued mixes</a></li>
+
+                            <li><a href="#playerRel" data-toggle="tab">related</a></li>
+
+                            <li><a href="#playerMixes" data-toggle="tab">mixes</a></li>
+
+                            <li><a href="#playerEvents" data-toggle="tab">events</a></li>
+
+                            <li><a href="#playerWords" data-toggle="tab">words</a></li>
+
+                        </ul>
+
+                        <div class="tab-content">
+                            <!-- list template --> 
+                            <script id="mobi-playerlist-tmp" type="text/x-handlebars-template">
+                                <ul class="mobiplayer-list">
+                                {{#each this}}
+                                <li  data-track="{{track}}">
+                                <button class="mix-drag"><img src="images/mobile/player/list-menu/draggable.png" ></button>
+                                <img src="images/mobile/player/list-menu/cued/1.png" />
+                                <div class="mix-info">
+                                <h2>{{artist}}</h2>
+                                <h3>{{name}}&nbsp;<label id='length'></label></h3>
+                                </div>
+                                <button class="mix-close"><img src="{{image}}" ></button>
+                                </li>
+                                </div>
+                                {{/each}}
+                                </ul>
+                            </script>
+                            <!-- start cued tab -->
+                            <div  class="tab-pane active" id="playerCued">
+                            </div>
+                            <!-- end cued tab -->
+
+                            <!-- start rel tab -->
+                            <div class="tab-pane" id="playerRel"></div>
+                            <!-- end rel tab -->
+
+                            <!-- start mixes tab -->
+                            <div class="tab-pane" id="playerMixes"></div>
+                            <!-- end mixes tab -->
+
+                            <!-- start events tab -->
+                            <div class="tab-pane" id="playerEvents">
+
+                                <ul class="mix-menu-words">
+
+                                    <li>
+
+                                        <img src="images/mobile/player/list-menu/words/1.jpg" />
+
+                                        <h2>Desolat Now Joining Troxler,Maceo Plex And More At LWE Tobacco Dock NYD</h2>
+
+                                        <h3>Tags: DJ, Festivals, Clubbing, Party, Producer</h3>
+
+                                    </li>
+
+                                    <li>
+
+                                        <img src="images/mobile/player/list-menu/words/1.jpg" />
+
+                                        <h2>Desolat Now Joining Troxler,Maceo Plex And More At LWE Tobacco Dock NYD</h2>
+
+                                        <h3>Tags: DJ, Festivals, Clubbing, Party, Producer</h3>
+
+                                    </li>
+
+                                    <li>
+
+                                        <img src="images/mobile/player/list-menu/words/1.jpg" />
+
+                                        <h2>Desolat Now Joining Troxler,Maceo Plex And More At LWE Tobacco Dock NYD</h2>
+
+                                        <h3>Tags: DJ, Festivals, Clubbing, Party, Producer</h3>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                            <!-- end events tab -->
+
+                            <!-- start words tab -->
+                            <div class="tab-pane" id="playerWords">
+
+                                <ul class="mix-menu-words">
+
+                                    <li>
+
+                                        <img src="images/mobile/player/list-menu/words/1.jpg" />
+
+                                        <h2>Desolat Now Joining Troxler,Maceo Plex And More At LWE Tobacco Dock NYD</h2>
+
+                                        <h3>Tags: DJ, Festivals, Clubbing, Party, Producer</h3>
+
+                                    </li>
+
+                                    <li>
+
+                                        <img src="images/mobile/player/list-menu/words/1.jpg" />
+
+                                        <h2>Desolat Now Joining Troxler,Maceo Plex And More At LWE Tobacco Dock NYD</h2>
+
+                                        <h3>Tags: DJ, Festivals, Clubbing, Party, Producer</h3>
+
+                                    </li>
+
+                                    <li>
+
+                                        <img src="images/mobile/player/list-menu/words/1.jpg" />
+
+                                        <h2>Desolat Now Joining Troxler,Maceo Plex And More At LWE Tobacco Dock NYD</h2>
+
+                                        <h3>Tags: DJ, Festivals, Clubbing, Party, Producer</h3>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                            <!-- end words tab -->
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- end mix cover -->
+                </div>
+            </div>
+
+        </div>
+        <!-- end tabbled player controls section -->
+
+        <div class="mix-title">
+            <div class="title-text">
+                <h1>Audiofly</h1>
+                <h2>flying circus podcast 001: 07.02.11</h2>
+            </div>
+            <div class="title-buttons">
+                <button class="mix-menu-btn" id="showPlayerMenu"></button>
+                <button class="pulse-like-btn"></button>
+            </div>
+        </div>
+
+
+    </div> <!-- .tab-play -->
+</div> <!-- .nav-bot -->

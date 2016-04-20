@@ -1,0 +1,737 @@
+// overview
+.myEvents-container-rhs {
+	padding: 0px;
+	min-height: 600px;
+	background-color:#FFF;
+}
+
+#myEventsOverviewFilter .isotope-item {
+  z-index: 10000;
+  right: 0;
+}
+
+	.events-overview__item {
+		margin-top: 20px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+		.events-overview__img {
+			max-width: 100%;
+		}
+
+		.events-overview__tab-right {
+			padding-bottom: 20px;
+			font-size: 13px;
+			color: #828282;
+			border-bottom: 1px solid #CCC;
+
+			.events-overview__item:last-child & {
+				padding-bottom: 0;
+				border-bottom: 0;
+			}
+		}
+
+			.events-overview__tab-headline {
+				margin-bottom: 10px;
+				font-size: 14px;
+				color: #1f1f1f;
+				margin-top: 0px;
+				font-weight: bold;
+			}
+
+
+// create event
+.create-event-step {
+	margin-bottom: 20px;
+}
+
+	.inner-header {
+		margin-bottom: 20px;
+		height: 50px;
+		background-color: #f2f2f2;
+		border-bottom: 1px solid #dadada;
+	}
+
+		.inner-header__number {
+			float: left;
+			width: 50px;
+			text-align: center;
+			font: 24px/50px "Karla", sans-serif;
+			font-weight: 700;
+			color: #fff;
+			background-color: #e32143;
+		}
+
+		.inner-header__copy {
+			float: left;
+			margin-left: 20px;
+			font: 24px/50px "Karla", sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #424242;
+		}
+
+			.field-required {
+				color: #e32143;
+
+				.label-create-ticket & {
+					margin-left: -3px;
+				}
+			}
+
+			.label-create-ticket {
+				position: relative;
+				margin-bottom: 0;
+				font: 700 14px/34px "Karla", sans-serif;
+				text-transform: uppercase;
+			}
+
+		.create-event__artwork-label {
+			display: block;
+			vertical-align: top;
+			font: 700 15px/1 "Karla", sans-serif;
+			color: #282828;
+			text-transform: uppercase;
+		}
+
+		.create-event__artwork-status-text {
+			margin: 10px 0 20px 0;
+			font: bold 12px/1 sans-serif;
+			color: #888;
+		}
+
+		.create-event__artwork-additional-text {
+			margin: 0;
+			font: 400 14px/16px "Karla", sans-serif;
+			color: #888;
+		}
+
+		.form-help {
+			font: 12px/34px "Karla", sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #e32143;
+			text-decoration: underline
+		}
+
+		.form-additional-info {
+			font: 12px/34px "Karla", sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #666;
+		}
+
+		.form-additional-info--small {
+			line-height: 1;
+			text-transform: none;
+			color: #939393;
+		}
+
+		.divide {
+			margin: 30px 0;
+			width: 100%;
+			height: 1px;
+			background-color: #e6e6e6;
+			border: none;
+		}
+
+		.divide--large {
+			margin: 40px 0;
+		}
+
+		.divide--small {
+			@include inline-block;
+			margin: 15px 0;
+		}
+
+		.form-control--inline {
+			@include inline-block;
+			width: auto;
+		}
+
+		.form-control--third {
+			width: 32%;
+		}
+
+		.select-seperator {
+			@include inline-block;
+			vertical-align: top;
+			text-transform: uppercase;
+			font: 700 16px/34px "Karla", sans-serif;
+			color: #282828;
+		}
+
+		.select-seperator--small {
+			font: 700 12px/34px "Karla", sans-serif;
+			color: #666;
+		}
+
+		// ticket options
+
+		.create-ticket .grid-sm__cell {
+			margin-bottom: 0;
+		}
+
+			.ticket-options {
+				padding: 0 10px;
+				height: 50px;
+				font: 400 13px/50px "Karla", sans-serif;
+				background-color: #F2F2F2;
+				border: 1px solid #D6D6D6;
+				border-top: 3px solid #D6D6D6;
+
+				.table-cell {
+					margin: 0;
+					line-height: 43px;
+				}
+
+				& + .ticket-options {
+					padding: 0;
+					background: none;
+					border: none;
+				}
+			}
+
+
+// Top fans
+
+.cell-listing {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+	.cell-item {
+		margin: 0;
+		border: 1px solid #d6d6d6;
+		border-top: 0;
+
+		&:first-child {
+			border: 0;
+			border-bottom: 1px solid #d6d6d6;
+		}
+
+		&.odd {
+			background-color: #f6f6f6;
+		}
+	}
+
+		.table-cell-title {
+			font: 13px/1 "Karla", sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #3D3D3D;
+		}
+
+		.table-cell-content {
+			height: 50px;
+			line-height: 50px;
+		}
+
+
+
+		// rank
+		.table-cell-content--1 {
+			text-align: center;
+			font: 29px/50px "Karla", sans-serif;
+			font-weight: 700;
+			color: #999;
+		}
+
+		// name
+		.table-cell-content--2 {
+
+			.fan-details {
+				@include inline-block;
+				height: 30px;
+			}
+
+			.fan-name {
+				display: block;
+				vertical-align: middle;
+				font: 15px/1 "Karla", sans-serif;
+				font-weight: 700;
+				color: #e32143;
+				text-transform: uppercase;
+				font-style: normal;
+			}
+
+			.fan-email {
+				display: block;
+				vertical-align: middle;
+				font: 11px/1 "Karla", sans-serif;
+				font-weight: 400;
+				color: #636363;
+				font-style: normal;
+			}
+		}
+
+		// fan
+		.table-cell-content--3 {
+			text-align: center;
+
+			.icons--fan-active {
+				display: none;
+			}
+
+			&.is-active {
+				.icons--fan-active {
+					@include inline-block;
+				}
+
+				.icons--fan-inactive {
+					display: none;
+				}
+			}
+		}
+
+		// value
+		.table-cell-content--4 {
+
+			.fan-value {
+				font: 15px/50px "Karla", sans-serif;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: #333;
+				font-style: normal;
+			}
+		}
+
+
+		// attend, spending, social bars
+		.fan-bar {
+			@include inline-block;
+			position: relative;
+			width: 100%;
+			height: 12px;
+			background-color: #e2e2e2;
+
+			.fill {
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 0%;
+				background-color: #222;
+
+				&.fill--attend {
+					width: 25%;
+					background-color: #ffbe40;
+				}
+
+				&.fill--spend {
+					width: 77%;
+					background-color: #3fb8af;
+				}
+
+				&.fill--social {
+					width: 53%;
+					background-color: #e32143;
+				}
+			}
+		}
+
+
+		// mark
+		.table-cell-content--8 {
+			text-align: center;
+
+			.icons--fan-mark-active {
+				display: none;
+			}
+
+			&.is-active {
+				.icons--fan-mark-active {
+					@include inline-block;
+				}
+
+				.icons--fan-mark-inactive {
+					display: none;
+				}
+			}
+		}
+
+// my tickets
+
+.pastevents {
+	margin-top: 40px;
+	padding-top: 40px;
+	border-top: 1px solid #E6E6E6;
+
+	&:first-child {
+		margin: 0;
+		padding: 0;
+		border: 0px;
+	}
+}
+
+	.ticket__details {
+		margin-left: 10px;
+		font-family: "Karla", sans-serif;
+		font-weight: 700;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+
+		.ticket__details-title {
+			font-size: 16px;
+			color: #e32143;
+		}
+
+		.ticket__details-reference {
+			margin: 10px 0;
+			font-size: 15px;
+			color: #636363;
+
+			.em {
+				color: #222;
+			}
+		}
+
+		.booking-details {
+			margin: 12px 0;
+			font-size: 13px;
+		}
+
+			.booking-details__title {
+				float: left;
+				width: 30%;
+				color: #636363;
+			}
+
+			.booking-details__desc {
+				float: right;
+				margin: 0;
+				width: 70%;
+				color: #222;
+			}
+
+			.ticket__details-help-text {
+				@include inline-block;
+				margin-left: 10px;
+				font: 12px/1 sans-serif;
+				text-transform: none;
+				color: #8f8f8f;
+			}
+
+			// billing
+			.ticket__billing-title {
+				padding: 0 10px;
+				height: 40px;
+				line-height: 40px;
+				background-color: #222;
+				font-weight: 400;
+				color: #a8a8a8;
+			}
+
+			.ticket__billing-details {
+				margin: 20px 0;
+				padding: 0;
+				list-style-type: none;
+			}
+
+				.ticket__billing-item {
+					font-size: 13px;
+					line-height: 19px;
+					color: #828282;
+
+					&:first-child {
+						color: #222;
+					}
+				}
+
+
+
+// my pulse
+
+.profile {
+	position: relative;
+	margin-bottom: 100px;
+}
+
+	.profile__img-container {
+		position: relative;
+		height: 310px;
+	}
+
+		.profile__img {
+			width: 100%;
+			position: absolute;
+			height: 100%;
+		}
+
+		.profile__social {
+			right: 10px;
+			bottom: 10px;
+			position: absolute;
+			left: 10px;
+			border-radius: 5px;
+		}
+
+			.profile__social-header {
+				background: rgba(0, 0, 0, 0.75);
+				height: 60px;
+				padding: 0 20px;
+			}
+
+				.profile__title {
+					margin: 0;
+					font-family: karla;
+					font-weight: 700;
+					color: #FFF;
+					line-height: 60px;
+					float: left;
+				}
+
+				.profile__rating {
+					float: right;
+					font-family: karla, sans-serif;
+					font-weight: 400;
+					color: #fff;
+					line-height: 60px;
+				}
+
+			.profile__social-footer {
+				background: #E1E1E1;
+				height: 40px;
+			}
+
+				.profile__genre {
+					font-family: karla;
+					font-weight: 700;
+					color: #767676;
+					text-transform: uppercase;
+					font-size: 13px;
+					display: inline-block;
+					float: left;
+					line-height: 40px;
+					margin-left: 20px;
+				}
+
+				.profile__social-listing {
+					margin: 0;
+					padding: 0;
+					list-style-type: none;
+					display: inline-block;
+					float: right;
+					line-height: 40px;
+				}
+
+					.profile__social-item {
+						display: inline-block;
+						width: 38px;
+						text-align: center;
+						border-left: 1px solid #D0D0D0;
+
+						&:first-child {
+							border-left: 0;
+						}
+					}
+
+						.profile__social-link {
+							display: block;
+
+							&:hover {
+								background-color: #E32143;
+							}
+						}
+
+				.profile__social-tools-listing {
+					margin: 0;
+					padding: 0;
+					list-style-type: none;
+					float: right;
+					width: 130px;
+				}
+
+					.profile__social-tools-item {
+						position: relative;
+						background: #3A3A3A;
+
+						&:hover {
+							.profile__social-tools-sub-listing {
+								display: block;
+							}
+						}
+					}
+
+						.profile__social-tools-title {
+							padding: 0 15px;
+							font-size: 12px;
+							color: #8E8D8D;
+							height: 40px;
+							line-height: 40px;
+							text-transform: uppercase;
+							cursor: pointer;
+							font-weight: bold;
+
+							&:hover {
+								background-color: #2b2a2a;
+								color: #a5a5a5;
+							}
+						}
+
+						.profile__social-tools-sub-listing {
+							margin: 0;
+							padding: 0;
+							list-style-type: none;
+							display: none;
+							padding: 5px;
+							background-color: #222;
+							position: absolute;
+							top: 100%;
+							left: 0;
+							right: 0;
+						}
+
+							.profile__social-tools-sub-item {
+								margin-top: 5px;
+
+								&:first-child {
+									margin-top: 0;
+								}
+							}
+
+								.profile__social-tools-link {
+									font-size: 11px;
+									color: #7D7D7D;
+									display: block;
+									padding: 5px;
+
+									&:hover {
+										color: #000;
+										text-decoration: none;
+										background-color: #FFF;
+										border-radius: 2px;
+									}
+								}
+	.profile__biography {
+		padding: 30px;
+		font: 13px/17px "Karla", sans-serif;
+	}
+
+		.profile__biography-content {
+			margin: 0 0 10px 0;
+		}
+
+		.profile__biography-content--headline {
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+			.profile__biography-link {
+				margin-left: 5px;
+				padding: 3px 6px;
+				color: #FFF;
+				font-size: 11px;
+				text-transform: uppercase;
+				background-color: #494949;
+			}
+
+// events detail
+$bg-going: #3fb8af;
+$bg-maybe: #ffbe40;
+$bg-invited: #e32143;
+
+	// attendance overview
+
+	.attendance-overview-listing {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+		.attendance-overview-item {
+			display: inline-block;
+			margin: 0 0 1px 1px;
+			min-width: 37px;
+			background-color: #141414;
+
+			&:hover {
+				background-color: #000;
+			}
+
+			&:first-child {
+				width: 86px;
+
+				.attendance-overview-listing--going & {
+					background-color: $bg-going;
+
+					&:hover {
+						background-color: darken($bg-going, 6);
+					}
+				}
+
+				.attendance-overview-listing--maybe & {
+					background-color: $bg-maybe;
+
+					&:hover {
+						background-color: darken($bg-maybe, 6);
+					}
+				}
+
+				.attendance-overview-listing--invited & {
+					background-color: $bg-invited;
+
+					&:hover {
+						background-color: darken($bg-invited, 6);
+					}
+				}
+			}
+		}
+
+			.attendance-overview-link {
+				display: block;
+				line-height: 38px;
+				text-align: center;
+				color: #fff;
+
+				.attendance-overview-listing--maybe & {
+					color: #000;
+
+					&:hover {
+						color: #000;
+					}
+				}
+
+				&:hover {
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+
+
+	// lineup listing
+	.lineup-listing {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		list-style-type: none;
+	}
+
+		.lineup-item {
+			display: inline-block;
+			width: 50px;
+			background-color: #141414;
+
+			&:hover {
+				background-color: #fff;
+			}
+
+			&:last-child:hover {
+				background-color: #000;
+			}
+		}
+
+			.lineup-link {
+				display: block;
+				line-height: 50px;
+				text-align: center;
+			}
+
+				.lineup-img {
+					vertical-align: top;
+				}

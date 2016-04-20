@@ -1,0 +1,12 @@
+<div class="nav-header  hidden-xs  clearfix">
+    <div class="nav-header__title  l-left">
+        My Pulse &gt; <em class="nav-header__title-em">{{title}}</em>
+    </div>
+
+    <ul class="nav-header__list  l-right  option-set  clearfix">
+        
+        <li class="nav-header__item js-side-nav-item" ng-repeat="item in nav" data-name="{{item.name}}" ng-click="goTo(item.nav)">
+            {{item.name}}
+        </li>
+    </ul>
+</div> 

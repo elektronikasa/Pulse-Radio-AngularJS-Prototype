@@ -1,0 +1,54 @@
+// ==========================================================================
+// The events nav
+// ==========================================================================
+
+.nav-content-side {
+	font-family: 'Karla', sans-serif;
+	font-size: 13px;
+}
+
+	.profile-img {
+		@include box-shadow (0 0 4px #c1c1c1);
+		padding: 5px;
+		width: 100%;
+	}
+
+	.nav-content-side__title {
+		border-top: 1px solid #dfdfdf;
+		font-weight: 700;
+		margin-top: 10px;
+		padding: 10px 0 0 0;
+		text-transform: uppercase;
+
+		&.first {
+			margin: 0;
+			padding: 0;
+			border-top: 0;
+		}
+	}
+
+	.nav-content-side__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+		.nav-content-side__item {
+			list-style-type: none;
+		}
+
+			.nav-content-side__link {
+				@include transition(color 0.1s ease);
+				color: #929292;
+				display: block;
+
+				&:hover {
+					color: #666;
+					text-decoration: none;
+				}
+
+				.nav-content-side__item.active & {
+					color: #e32143;
+					font-weight: 700;
+				}
+			}

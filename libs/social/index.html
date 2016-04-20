@@ -1,0 +1,699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Plugin - Social Share Buttons Documentation</title>
+<link rel="stylesheet" type="text/css" href="inc/layout.css" media="all" />
+<script type="text/javascript" src="inc/js/jquery-1.4.min.js"></script>
+<script type="text/javascript" src="inc/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="inc/js/jquery.site.js"></script>
+
+</head>
+
+<body>
+
+<!-- Begin Second Wrapper -->
+
+<div id="wrapper">
+ 
+  <div id="container"> 
+  <!-- Begin Question Block -->
+
+  <div class="opacity pad-btm">
+	<div id="banner">
+		<a href="http://www.designchemical.com/blog/index.php/premium-jquery-plugins/jquery-social-share-buttons-plugin/"><img src="inc/images/banner.png" alt="" /></a>
+		<h1>jQuery Social Share Buttons Plugin Documentation</h1>
+	</div>
+	<div id="nav-container">
+		<ul id="dctsp-nav">
+			<li><a href="index.html">Documentation</a></li>
+		<li><a href="example_1.html">Example 1</a></li>
+		<li><a href="example_2.html">Example 2</a></li>
+		<li><a href="example_3.html">Example 3</a></li>
+		<li><a href="example_4.html">Example 4</a></li><li><a href="example_5.html">Example 5</a></li><li><a href="example_6.html">Example 6</a></li>
+		
+		</ul>
+		</div>
+	</div>
+	<div class="opacity pad-btm">
+	<div class="col-side">
+	
+	<div class="info">
+		Plugin: jQuery Social Share Buttons<br />
+		By: <a href="http://codecanyon.net/user/designchemical">designchemical</a><br />
+		Created: 6th August 2012<br>
+		Version: 2.2
+	</div>
+	</div>
+	<div class="col-main">
+
+    <div class="info ">
+		<p>Thank you for purchasing the jQuery Social Share Buttons plugin.<br />
+		If you have any questions that are beyond the scope of this help file, please feel free to send us an email using the contact form on our <a href="http://codecanyon.net/user/designchemical">codecanyon profile page</a>. We are also <a href="http://www.designchemical.com">available for hire</a> if you require any customisations or assistance with jQuery or Wordpress.
+	</div>
+    </div>
+	<div class="clear"></div>
+  </div>
+  
+
+<div class="opacity">
+
+ <div class="title">
+    <h3>Setting Up The Plugin</h3>
+    
+  </div>
+
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Installation</h2>
+	<div class="togglebox">
+	<div>
+		<p>The plugin requires the jQuery javascript library. So first thing is to add the jquery library from your preferred source. There are no specific requirements for this plugin so you are free to use any of the latest versions:</p>
+		<pre>&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"&gt;&lt;/script&gt;</pre>
+		<p>Once you have loaded the jQuery library you need to include the social share buttons plugin file:</p>
+		<pre>&lt;script type="text/javascript" src="js/jquery.social.share.2.2.js"&gt;&lt;/script&gt;</pre>
+		<p>Finally, if you want to use the default styles then either include the social.css file or copy/paste the CSS code to your site's style sheet:</p>
+		<pre>&lt;link rel="stylesheet" type="text/css" href="css/social.css" media="all" /&gt;</pre>
+		<p>The plugin is now ready to use!</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Quick Start</h2>
+	<div class="togglebox">
+	<div> 
+		<p>The easiest way to get started is to just initialize the plugin with the default settings.</p>
+		<p>1. Insert the following jQuery into the head of your document (before the closing "head" tag):</p>
+		<pre>$(document).ready(function($){
+	$('#social-share').dcSocialShare();
+});</pre>
+		<p>2. Add the following HTML to your page, just before the closing "body" tag:</p>
+		<pre>&lt;div id="social-share"&gt;&lt;/div&gt;</pre>
+		<p>That's all there is to it! The social share buttons will be inserted into the "social-share" div tag when the page loads.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+</div>
+
+
+  <div class="opacity">
+     <div class="title">
+    <h3>Plugin Options</h3>
+    
+  </div>
+  
+  
+  <!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Plugin Options</h2>
+	<div class="togglebox">
+	<div>
+		<p>The following list details the options available for customizing the plugin and the default values:</p>
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr><td class="first">buttons</td><td>twitter, facebook, plusone, linkedin, digg, stumbleupon, delicious, pinterest, xing, buffer, print, email</td><td></td><td>Declare which buttons to include and the order in which they appear</td></tr>
+<tr><td class="first">size</td><td> 'vertical',</td><td>horizontal, none</td><td>Button size</td></tr>
+<tr><td class="first">txtPrint</td><td> 'Print',</td><td></td><td>Text for print button</td></tr>
+<tr><td class="first">txtEmail</td><td> 'Email',</td><td></td><td>Text for email button</td></tr>
+<tr><td class="first">twitterId</td><td> '',</td><td></td><td>Twitter ID for data-via option</td></tr>
+<tr><td class="first">email</td><td> '',</td><td></td><td>Email address for email button<br />(<a href="#tag-email">See section "email address"</a>)</td></tr>
+<tr><td class="first">url</td><td> document.URL,</td><td></td><td>URL of the page to be "liked". Default uses the document URL</td></tr>
+<tr><td class="first">title</td><td> document.title,</td><td></td><td>Title to use for the Twitter, Digg, Delicious, Reddit & Buffer buttons. Default uses the document title</td></tr>
+<tr><td class="first">description</td><td> $('meta[name=description]').attr("content"),</td><td></td><td>Description text for Digg & Pinterest button. Default uses the page meta-description tag</td></tr>
+<tr><td class="first">classWrapper</td><td> 'dcssb-float',</td><td></td><td>CSS class for wrapper</td></tr>
+<tr><td class="first">classContent</td><td> 'dcssb-content',</td><td></td><td>CSS class for button panel</td></tr>
+<tr><td class="first">width</td><td> 70,</td><td></td><td>Width in pixels of button panel</td></tr>
+<tr><td class="first">location</td><td> 'top',</td><td>bottom</td><td>Location of button panel - top/bottom</td></tr>
+<tr><td class="first">align</td><td> 'left', </td><td>right</td><td>Alignment of button panel - left/right of browser window</td></tr>
+<tr><td class="first">offsetLocation</td><td> 30,</td><td></td><td>Number of pixels from top/bottom of browser</td></tr>
+<tr><td class="first">offsetAlign</td><td> 30,</td><td></td><td>Number of pixels from left/right of browser</td></tr>
+<tr><td class="first">center</td><td>0,</td><td></td><td>Number of pixels from center of browser<br />(<a href="#tag-position">See section "positioning"</a>)</td></tr>
+<tr><td class="first">speedFloat</td><td> 1500,</td><td></td><td>Speed in milliseconds of floating animation</td></tr>
+<tr><td class="first">speed</td><td> 600,</td><td></td><td>Speed in milliseconds of panel opening/closing</td></tr>
+<tr><td class="first">floater</td><td> true,</td><td>false</td><td>Set to "false" to disable floating animation</td></tr>
+<tr><td class="first">autoClose</td><td> false,</td><td>true</td><td>Set to "true" to automatically close button panel</td></tr>
+<tr><td class="first">loadOpen</td><td> true,</td><td>false</td><td>Set to "false" to keep panel closed on page load</td></tr>
+<tr><td class="first">easing</td><td> 'easeOutQuint',</td><td>(See easing options)</td><td>Easing options for floating animation</td></tr>
+<tr><td class="first">classOpen</td><td> 'dc-open',</td><td></td><td>CSS class of link to open button panel when clicked</td></tr>
+<tr><td class="first">classClose</td><td> 'dc-close',</td><td></td><td>CSS class of link to close button panel when clicked</td></tr>
+<tr><td class="first">classToggle</td><td> 'dc-toggle</td><td></td><td>CSS class of link to toggle button panel when clicked</td></tr>
+
+</tbody>
+
+	</table>
+	<h4>Using The Plugin Options</h4>
+	<p>The options can be set when the plugin is initialized. To change an option, include the parameter and it's new value in the initialisation code - e.g.</p>
+	<pre>$(document).ready(function($){
+	$('#social-share').dcSocialShare({
+		size: 'horizontal',
+		location: 'bottom',
+		offsetAlign: 0,
+		offsetLocation: 0,
+		buttons: 'twitter,facebook,linkedin,digg,stumbleupon,delicious,pinterest,xing,buffer,print,email',
+		floater: false,
+		autoClose: true
+	});
+});</pre>
+<p>Options that are not included in the initialisation code will automatically use the default values.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+  <!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 id="tag-position" class="trigger"><span></span>Positioning</h2>
+	<div class="togglebox">
+	<div>
+		<p>There are 2 main ways to position the button panel:</p>
+		<h4>Position based on number of pixels from edge of browser</h4>
+		<p>To position the buttons based on the edge of the browser window use the 'location' & 'align' settings to fix the corner. There are basically 4 different settings available:</p>
+		<ul>
+			<li>Top Left</li>
+			<li>Top Right</li>
+			<li>Bottom Left</li>
+			<li>Bottom Right</li>
+		</ul>
+		<p>Use the offsetAlign & OffsetLocation to locate the panel x number of pixels from your selected location.</p>
+		<p>Note: To use this positioning the "center" value must be set to zero.</p>
+		
+		<h4>Position based on number of pixels from center of browser</h4>
+		<p>To position the buttons based on the center of the browser edge of the browser window use the 'location' & 'align' settings to fix the corner and the "center" option to fix the number of pixels from the center of the screen. Use offsetLocation to fix the number of pixels from the top/bottom of the browser window.</p>
+		<p>When using "center" the offsetAlign value is ignored.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 id="tag-email" class="trigger"><span></span>Email Address</h2>
+	<div class="togglebox">
+	<div>
+		<p>The plugin includes code, which allows you to add an obfuscated email address for the email button. This helps prevent spam harvesters from reading the email in the source code.</p>
+		<p>To create the obfuscated email address:</p>
+		<ol>
+			<li>Replace all "." with "//"</li>
+			<li>Replace the "@" symbol with "/"</li>
+			<li>Reverse the text</li>
+		</ol>
+		<p>Example - email@domain.com</p>
+		<ol>
+			<li>email@domain//com</li>
+			<li>email/domain//com</li>
+			<li>moc//niamod/liame</li>
+		</ol>
+		<h4>Generate Your Obfuscated Email</h4>
+		<p>Rather than do it manually you can also use the tool below! Input your email address and click "go"</p>
+		<form>
+			<p><input type="text" class="obfuscate" id="email-in" value="" /><a href="#" id="link-obfuscate">Go</a></p>
+			<p id="email-out"><input type="text" class="obfuscate" value="" /> copy/paste the scrambled email into your plugin settings.</p>
+		</form>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+</div>
+
+
+<div class="opacity">
+ <div class="title">
+    <h3>Styling</h3>
+    
+  </div>
+  <!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>CSS</h2>
+	<div class="togglebox">
+	<div>
+		<p>Social.css contains the styles for both the button panel and any specific button styles for the print, email and pinterest buttons.</p>
+		<h4>Default Button Panel Styles</h4>
+		<pre>
+/* Button panel */
+.dcssb-float .dcssb-content {
+	background: #fff;
+	padding: 10px 10px 5px 10px;
+	text-align: center;
+	width: 70px;
+	border: 1px solid #ccc;
+	border-radius: 3px; 
+	-webkit-border-radius: 3px;
+}
+.dcssb-btn {
+	margin-bottom: 5px;
+}
+.dcssb-btn.size-horizontal {
+	width: 80px;
+	height: 24px;
+}
+.dcssb-btn.size-none {
+	width: 60px;
+	height: 24px;
+}
+.dcssb-btn.size-vertical {
+	width: 60px;
+	height: 62px;
+}
+
+/* Button specific styling - adjustments */
+/* Digg */
+.dcssb-digg.size-vertical {
+	height: 68px;
+}
+/* Delicious */
+.dcssb-delicious div {
+	margin: 0 auto;
+}
+/* LinkedIn */
+.dcssb-linkedin.size-horizontal {
+	width: 65px;
+}
+/* Buffer */
+.dcssb-buffer.size-horizontal {
+	width: 85px;
+}
+		</pre>
+		<h4>Print &amp; Email Button Styles</h4>
+		<p>Unlike the other social share buttons, the Pinterest, print and email buttons are all created by the plugin. We therefore need to include the CSS for these buttons in the style sheet:</p>
+		<pre>
+/* Print & Email */
+.dcssb-print.size-horizontal, .dcssb-print.size-none, .dcssb-email.size-horizontal, .dcssb-email.size-horizontal {
+	width: 56px;
+}
+.dcssb-print.size-vertical, .dcssb-email.size-vertical {
+	height: 24px;
+}
+.link-email, .link-print {
+	padding-left: 20px;
+	display: block;
+	font: bold 11px/18px Arial, sans-serif;
+	height: 20px;
+	text-decoration: none;
+	color: #333333;
+    cursor: pointer;
+    background-color: #F8F8F8;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #DEDEDE);
+    border: 1px solid #bbb;
+    border-radius: 3px 3px 3px 3px;
+    max-width: 98%;
+    overflow: hidden;
+    position: relative;
+	text-align: left;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.link-print .icon, .link-email .icon {
+	display: block;
+	width: 14px;
+	height: 12px;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+.link-print .icon {
+	background: url(../images/icon_print.png) no-repeat 0 0;
+}
+.link-email .icon {
+	background: url(../images/icon_email.png) no-repeat 0 0;
+}
+.link-email:hover, .link-print:hover {
+	background-color: #e8e8e8;
+	border: 1px solid #999;
+    background-image: -moz-linear-gradient(center top , #f8f8f8, #cecece);
+}</pre>
+<h4>Pinterest Button Styles</h4>
+		<pre>
+/* Pinterest */
+.dcssb-pinterest {
+	position: relative;
+	width: 60px;
+}
+.dcssb-pinterest.size-horizontal, .dcssb-pinterest.size-none {
+	height: 20px;
+}
+.dcssb-pinterest.size-horizontal {
+	width: 70px;
+}
+.dcssb-pinterest-button {
+    height: 25px;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+.pinItButton {
+    position: absolute;
+    background: url(../images/pinterest.png);
+    font: 11px Arial, sans-serif;
+    text-indent: -9999em;
+    font-size: .01em;
+    color: #CD1F1F;
+    height: 22px;
+    width: 47px;
+    background-position: 0 -37px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -24px;
+}
+.pinItButton:hover {
+	background-position: 0 -58px;
+	background-color: none;
+}
+.pinterest-counter-count{
+	font: 12px/12px Arial,Helvetica,sans-serif;
+    height: 29px;
+    padding: 9px 0 0;
+    text-align: center;
+    width: 47px;
+	background: url(../images/pinterest.png) no-repeat 0 0;
+    color: #777777;
+    position: absolute;
+	bottom: 23px;
+	right: 8px;
+}
+.size-horizontal .pinItButton {
+	left: 0;
+	margin-left: 0;
+}
+.size-horizontal .pinterest-counter-count{
+	font: 11px/11px Arial,Helvetica,sans-serif;
+    height: 15px;
+    padding: 3px 0 0;
+    text-align: center;
+    width: 21px;
+	background: url(../images/pinit-count-s.png) no-repeat 0 0;
+    color: #777777;
+    position: absolute;
+	bottom: 1px;
+	right: 0;
+}
+.size-none .pinterest-counter-count{
+ display: none;
+}
+		</pre>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Default Images</h2>
+	<div class="togglebox">
+	<div>
+		<p>Several images/icons are required to create the default plugin styles. These can be found in the images folder. If the images are moved to a new folder make sure that the image path is updated in the social.css file.</p>
+		<p><img src="images/icon_email.png" alt="" /></p>
+		<p><img src="images/icon_print.png" alt="" /></p>
+		<p><img src="images/pinterest.png" alt="" /></p>
+		<p><img src="images/pinit-count.png" alt="" /></p>
+		<p><img src="images/pinit-count-s.png" alt="" /></p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+  </div>
+  
+  <div class="opacity">
+  
+   <div class="title">
+    <h3>Demos</h3>
+    
+  </div>
+  
+  
+    <!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Default Settings</h2>
+	<div class="togglebox">
+	<div> 
+	<p>Quick start - no customized options! - <a href="example_1.html">View Example 1</a></p>
+	<pre>$(document).ready(function($){
+	$('#social-share').dcSocialShare();
+});</pre>
+	
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+   <!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Custom Buttons</h2>
+	<div class="togglebox">
+	<div> 
+	<p>The buttons can be added/removed by editing the button list for the "buttons" option. Changing the order of the buttons will also alter the order in which the buttons will appear in the page - <a href="example_2.html">View Example 2</a></p>
+	<pre>$(document).ready(function($){
+	$('#social-share').dcSocialShare({
+		buttons: 'facebook,linkedin,twitter,digg,print,email',
+		email: 'moc//niamod/liame'
+	});
+});</pre>
+	
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+
+   <!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Custom Positioning</h2>
+	<div class="togglebox">
+	<div> 
+	<p>The position of the button panel is completely flexible - move the button panel to the right and fix the positioning based on the center of the browser window - <a href="example_3.html">View Example 3 - Custom Positioning</a></p>
+	<pre>$(document).ready(function($){
+	$('#social-share').dcSocialShare({
+		buttons: 'facebook,linkedin,twitter,digg,print,email',
+		email: 'moc//niamod/liame',
+		align: 'right',
+		center: 570
+	});
+});</pre>
+	
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Creating a Social Share Toolbar</h2>
+	<div class="togglebox">
+	<div> 
+	<p>The plugin is very versatile and with a few changes to the CSS and the default settings we can create a custom social share toolbar - <a href="example_4.html">View Example 4</a></p>
+	<pre>$(document).ready(function($){
+	$('#social-share').dcSocialShare({
+	size: 'horizontal',
+		location: 'bottom',
+		offsetAlign: 0,
+		offsetLocation: 0,
+		buttons: 'twitter,facebook,linkedin,digg,stumbleupon,delicious,pinterest,buffer,print,email',
+		floater: false,
+		autoClose: true
+	});
+});</pre>
+
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Custom jQuery Positioning</h2>
+	<div class="togglebox">
+	<div> 
+	<p>Another example of custom styling to create a double row button panel with just minor changes to the default css styles.</p>
+	<p>This example also includes some additional jQuery code, which prevents the buttons moving up into the header by adjusting the position when the user scrolls the browser.</p>
+	<h4>jQuery Code</h4>
+	<pre>$(document).ready(function(){
+	$('#social-share').dcSocialShare({
+		buttons: 'twitter,facebook,linkedin,digg,stumbleupon,delicious,pinterest,buffer,print,email',
+		offsetLocation: 0,
+		center: 625,
+		floater: false
+	});
+	var a = $('#dcssb-1');
+	buttonPosition(a);
+	$(window).scroll(function(){
+		buttonPosition(a);
+	});
+});
+function buttonPosition(obj){
+	var o = obj.offset();
+	var p = o.top > 400 ? {marginTop: '20px'} : {marginTop: '400px'};
+	obj.stop().animate(p,500,'easeOutQuint');
+}</pre>
+
+
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Setting The Share URL</h2>
+	<div class="togglebox">
+	<div> 
+	<p>The default settings will automatically detect the current page URL and use this for the share buttons. If you want to overide this and set your own URL you can use the "url" option when initialising the plugin - <a href="example_6.html">View Example 6</a></p>
+	<pre>$(document).ready(function($){
+	$('#social-share').dcSocialShare({
+		url:'http://www.designchemical.com/'
+	});
+});</pre>
+	
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+</div>
+
+  <div class="opacity">
+  <div class="title">
+    <h3>FAQ / Errors</h3>
+    
+  </div>
+  
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Buttons not rendering</h2>
+	<div class="togglebox">
+	<div> 
+		<p>If the buttons are not appearing on the screen check the following:</p>
+		<ul>
+			<li>Is the jQuery library included in the page and positioned BEFORE the social share plugin?</li>
+			<li>Is the jquery social share plugin file included in the page?</li>
+			<li>Is the div tag with the correct ID included in the page between the "body" tags?</li>
+			<li>Check the page using firebug for any other jquery/javascript errors that may be stopping the plugin from initialising</li>
+		</ul>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>The Social Share Button Counts Are Not Showing</h2>
+	<div class="togglebox">
+	<div> 
+		<p>If any of the social share button counts suddenly stop showing this may be due to a temporary local/API problem. usually the problem will rectify itself within a few hours and the count results should return.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Changing The Page URL</h2>
+	<div class="togglebox">
+	<div> 
+		<p>Social share counts are specific to each URL. Changing the URL of a page will reset all of the count values for that page back to zero. The social counts cannot be carried over to different URLs.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+</div>
+
+
+<!-- Start sources -->
+<div class="opacity">
+  
+   <div class="title">
+    <h3>Sources</h3>
+    
+  </div>
+  
+  
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>jQuery Plugins</h2>
+	<div class="togglebox">
+	<div> 
+		<ul>
+			<li>jQuery Social Share Buttons: <a href="http://www.designchemical.com/blog/">Design Chemical</a></li>
+			<li>jQuery Easing: <a href="http://gsgd.co.uk/sandbox/jquery/easing/">[Source]</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+</div>
+<!-- End sources -->
+
+<!-- Start sources -->
+<div class="opacity">
+  
+   <div class="title">
+    <h3>Changelog</h3>
+    
+  </div>
+	<div> 
+		<h4>v2.1 - 25th May 2012</h4>
+		<ul><li>Added: Option to set URL</li>
+Added: prevent pinterest button from browsing</li>
+Edited: Modify loading of linked in script</li></ul>
+		<p></p>
+	</div>
+	<div> 
+		<h4>v2.0 - 3rd March 2012</h4>
+		<ul><li>First release</li></ul>
+		<p></p>
+	</div>
+</div>
+<!-- End sources -->
+
+  <div class="opacity">
+  <div class="title">
+    <h3>Thank You</h3>
+    
+  </div>
+  
+  <!-- Begin Question Block -->
+  
+    <div class="info">
+		<p class="margin-bottom">Once again, thank you for purchasing the jQuery Social Share Buttons plugin!</p>
+		<p class="margin-bottom">If you have any questions relating to this plugin or suggestions for future improvements please contact us via our <a href="http://codecanyon.net/user/designchemical">Code Canyon profile</a> or via our website - <a href="http://www.designchemical.com/blog/">http://www.designchemical.com/blog/</a></div>
+ 
+  <!-- End Question Block --> 
+  <div id="copyright">
+	<p>jQuery Social Share Buttons Plugin was created by <a href="http://www.designchemical.com">Design Chemical</a>.</p>
+  </div>
+  </div>
+  
+  
+</div>
+<!-- End Wrapper -->
+</body>
+</html>

@@ -1,0 +1,14 @@
+// ==========================================================================
+// General custom select
+// ==========================================================================
+
+.form-label {
+	@include inline-block;
+	font: 700 13px/34px "Karla", sans-serif;
+	text-transform: uppercase;
+	color: #424242;
+}
+
+.form-label--large {
+	font: 700 16px/34px "Karla", sans-serif;
+}

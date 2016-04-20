@@ -1,0 +1,55 @@
+.player-container {
+    background: #000;
+    border: 1px solid #222;
+    @include border-radius(3px);
+    margin: 10px 0;
+    position: relative;
+}
+
+.player {
+    background: #191919;
+    border: 1px solid #222;
+    border-left: 0;
+    border-top: 0;
+    float: left;
+    height: 69px;
+    margin: 8px;
+    padding: 12px;
+    width: 614px;
+    @include border-radius(3px);
+}
+
+    .player__btn {
+        cursor: pointer;
+        float: left;
+        line-height: 40px;
+        width: 40px;
+        @include background(linear-gradient(#2c2c2c, #1e1e1e));
+        border: 1px solid #2d2d2d;
+        text-align: center;
+
+        &:hover {
+            @include background(linear-gradient(#3a3a3a, #272727));
+        }
+    }
+
+    .player__btn--vol {
+        box-sizing: initial;
+        width: 80px;
+        padding: 0 12px;
+    }
+
+        .player__btn-icon {
+            vertical-align: middle;
+        }
+
+    .player__close {
+        cursor: pointer;
+        opacity: 0.3;
+        position: absolute;
+        right: -28px;
+        top: 6px;
+    }
+
+@import "player-sliders";
+@import "player-list";
